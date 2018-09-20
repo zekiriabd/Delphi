@@ -1,6 +1,6 @@
-# Xamarin
+# Delphi
 
-#### Login to Facebook using Xamarin.Auth
+#### Alert - Custom popup In Delphi FMX  -    علب حوار و تنبه في الدلفي
 
 ## Platform Support
 
@@ -12,10 +12,10 @@
 
 
 <p align="center">
-  <img src="https://i.imgur.com/QFbWWO2.gif" alt="badges" style="margin:auto">
+  <img src="https://i.imgur.com/XP3aLwK.png" alt="badges" style="margin:auto">
 </p>
 
 
 <p>
-  https://www.youtube.com/watch?v=BtL0ZknXxlM&list=PLfVdvKscEioMSVPWYUW0XD3CKKohUYMEG&index=45
+  https://www.youtube.com/watch?v=LqTicZvqicI&list=PLfVdvKscEioOgxKhAz_LFBjrQcyXImD_K&index=6&t=0s
 </p>
