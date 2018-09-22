@@ -1,0 +1,22 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 413
+  ClientWidth = 347
+  WindowState = wsMaximized
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnPlay: TButton
+    Align = Center
+    Size.Width = 92.000000000000000000
+    Size.Height = 99.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'playtoolbutton'
+    TabOrder = 1
+    Text = 'Play'
+    OnClick = btnPlayClick
+  end
+end

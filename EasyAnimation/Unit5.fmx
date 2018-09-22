@@ -8,30 +8,10 @@ object Form5: TForm5
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object Button1: TButton
-    Position.X = 64.000000000000000000
-    Position.Y = 32.000000000000000000
-    Size.Width = 193.000000000000000000
-    Size.Height = 57.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 2
-    Text = 'ShowMessage'
-    OnClick = Button1Click
-  end
-  object Button2: TButton
-    Position.X = 64.000000000000000000
-    Position.Y = 104.000000000000000000
-    Size.Width = 193.000000000000000000
-    Size.Height = 57.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 1
-    Text = 'MessageDlg / MessageDlgPos'
-    OnClick = Button2Click
-  end
   object Button3: TButton
-    Position.X = 64.000000000000000000
-    Position.Y = 176.000000000000000000
-    Size.Width = 193.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 313.000000000000000000
     Size.Height = 57.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
@@ -49,9 +29,9 @@ object Form5: TForm5
   end
   object Rectangle2: TRectangle
     Align = Center
-    Fill.Color = claCornflowerblue
+    Fill.Color = claDarkslateblue
     Size.Width = 313.000000000000000000
-    Size.Height = 191.000000000000000000
+    Size.Height = 200.000000000000000000
     Size.PlatformDefault = False
     Visible = False
     XRadius = 20.000000000000000000
@@ -95,7 +75,7 @@ object Form5: TForm5
       Size.PlatformDefault = False
     end
     object Button4: TButton
-      Position.X = 72.000000000000000000
+      Position.X = 96.000000000000000000
       Position.Y = 137.000000000000000000
       Size.Width = 161.000000000000000000
       Size.Height = 22.000000000000000000
@@ -103,6 +83,13 @@ object Form5: TForm5
       TabOrder = 3
       Text = 'OK'
       OnClick = Button4Click
+    end
+    object FloatAnimation1: TFloatAnimation
+      Enabled = True
+      Duration = 5.000000000000000000
+      PropertyName = 'Opacity'
+      StartValue = 0.100000001490116100
+      StopValue = 1.000000000000000000
     end
   end
 end
