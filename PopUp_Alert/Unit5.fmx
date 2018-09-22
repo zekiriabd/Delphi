@@ -1,0 +1,108 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 546
+  ClientWidth = 330
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'ShowMessage'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'MessageDlg / MessageDlgPos'
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Open Model'
+    OnClick = Button3Click
+  end
+  object Rectangle1: TRectangle
+    Align = Client
+    Fill.Color = claBlack
+    Opacity = 0.500000000000000000
+    Size.Width = 330.000000000000000000
+    Size.Height = 546.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+  object Rectangle2: TRectangle
+    Align = Center
+    Fill.Color = claCornflowerblue
+    Size.Width = 313.000000000000000000
+    Size.Height = 191.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.800000011920929000
+      Opacity = 0.800000011920929000
+      ShadowColor = claBlack
+    end
+    object Label2: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 280.000000000000000000
+      Position.Y = 22.000000000000000000
+      Size.Width = 17.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'X'
+      TabOrder = 0
+      OnClick = Label2Click
+    end
+    object Label1: TLabel
+      Position.X = 24.000000000000000000
+      Position.Y = 86.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Mail'
+      TabOrder = 1
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 96.000000000000000000
+      Position.Y = 81.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Button4: TButton
+      Position.X = 72.000000000000000000
+      Position.Y = 137.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'OK'
+      OnClick = Button4Click
+    end
+  end
+end
