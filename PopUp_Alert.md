@@ -6,9 +6,9 @@
 
 |Platform|Version|
 | ------------------- | :------------------: |
-|Xamarin.iOS|iOS 8+|
-|Xamarin.Android|API 14+|
-|Xamarin.UWP|
+|DELPHI.iOS|
+|DELPHI.Android|
+|DELPHI.Win|
 
 
 <p align="center">
