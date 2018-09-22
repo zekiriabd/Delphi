@@ -1,14 +1,14 @@
 # Delphi
 
-#### Alert - Custom popup In Delphi FMX  -    علب حوار و تنبه في الدلفي
+#### Tosts Message In Delphi FMX  -     التنبه المسمى طوست في الدلفي
 
 ## Platform Support
 
 |Platform|Version|
 | ------------------- | :------------------: |
-|Xamarin.iOS|iOS 8+|
-|Xamarin.Android|API 14+|
-|Xamarin.UWP|
+|DELPHI.iOS|
+|DELPHI.Android|
+|DELPHI.Win|
 
 
 <p align="center">
