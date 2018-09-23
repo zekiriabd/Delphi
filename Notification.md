@@ -1,6 +1,6 @@
 # Delphi
 
-#### Playing Audio File In Xamarin Forms تشغيل ملف صوتي في الدلفي 
+#### 1- Local Notification with NotificationCenter in Delphi FMX
 ## Platform Support
 
 |Platform|Version|
@@ -11,6 +11,9 @@
 
 
 
+<p align="center">
+  <img src="https://i.imgur.com/zDLkHKf.png" alt="badges" style="margin:auto">
+</p>
 
 
 <p>
