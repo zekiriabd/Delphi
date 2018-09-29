@@ -1,6 +1,6 @@
 # Delphi
 
-#### Tosts Message In Delphi FMX  -     التنبه المسمى طوست في الدلفي
+####  Using a SQLite in Delphi - FMX الاتصال بقاعدة بيانات سكلايت بالدلفي
 
 ## Platform Support
 
@@ -12,10 +12,10 @@
 
 
 <p align="center">
-  <img src="https://i.imgur.com/nhOF7pO.gif" alt="badges" style="margin:auto">
+  <img src="https://i.imgur.com/IQpCW80.gif" alt="badges" style="margin:auto">
 </p>
 
 
 <p>
-  https://www.youtube.com/watch?v=LqTicZvqicI&list=PLfVdvKscEioOgxKhAz_LFBjrQcyXImD_K&index=6&t=0s
+  https://www.youtube.com/watch?v=CP58MYuykdg&t=0s&list=PLfVdvKscEioOgxKhAz_LFBjrQcyXImD_K&index=17
 </p>
