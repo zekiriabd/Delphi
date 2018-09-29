@@ -1,0 +1,216 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 508
+  ClientWidth = 338
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Padding.Left = 20.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 20.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label3: TLabel
+      Align = Top
+      Position.X = 20.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 298.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Id'
+      TabOrder = 0
+    end
+    object TxId: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      Size.Width = 298.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Layout2: TLayout
+    Align = Top
+    Padding.Left = 20.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 20.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Position.Y = 70.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Top
+      Position.X = 20.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 298.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'FirstName'
+      TabOrder = 0
+    end
+    object txFName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      Size.Width = 298.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Layout3: TLayout
+    Align = Top
+    Padding.Left = 20.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 20.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Position.Y = 140.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label2: TLabel
+      Align = Top
+      Position.X = 20.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 298.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'LastName'
+      TabOrder = 0
+    end
+    object txLName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      Size.Width = 298.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Layout4: TLayout
+    Align = Top
+    Padding.Left = 20.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 20.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Position.Y = 210.000000000000000000
+    Size.Width = 338.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Size.Width = 71.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Button3: TButton
+      Align = Right
+      Position.X = 184.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 56.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Serach'
+      OnClick = Button3Click
+    end
+    object Button2: TButton
+      Align = Right
+      Position.X = 132.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 52.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Delete'
+      OnClick = Button2Click
+    end
+    object Button1: TButton
+      Align = Right
+      Position.X = 240.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 78.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Save'
+      OnClick = Button1Click
+    end
+    object Button4: TButton
+      Align = Left
+      Position.X = 20.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Add'
+      OnClick = Button4Click
+    end
+  end
+  object StringGrid1: TStringGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 338.000000000000000000
+    Size.Height = 258.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    RowCount = 0
+    Viewport.Width = 334.000000000000000000
+    Viewport.Height = 233.000000000000000000
+  end
+  object AdapterBindSource1: TAdapterBindSource
+    AutoActivate = True
+    ScopeMappings = <>
+    Left = 248
+    Top = 320
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 132
+    Top = 317
+    object LinkGridToDataSourceAdapterBindSource1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      FieldName = 'Id'
+      Control = TxId
+      Track = False
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      FieldName = 'LastName'
+      Control = txLName
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      FieldName = 'FirstName'
+      Control = txFName
+      Track = False
+    end
+  end
+end
