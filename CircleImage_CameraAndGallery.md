@@ -1,6 +1,6 @@
 # Delphi
 
-#### 1- Local Notification with NotificationCenter in Delphi FMX
+#### 1- Circle Image / Camera / Gallery in Delphi FMX
 ## Platform Support
 
 |Platform|Version|
@@ -12,10 +12,10 @@
 
 
 <p align="center">
-  <img src="https://i.imgur.com/zDLkHKf.png" alt="badges" style="margin:auto">
+  <img src="https://i.imgur.com/7q44DUc.png" alt="badges" style="margin:auto">
 </p>
 
 
 <p>
-  https://www.youtube.com/watch?v=ndCE9E2u6y4&list=PLfVdvKscEioOgxKhAz_LFBjrQcyXImD_K&index=10
+ 
 </p>
