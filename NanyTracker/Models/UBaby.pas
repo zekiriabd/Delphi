@@ -2,7 +2,10 @@ unit UBaby;
 
 interface
 uses
-System.SysUtils,System.Generics.Collections,FMX.Graphics,FMX.Objects,System.iOUtils;
+System.SysUtils,System.Generics.Collections,FMX.Graphics,FMX.Objects,System.iOUtils
+
+, FMX.Dialogs
+;
 
 type
 {$METHODINFO ON}
@@ -47,12 +50,12 @@ Try
   {$IFDEF MSWINDOWS}
     path := ExpandFileName(GetCurrentDir) + '\images\bebe1.jpg';
   {$ELSE}
-    path := TPath.GetDocumentsPath + PathDelim + '\images\bebe1.jpg';
+    path := TPath.GetDocumentsPath + '/bebe1.jpg';
   {$ENDIF}
-
   circleItem.Fill.Bitmap.Bitmap.LoadFromFile(path);
   circleItem.Fill.Bitmap.WrapMode:= TWrapMode.TileStretch;
   circleItem.Fill.Kind := TBrushKind.Bitmap;
+  circleItem.Stroke.Kind:= TBrushKind.Bitmap;
 Finally
    Result :=  circleItem.MakeScreenshot;
    circleItem.Free;

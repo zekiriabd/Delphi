@@ -36,6 +36,8 @@ type
     BindingsList1: TBindingsList;
     ListView1: TListView;
     LinkFillControlToField1: TLinkFillControlToField;
+    LinkFillControlToField2: TLinkFillControlToField;
+    LinkFillControlToField3: TLinkFillControlToField;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -62,6 +64,9 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+   //LinkFillControlToField1.FieldName := 'FirstName';
+   //LinkFillControlToField2.FieldName := 'LastName';
+   //LinkFillControlToField3.FieldName := 'ProfileBitmap';
    BindSourceAdapterReload();
 end;
 

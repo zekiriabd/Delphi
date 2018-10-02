@@ -10,22 +10,53 @@ object Form1: TForm1
   OnCreate = FormCreate
   DesignerMasterStyle = 0
   object ListView1: TListView
-    ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
-    ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+    ItemAppearanceClassName = 'TDynamicAppearance'
+    ItemEditAppearanceClassName = 'TDynamicAppearance'
     HeaderAppearanceClassName = 'TListHeaderObjects'
     FooterAppearanceClassName = 'TListHeaderObjects'
-    Position.X = 8.000000000000000000
-    Position.Y = 56.000000000000000000
-    Size.Width = 337.000000000000000000
-    Size.Height = 353.000000000000000000
+    AllowSelection = False
+    Locked = True
+    Position.X = 24.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 313.000000000000000000
+    Size.Height = 185.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 3
-    ItemAppearance.ItemHeight = 100
+    TabOrder = 5
+    ParentShowHint = False
+    ShowHint = False
+    ItemAppearance.ItemHeight = 60
     ItemAppearance.HeaderHeight = 1
     ItemAppearance.FooterHeight = 1
-    ItemAppearanceObjects.ItemObjects.Image.Width = 87.000000000000000000
-    ItemAppearanceObjects.ItemObjects.Image.Height = 69.000000000000000000
-    ItemAppearanceObjects.ItemObjects.Image.PlaceOffset.X = 8.000000000000000000
+    ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Width = 229.000000000000000000
+        Appearance.Height = 33.000000000000000000
+        Appearance.PlaceOffset.X = 62.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Text2'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Width = 228.000000000000000000
+        Appearance.Height = 29.000000000000000000
+        Appearance.PlaceOffset.X = 64.000000000000000000
+        Appearance.PlaceOffset.Y = 32.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Image3'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.Width = 63.000000000000000000
+        Appearance.Height = 58.000000000000000000
+        Appearance.VertAlign = Center
+      end>
+    ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+      end>
+    ItemAppearanceObjects.HeaderObjects.Text.Height = 1.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.Height = 1.000000000000000000
   end
   object AdapterBindSource1: TAdapterBindSource
     AutoActivate = True
@@ -40,6 +71,37 @@ object Form1: TForm1
     Top = 13
     object LinkFillControlToField1: TLinkFillControlToField
       Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      Control = ListView1
+      Track = False
+      FillDataSource = AdapterBindSource1
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'FirstName'
+          ControlMemberName = 'Text1'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField2: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
+      Control = ListView1
+      Track = False
+      FillDataSource = AdapterBindSource1
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'LastName'
+          ControlMemberName = 'Text2'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField3: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = AdapterBindSource1
       Control = ListView1
       Track = False
       FillDataSource = AdapterBindSource1
@@ -47,7 +109,7 @@ object Form1: TForm1
       FillExpressions = <
         item
           SourceMemberName = 'ProfileBitmap'
-          ControlMemberName = 'Bitmap'
+          ControlMemberName = 'Image3'
         end>
       FillHeaderExpressions = <>
       FillBreakGroups = <>
