@@ -1,6 +1,7 @@
 # Delphi
 
-#### Tosts Message In Delphi FMX  -     التنبه المسمى طوست في الدلفي
+####  عرض صورة دائرية
+#### عنصر ListView و عمل الباينيغ مع قائمة ابجكت
 
 ## Platform Support
 
