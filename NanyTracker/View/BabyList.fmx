@@ -14,101 +14,86 @@ object Form1: TForm1
     ItemEditAppearanceClassName = 'TDynamicAppearance'
     HeaderAppearanceClassName = 'TListHeaderObjects'
     FooterAppearanceClassName = 'TListHeaderObjects'
-    AllowSelection = False
-    Locked = True
-    Position.X = 24.000000000000000000
-    Position.Y = 80.000000000000000000
-    Size.Width = 313.000000000000000000
-    Size.Height = 185.000000000000000000
+    Align = Client
+    Size.Width = 347.000000000000000000
+    Size.Height = 537.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 5
-    ParentShowHint = False
-    ShowHint = False
+    TabOrder = 9
     ItemAppearance.ItemHeight = 60
-    ItemAppearance.HeaderHeight = 1
-    ItemAppearance.FooterHeight = 1
     ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
       item
         AppearanceObjectName = 'Text1'
         AppearanceClassName = 'TTextObjectAppearance'
-        Appearance.Width = 229.000000000000000000
-        Appearance.Height = 33.000000000000000000
-        Appearance.PlaceOffset.X = 62.000000000000000000
+        Appearance.Font.Size = 14.000000000000000000
+        Appearance.Font.StyleExt = {00070000000000000004000000}
+        Appearance.TextAlign = Leading
+        Appearance.Width = 217.000000000000000000
+        Appearance.Height = 17.000000000000000000
+        Appearance.Align = Center
+        Appearance.PlaceOffset.X = 19.000000000000000000
       end
       item
-        AppearanceObjectName = 'Text2'
-        AppearanceClassName = 'TTextObjectAppearance'
-        Appearance.Width = 228.000000000000000000
-        Appearance.Height = 29.000000000000000000
-        Appearance.PlaceOffset.X = 64.000000000000000000
-        Appearance.PlaceOffset.Y = 32.000000000000000000
+        AppearanceObjectName = 'Image2'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.Width = 47.000000000000000000
+        Appearance.Height = 44.000000000000000000
       end
       item
         AppearanceObjectName = 'Image3'
         AppearanceClassName = 'TImageObjectAppearance'
-        Appearance.Width = 63.000000000000000000
-        Appearance.Height = 58.000000000000000000
-        Appearance.VertAlign = Center
+        Appearance.Width = 15.000000000000000000
+        Appearance.Height = 17.000000000000000000
+        Appearance.PlaceOffset.X = 38.000000000000000000
+        Appearance.PlaceOffset.Y = 29.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Text4'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.TextAlign = Leading
+        Appearance.Width = 161.000000000000000000
+        Appearance.Height = 33.000000000000000000
+        Appearance.PlaceOffset.X = 78.000000000000000000
+        Appearance.PlaceOffset.Y = 16.000000000000000000
       end>
     ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
       item
         AppearanceObjectName = 'Text1'
         AppearanceClassName = 'TTextObjectAppearance'
       end>
-    ItemAppearanceObjects.HeaderObjects.Text.Height = 1.000000000000000000
-    ItemAppearanceObjects.FooterObjects.Text.Height = 1.000000000000000000
   end
   object AdapterBindSource1: TAdapterBindSource
     AutoActivate = True
     ScopeMappings = <>
-    Left = 232
-    Top = 8
+    Left = 240
+    Top = 104
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 68
-    Top = 13
+    Left = 124
+    Top = 117
     object LinkFillControlToField1: TLinkFillControlToField
       Category = 'Quick Bindings'
-      DataSource = AdapterBindSource1
       Control = ListView1
       Track = False
       FillDataSource = AdapterBindSource1
+      FillDisplayFieldName = 'FirstName'
       AutoFill = True
       FillExpressions = <
         item
           SourceMemberName = 'FirstName'
           ControlMemberName = 'Text1'
-        end>
-      FillHeaderExpressions = <>
-      FillBreakGroups = <>
-    end
-    object LinkFillControlToField2: TLinkFillControlToField
-      Category = 'Quick Bindings'
-      DataSource = AdapterBindSource1
-      Control = ListView1
-      Track = False
-      FillDataSource = AdapterBindSource1
-      AutoFill = True
-      FillExpressions = <
+        end
         item
           SourceMemberName = 'LastName'
-          ControlMemberName = 'Text2'
-        end>
-      FillHeaderExpressions = <>
-      FillBreakGroups = <>
-    end
-    object LinkFillControlToField3: TLinkFillControlToField
-      Category = 'Quick Bindings'
-      DataSource = AdapterBindSource1
-      Control = ListView1
-      Track = False
-      FillDataSource = AdapterBindSource1
-      AutoFill = True
-      FillExpressions = <
+          ControlMemberName = 'Text4'
+        end
         item
           SourceMemberName = 'ProfileBitmap'
+          ControlMemberName = 'Image2'
+        end
+        item
+          SourceMemberName = 'IsPresentColor'
           ControlMemberName = 'Image3'
         end>
       FillHeaderExpressions = <>

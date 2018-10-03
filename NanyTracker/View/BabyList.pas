@@ -28,7 +28,8 @@ uses
   FMX.ListView.Adapters.Base,
   FMX.ListView,
   IdHTTP,
-  FMX.Objects, System.Rtti;
+  FMX.Objects, System.Rtti, FMX.Grid.Style, Fmx.Bind.Grid, Data.Bind.Grid,
+  FMX.Grid;
 
 type
   TForm1 = class(TForm)
@@ -36,8 +37,6 @@ type
     BindingsList1: TBindingsList;
     ListView1: TListView;
     LinkFillControlToField1: TLinkFillControlToField;
-    LinkFillControlToField2: TLinkFillControlToField;
-    LinkFillControlToField3: TLinkFillControlToField;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -56,17 +55,15 @@ uses DatabaseAccess,UBaby;
 procedure  TForm1.BindSourceAdapterReload();
 var _list : TList<TBaby>;
 begin
-_list := DataModule1.GetUserList();
-AdapterBindSource1.Active:=   False;
-AdapterBindSource1.Adapter:=  TListBindSourceAdapter<TBaby>.Create(self,_list,True);
-AdapterBindSource1.Active:=   True;
+  _list := DataModule1.GetUserList();
+  AdapterBindSource1.Active:=   False;
+  AdapterBindSource1.Adapter:=  TListBindSourceAdapter<TBaby>.Create(self,_list,True);
+  AdapterBindSource1.Active := True;
 end;
+
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-   //LinkFillControlToField1.FieldName := 'FirstName';
-   //LinkFillControlToField2.FieldName := 'LastName';
-   //LinkFillControlToField3.FieldName := 'ProfileBitmap';
    BindSourceAdapterReload();
 end;
 

@@ -2,10 +2,8 @@ unit UBaby;
 
 interface
 uses
-System.SysUtils,System.Generics.Collections,FMX.Graphics,FMX.Objects,System.iOUtils
-
-, FMX.Dialogs
-;
+System.SysUtils,System.Generics.Collections,FMX.Graphics,FMX.Objects,
+System.iOUtils,System.UITypes,FMX.Dialogs;
 
 type
 {$METHODINFO ON}
@@ -22,11 +20,14 @@ type
     procedure SetLastName(const Value: string);
     procedure SetProfileImage(const Value: string);
     procedure SetIsPresent(const Value: Boolean);
+    //function ImagePathToCircleBitmap(imageName : string):TBitmap;
     function GetProfileBitmap():TBitmap;
+    function GetIsPresentColor():TBitmap;
     { Private declarations }
   public
     { Public declarations }
     ProfileBitmap :TBitmap;
+    IsPresentColor:TBitmap;
    //Constructor Create; overload;
     Constructor Create(id : integer; firstName:string; lastName: string; profileImage:string;isPresent:Boolean);
     Property Id: integer read _Id write SetId;
@@ -37,9 +38,8 @@ type
   end;
 {$METHODINFO OFF}
 implementation
-{ TUser }
 
-function TBaby.GetProfileBitmap:TBitmap;
+function ImagePathToCircleBitmap(imageName : string):TBitmap;
 var
 path : string;
 circleItem: TCircle;
@@ -48,9 +48,9 @@ Try
    Result:= TBitmap.Create;
    circleItem := TCircle.Create(nil);
   {$IFDEF MSWINDOWS}
-    path := ExpandFileName(GetCurrentDir) + '\images\bebe1.jpg';
+    path := ExpandFileName(GetCurrentDir) + '\images\' + imageName;
   {$ELSE}
-    path := TPath.GetDocumentsPath + '/bebe1.jpg';
+    path := TPath.GetDocumentsPath + '/' + imageName;
   {$ENDIF}
   circleItem.Fill.Bitmap.Bitmap.LoadFromFile(path);
   circleItem.Fill.Bitmap.WrapMode:= TWrapMode.TileStretch;
@@ -63,6 +63,29 @@ End;
 
 end;
 
+function TBaby.GetProfileBitmap:TBitmap;
+begin
+    Result :=  ImagePathToCircleBitmap(Self._ProfileImage);
+end;
+
+function TBaby.GetIsPresentColor:TBitmap;
+var
+   circleItem: TCircle;
+begin
+Try
+   Result:= TBitmap.Create;
+   circleItem := TCircle.Create(nil);
+  if (self._IsPresent = True) then
+      circleItem.Fill.Color:= TAlphaColorRec.Greenyellow
+  else
+      circleItem.Fill.Color:= TAlphaColorRec.Red;
+Finally
+   Result :=  circleItem.MakeScreenshot;
+   circleItem.Free;
+End;
+end;
+
+
 Constructor TBaby.Create(id : integer; firstName:string; lastName: string;profileImage:string;isPresent:Boolean);
 begin
     self._Id           := id;
@@ -71,6 +94,8 @@ begin
     Self._ProfileImage := profileImage;
     Self._IsPresent    := isPresent;
     Self.ProfileBitmap := GetProfileBitmap();
+    Self.IsPresentColor := GetIsPresentColor();
+
 end;
 
 procedure TBaby.SetFirstName(const Value: string);
