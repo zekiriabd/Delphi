@@ -1,7 +1,7 @@
 # Delphi
 
-####  عرض صورة دائرية
-#### عنصر ListView و عمل الباينيغ مع قائمة ابجكت
+#### Circle image in listview delphi formonky
+#### عنصر ListView  عرض صورة دائرية و عمل الباينيغ مع قائمة ابجكت
 
 ## Platform Support
 
