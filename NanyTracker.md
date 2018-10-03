@@ -1,6 +1,6 @@
 # Delphi
 
-#### Circle image in listview delphi formonky
+#### Circle image in listview Delphi Firemonkey
 #### عنصر ListView  عرض صورة دائرية و عمل الباينيغ مع قائمة ابجكت
 
 ## Platform Support
