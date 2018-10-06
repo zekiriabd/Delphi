@@ -102,7 +102,7 @@ begin
     {$IFDEF MSWINDOWS}
         dbPath := TPath.Combine(ExpandFileName(GetCurrentDir), DBFILE);
     {$ELSE}
-        dbPath := TPath.GetDocumentsPath + PathDelim + DBFILE;
+        dbPath := TPath.GetDocumentsPath + '/Database/' + DBFILE;
     {$ENDIF}
     Result := TFDConnection.Create(self);
     Result.Params.Add('Database='+  dbPath);
