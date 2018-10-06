@@ -43,14 +43,17 @@ function ImagePathToCircleBitmap(imageName : string):TBitmap;
 var
 path : string;
 circleItem: TCircle;
+const
+  IMGDIR = 'Images';
 begin
 Try
    Result:= TBitmap.Create;
    circleItem := TCircle.Create(nil);
   {$IFDEF MSWINDOWS}
-    path := ExpandFileName(GetCurrentDir) + '\images\' + imageName;
+    path := ExpandFileName(GetCurrentDir) + '\' + IMGDIR + '\' + imageName;
   {$ELSE}
-    path := TPath.GetDocumentsPath + '/' + imageName;
+    path := TPath.GetDocumentsPath + '/' + IMGDIR +'/' + imageName;
+
   {$ENDIF}
   circleItem.Fill.Bitmap.Bitmap.LoadFromFile(path);
   circleItem.Fill.Bitmap.WrapMode:= TWrapMode.TileStretch;
