@@ -6,7 +6,7 @@
         <MainSource>NanyTracker2.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Platform Condition="'$(Platform)'==''">Android</Platform>
         <TargetedPlatforms>1119</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
@@ -401,8 +401,7 @@
                 </DeployFile>
                 <DeployFile LocalName="Images\bebe1.jpg" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Android">
-                        <RemoteDir>.\assets\internal\</RemoteDir>
-                        <Enabled>false</Enabled>
+                        <RemoteDir>.\assets\internal\Images</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -420,8 +419,7 @@
                 </DeployFile>
                 <DeployFile LocalName="Images\bebe2.jpg" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Android">
-                        <RemoteDir>.\assets\internal\</RemoteDir>
-                        <Enabled>false</Enabled>
+                        <RemoteDir>.\assets\internal\Images</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -443,7 +441,7 @@
                 </DeployFile>
                 <DeployFile LocalName="Database\NanyTracker.db" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Android">
-                        <RemoteDir>.\assets\internal\</RemoteDir>
+                        <RemoteDir>.\assets\internal\Database</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

@@ -3,19 +3,20 @@ object Form1: TForm1
   Top = 0
   Caption = 'Form1'
   ClientHeight = 537
-  ClientWidth = 347
+  ClientWidth = 375
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
   DesignerMasterStyle = 0
   object ListView1: TListView
+    Touch.GestureManager = GestureManager1
     ItemAppearanceClassName = 'TDynamicAppearance'
     ItemEditAppearanceClassName = 'TDynamicAppearance'
     HeaderAppearanceClassName = 'TListHeaderObjects'
     FooterAppearanceClassName = 'TListHeaderObjects'
     Align = Client
-    Size.Width = 347.000000000000000000
+    Size.Width = 375.000000000000000000
     Size.Height = 537.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 9
@@ -27,10 +28,10 @@ object Form1: TForm1
         Appearance.Font.Size = 14.000000000000000000
         Appearance.Font.StyleExt = {00070000000000000004000000}
         Appearance.TextAlign = Leading
-        Appearance.Width = 217.000000000000000000
-        Appearance.Height = 17.000000000000000000
+        Appearance.Width = 190.000000000000000000
+        Appearance.Height = 25.000000000000000000
         Appearance.Align = Center
-        Appearance.PlaceOffset.X = 19.000000000000000000
+        Appearance.PlaceOffset.X = 3.000000000000000000
       end
       item
         AppearanceObjectName = 'Image2'
@@ -50,16 +51,30 @@ object Form1: TForm1
         AppearanceObjectName = 'Text4'
         AppearanceClassName = 'TTextObjectAppearance'
         Appearance.TextAlign = Leading
-        Appearance.Width = 161.000000000000000000
+        Appearance.Width = 190.000000000000000000
         Appearance.Height = 33.000000000000000000
-        Appearance.PlaceOffset.X = 78.000000000000000000
-        Appearance.PlaceOffset.Y = 16.000000000000000000
+        Appearance.PlaceOffset.X = 60.000000000000000000
+        Appearance.PlaceOffset.Y = 24.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'TextButton5'
+        AppearanceClassName = 'TTextButtonObjectAppearance'
+        Appearance.TintColor = claForestgreen
+        Appearance.Width = 50.000000000000000000
+        Appearance.Visible = False
+        Appearance.PlaceOffset.X = 300.000000000000000000
+        Appearance.Text = 'Start'
       end>
     ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
       item
         AppearanceObjectName = 'Text1'
         AppearanceClassName = 'TTextObjectAppearance'
       end>
+    ItemAppearanceObjects.HeaderObjects.Text.Width = 311.000000000000000000
+    ItemAppearanceObjects.HeaderObjects.Text.Height = 24.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.Width = 303.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.Height = 24.000000000000000000
+    CanSwipeDelete = False
   end
   object AdapterBindSource1: TAdapterBindSource
     AutoActivate = True
@@ -98,6 +113,36 @@ object Form1: TForm1
         end>
       FillHeaderExpressions = <>
       FillBreakGroups = <>
+    end
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 88
+    Top = 288
+    GestureData = <
+      item
+        Control = ListView1
+        Collection = <
+          item
+            Action = Action1
+            GestureID = sgiLeft
+          end
+          item
+            Action = Action2
+            GestureID = sgiRight
+          end>
+      end>
+  end
+  object ActionList1: TActionList
+    Left = 72
+    Top = 208
+    object Action1: TAction
+      Text = 'Action1'
+      OnExecute = Action1Execute
+    end
+    object Action2: TAction
+      Text = 'Action2'
+      OnExecute = Action2Execute
     end
   end
 end

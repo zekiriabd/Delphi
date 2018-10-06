@@ -97,12 +97,14 @@ function TDataModule1.SqlitConnection(): TFDConnection;
 var
   dbPath:string;
 const
+  DBDIR = 'Database';
+const
   DBFILE = 'NanyTracker.db';
 begin
     {$IFDEF MSWINDOWS}
-        dbPath := TPath.Combine(ExpandFileName(GetCurrentDir), DBFILE);
+        dbPath := TPath.Combine(ExpandFileName(GetCurrentDir),  TPath.Combine(DBDIR,DBFILE));
     {$ELSE}
-        dbPath := TPath.GetDocumentsPath + '/Database/' + DBFILE;
+        dbPath := TPath.GetDocumentsPath + '/'+ DBDIR +'/' + DBFILE;
     {$ENDIF}
     Result := TFDConnection.Create(self);
     Result.Params.Add('Database='+  dbPath);

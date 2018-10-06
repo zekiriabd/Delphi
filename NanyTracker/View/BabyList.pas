@@ -29,7 +29,7 @@ uses
   FMX.ListView,
   IdHTTP,
   FMX.Objects, System.Rtti, FMX.Grid.Style, Fmx.Bind.Grid, Data.Bind.Grid,
-  FMX.Grid;
+  FMX.Grid, FMX.StdCtrls, System.Actions, FMX.ActnList, FMX.Gestures;
 
 type
   TForm1 = class(TForm)
@@ -37,7 +37,13 @@ type
     BindingsList1: TBindingsList;
     ListView1: TListView;
     LinkFillControlToField1: TLinkFillControlToField;
+    GestureManager1: TGestureManager;
+    ActionList1: TActionList;
+    Action1: TAction;
+    Action2: TAction;
     procedure FormCreate(Sender: TObject);
+    procedure Action1Execute(Sender: TObject);
+    procedure Action2Execute(Sender: TObject);
   private
     { Private declarations }
     procedure BindSourceAdapterReload();
@@ -52,6 +58,42 @@ implementation
 uses DatabaseAccess,UBaby;
 {$R *.fmx}
 
+procedure TForm1.Action1Execute(Sender: TObject);
+var
+  I: Integer;
+  item:TAppearanceListViewItem;
+begin
+  if (ListView1.ItemIndex >= 0) then
+  begin
+    item := ListView1.Items[ListView1.ItemIndex];
+    item.Objects.FindObject('TextButton5').Visible:= True;
+    for I := 350 Downto 300 do
+    begin
+     item.Objects.FindObject('TextButton5').PlaceOffset.X:=i;
+     //System.SysUtils.Sleep(1);
+     //Application.ProcessMessages;
+    end;
+  end;
+end;
+
+procedure TForm1.Action2Execute(Sender: TObject);
+var
+  I: Integer;
+  item:TAppearanceListViewItem;
+begin
+  if (ListView1.ItemIndex >= 0) then
+  begin
+    item := ListView1.Items[ListView1.ItemIndex];
+    item.Objects.FindObject('TextButton5').Visible:= True;
+    for I := 300 to 350 do
+    begin
+       item.Objects.FindObject('TextButton5').PlaceOffset.X:=i;
+       //System.SysUtils.Sleep(1);
+       //Application.ProcessMessages;
+    end;
+  end;
+end;
+
 procedure  TForm1.BindSourceAdapterReload();
 var _list : TList<TBaby>;
 begin
@@ -60,7 +102,6 @@ begin
   AdapterBindSource1.Adapter:=  TListBindSourceAdapter<TBaby>.Create(self,_list,True);
   AdapterBindSource1.Active := True;
 end;
-
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
