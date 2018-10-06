@@ -29,7 +29,7 @@ uses
   FMX.ListView,
   IdHTTP,
   FMX.Objects, System.Rtti, FMX.Grid.Style, Fmx.Bind.Grid, Data.Bind.Grid,
-  FMX.Grid, FMX.StdCtrls, System.Actions, FMX.ActnList, FMX.Gestures;
+  FMX.Grid, FMX.StdCtrls, System.Actions, FMX.ActnList, FMX.Gestures, FMX.Menus;
 
 type
   TForm1 = class(TForm)
@@ -44,6 +44,8 @@ type
     procedure FormCreate(Sender: TObject);
     procedure Action1Execute(Sender: TObject);
     procedure Action2Execute(Sender: TObject);
+    procedure ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
+      const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
   private
     { Private declarations }
     procedure BindSourceAdapterReload();
@@ -69,9 +71,11 @@ begin
     item.Objects.FindObject('TextButton5').Visible:= True;
     for I := 350 Downto 300 do
     begin
-     item.Objects.FindObject('TextButton5').PlaceOffset.X:=i;
-     //System.SysUtils.Sleep(1);
-     //Application.ProcessMessages;
+      item.Objects.FindObject('TextButton5').PlaceOffset.X:=i;
+      {$IFDEF MSWINDOWS}
+      System.SysUtils.Sleep(10);
+      Application.ProcessMessages;
+      {$ENDIF}
     end;
   end;
 end;
@@ -87,12 +91,26 @@ begin
     item.Objects.FindObject('TextButton5').Visible:= True;
     for I := 300 to 350 do
     begin
-       item.Objects.FindObject('TextButton5').PlaceOffset.X:=i;
-       //System.SysUtils.Sleep(1);
-       //Application.ProcessMessages;
+      item.Objects.FindObject('TextButton5').PlaceOffset.X:=i;
+      {$IFDEF MSWINDOWS}
+       System.SysUtils.Sleep(10);
+       Application.ProcessMessages;
+      {$ENDIF}
     end;
   end;
 end;
+
+
+procedure TForm1.ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
+  const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
+begin
+ if ItemObject.Name.Equals('TextButton5') then
+ begin
+    ShowMessage('TextButton5 is clicked');
+ end;
+end;
+
+
 
 procedure  TForm1.BindSourceAdapterReload();
 var _list : TList<TBaby>;
@@ -107,5 +125,6 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
    BindSourceAdapterReload();
 end;
+
 
 end.
