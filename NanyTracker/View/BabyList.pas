@@ -68,15 +68,7 @@ begin
   if (ListView1.ItemIndex >= 0) then
   begin
     item := ListView1.Items[ListView1.ItemIndex];
-    item.Objects.FindObject('TextButton5').Visible:= True;
-    for I := 350 Downto 300 do
-    begin
-      item.Objects.FindObject('TextButton5').PlaceOffset.X:=i;
-      {$IFDEF MSWINDOWS}
-      System.SysUtils.Sleep(10);
-      Application.ProcessMessages;
-      {$ENDIF}
-    end;
+    item.Objects.FindObject('TextButton5').Visible:= true;
   end;
 end;
 
@@ -88,15 +80,7 @@ begin
   if (ListView1.ItemIndex >= 0) then
   begin
     item := ListView1.Items[ListView1.ItemIndex];
-    item.Objects.FindObject('TextButton5').Visible:= True;
-    for I := 300 to 350 do
-    begin
-      item.Objects.FindObject('TextButton5').PlaceOffset.X:=i;
-      {$IFDEF MSWINDOWS}
-       System.SysUtils.Sleep(10);
-       Application.ProcessMessages;
-      {$ENDIF}
-    end;
+    item.Objects.FindObject('TextButton5').Visible:= false;
   end;
 end;
 
@@ -104,10 +88,10 @@ end;
 procedure TForm1.ListView1ItemClickEx(const Sender: TObject; ItemIndex: Integer;
   const LocalClickPos: TPointF; const ItemObject: TListItemDrawable);
 begin
- if ItemObject.Name.Equals('TextButton5') then
- begin
-    ShowMessage('TextButton5 is clicked');
- end;
+     if (ItemObject <> nil) and (ItemObject.Name.Equals('TextButton5')) then
+     begin
+        ShowMessage('TextButton5 is clicked');
+     end;
 end;
 
 
