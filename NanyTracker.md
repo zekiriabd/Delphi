@@ -2,6 +2,8 @@
 
 #### Circle image in listview Delphi Firemonkey
 #### عنصر ListView  عرض صورة دائرية و عمل الباينيغ مع قائمة ابجكت
+#### SwipListView  Delphi FMX - قائمة ازرار تتحرك بالسحب
+
 
 ## Platform Support
 
@@ -13,7 +15,7 @@
 
 
 <p align="center">
-  <img src="https://i.imgur.com/LJ85DLZ.png" alt="badges" style="margin:auto">
+  <img src="https://i.imgur.com/2TyOPZS.gif" alt="badges" style="margin:auto">
 </p>
 
 
