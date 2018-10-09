@@ -1,0 +1,175 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 591
+  ClientWidth = 368
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Circle1: TCircle
+    Anchors = [akRight, akBottom]
+    Fill.Color = claBlue
+    Position.X = 283.000000000000000000
+    Position.Y = 495.000000000000000000
+    Size.Width = 71.000000000000000000
+    Size.Height = 88.000000000000000000
+    Size.PlatformDefault = False
+    OnClick = Circle1Click
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family]
+      Size.Width = 71.000000000000000000
+      Size.Height = 88.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claCornsilk
+      TextSettings.HorzAlign = Center
+      Text = 'Ok'
+      TabOrder = 0
+    end
+  end
+  object GridPanelLayout1: TGridPanelLayout
+    Position.X = 232.000000000000000000
+    Position.Y = 308.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 1
+    ColumnCollection = <
+      item
+        Value = 100.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = Rectangle1
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = Rectangle2
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = Rectangle3
+        Row = 2
+      end>
+    RowCollection = <
+      item
+        Value = 32.343169103503370000
+      end
+      item
+        Value = 32.288450628782060000
+      end
+      item
+        Value = 35.368380267714570000
+      end
+      item
+        SizeStyle = Auto
+      end>
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = claNull
+      Sides = []
+      Size.Width = 113.000000000000000000
+      Size.Height = 52.072502136230470000
+      Size.PlatformDefault = False
+      Visible = False
+      object Circle2: TCircle
+        Align = Right
+        Fill.Color = claRed
+        Position.X = 70.801498413085940000
+        Size.Width = 42.198501586914060000
+        Size.Height = 52.072502136230470000
+        Size.PlatformDefault = False
+      end
+      object Label2: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 10.000000000000000000
+        Size.Width = 60.801498413085940000
+        Size.Height = 52.072502136230470000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Menu 1'
+        TabOrder = 1
+      end
+      object FloatAnimation1: TFloatAnimation
+        Duration = 0.200000002980232200
+        StartValue = 0.000000000000000000
+        StopValue = 0.000000000000000000
+      end
+    end
+    object Rectangle2: TRectangle
+      Align = Client
+      Fill.Color = claNull
+      Sides = []
+      Size.Width = 113.000000000000000000
+      Size.Height = 51.984405517578130000
+      Size.PlatformDefault = False
+      Visible = False
+      object Circle3: TCircle
+        Align = Right
+        Fill.Color = claOrange
+        Position.X = 70.801498413085940000
+        Size.Width = 42.198501586914060000
+        Size.Height = 51.984405517578130000
+        Size.PlatformDefault = False
+      end
+      object Label4: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 10.000000000000000000
+        Size.Width = 60.801498413085940000
+        Size.Height = 51.984405517578130000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Menu 1'
+        TabOrder = 1
+      end
+      object FloatAnimation2: TFloatAnimation
+        Duration = 0.200000002980232200
+        StartValue = 0.000000000000000000
+        StopValue = 0.000000000000000000
+      end
+    end
+    object Rectangle3: TRectangle
+      Align = Client
+      Fill.Color = claNull
+      Sides = []
+      Size.Width = 113.000000000000000000
+      Size.Height = 56.943092346191410000
+      Size.PlatformDefault = False
+      Visible = False
+      object Circle4: TCircle
+        Align = Right
+        Fill.Color = claPalevioletred
+        Position.X = 70.801498413085940000
+        Size.Width = 42.198501586914060000
+        Size.Height = 56.943092346191410000
+        Size.PlatformDefault = False
+      end
+      object Label5: TLabel
+        Align = Client
+        StyledSettings = [Family, Size, FontColor]
+        Margins.Left = 10.000000000000000000
+        Size.Width = 60.801498413085940000
+        Size.Height = 56.943092346191410000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Menu 1'
+        TabOrder = 1
+      end
+      object FloatAnimation3: TFloatAnimation
+        Duration = 0.200000002980232200
+        StartValue = 0.000000000000000000
+        StopValue = 0.000000000000000000
+      end
+    end
+  end
+end
