@@ -25,7 +25,12 @@ type
     FloatAnimation1: TFloatAnimation;
     FloatAnimation2: TFloatAnimation;
     FloatAnimation3: TFloatAnimation;
+    Rectangle4: TRectangle;
+    Layout1: TLayout;
     procedure Circle1Click(Sender: TObject);
+    procedure FloatAnimation1Finish(Sender: TObject);
+    procedure FloatAnimation2Finish(Sender: TObject);
+    procedure GridPanelLayout1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -41,38 +46,50 @@ implementation
 
 procedure TForm5.Circle1Click(Sender: TObject);
 begin
-     GridPanelLayout1.Visible:=True;
-     Rectangle1.Visible           := True;
-     FloatAnimation1.Enabled      := False;
+     Layout1.Visible := true;
+     Rectangle1.Visible := true;
      FloatAnimation1.Delay        := 0;
      FloatAnimation1.PropertyName := 'Position.Y';
      FloatAnimation1.StartValue   := 20;
      FloatAnimation1.StopValue    := 0;
-     FloatAnimation1.Duration     := 0.5;
+     FloatAnimation1.Duration     := 0.1;
      FloatAnimation1.Inverse      := True;
      FloatAnimation1.Enabled      := True;
 
-     Rectangle2.Visible           := True;
-     FloatAnimation2.Enabled      := False;
-     FloatAnimation2.Delay        := 1;
+
+
+end;
+
+procedure TForm5.FloatAnimation1Finish(Sender: TObject);
+begin
+     Rectangle2.Visible := true;
+     FloatAnimation2.Delay        := 0;
      FloatAnimation2.PropertyName := 'Position.Y';
      FloatAnimation2.StartValue   := 70;
      FloatAnimation2.StopValue    := 0;
-     FloatAnimation2.Duration     := 1;
+     FloatAnimation2.Duration     := 0.3;
      FloatAnimation2.Inverse      := True;
      FloatAnimation2.Enabled      := True;
 
-     Rectangle3.Visible           := True;
-     FloatAnimation3.Enabled      := False;
-     FloatAnimation3.Delay        := 2;
+
+
+end;
+
+procedure TForm5.FloatAnimation2Finish(Sender: TObject);
+begin
+     Rectangle3.Visible := true;
+     FloatAnimation3.Delay        := 0;
      FloatAnimation3.PropertyName := 'Position.Y';
-     FloatAnimation3.StartValue   := 120;
+     FloatAnimation3.StartValue   := 100;
      FloatAnimation3.StopValue    := 0;
-     FloatAnimation3.Duration     := 1;
+     FloatAnimation3.Duration     := 0.5;
      FloatAnimation3.Inverse      := True;
      FloatAnimation3.Enabled      := True;
+end;
 
-
+procedure TForm5.GridPanelLayout1Click(Sender: TObject);
+begin
+     Layout1.Visible := false;
 end;
 
 end.
