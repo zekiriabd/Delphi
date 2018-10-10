@@ -83,7 +83,6 @@ object Form5: TForm5
         item
           SizeStyle = Auto
         end>
-      OnClick = GridPanelLayout1Click
       object Rectangle1: TRectangle
         Align = Client
         Fill.Color = claNull
@@ -93,6 +92,7 @@ object Form5: TForm5
         Size.Height = 52.072502136230470000
         Size.PlatformDefault = False
         Visible = False
+        OnClick = Rectangle1Click
         object Circle2: TCircle
           Align = Right
           Fill.Color = claRed

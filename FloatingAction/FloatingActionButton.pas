@@ -30,7 +30,7 @@ type
     procedure Circle1Click(Sender: TObject);
     procedure FloatAnimation1Finish(Sender: TObject);
     procedure FloatAnimation2Finish(Sender: TObject);
-    procedure GridPanelLayout1Click(Sender: TObject);
+    procedure Rectangle1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,9 +55,6 @@ begin
      FloatAnimation1.Duration     := 0.1;
      FloatAnimation1.Inverse      := True;
      FloatAnimation1.Enabled      := True;
-
-
-
 end;
 
 procedure TForm5.FloatAnimation1Finish(Sender: TObject);
@@ -70,9 +67,6 @@ begin
      FloatAnimation2.Duration     := 0.3;
      FloatAnimation2.Inverse      := True;
      FloatAnimation2.Enabled      := True;
-
-
-
 end;
 
 procedure TForm5.FloatAnimation2Finish(Sender: TObject);
@@ -87,9 +81,12 @@ begin
      FloatAnimation3.Enabled      := True;
 end;
 
-procedure TForm5.GridPanelLayout1Click(Sender: TObject);
+procedure TForm5.Rectangle1Click(Sender: TObject);
 begin
-     Layout1.Visible := false;
+    FloatAnimation3.Enabled      := false;
+    FloatAnimation3.Enabled      := false;
+    FloatAnimation3.Enabled      := false;
+    Layout1.Visible := false;
 end;
 
 end.
