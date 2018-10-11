@@ -2,8 +2,8 @@ object Form5: TForm5
   Left = 0
   Top = 0
   Caption = 'Form5'
-  ClientHeight = 591
-  ClientWidth = 376
+  ClientHeight = 513
+  ClientWidth = 333
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -12,19 +12,21 @@ object Form5: TForm5
     Anchors = [akRight, akBottom]
     Cursor = crHandPoint
     Fill.Color = claBlue
-    Position.X = 291.000000000000000000
-    Position.Y = 495.000000000000000000
-    Size.Width = 71.000000000000000000
+    Locked = True
+    Position.X = 213.592514038085900000
+    Position.Y = 418.694305419921900000
+    Size.Width = 119.000000000000000000
     Size.Height = 88.000000000000000000
     Size.PlatformDefault = False
     OnClick = Circle1Click
     object Label1: TLabel
-      Align = Client
+      Align = Center
       AutoSize = True
-      StyledSettings = [Family]
+      StyledSettings = []
+      Locked = True
       Margins.Bottom = 20.000000000000000000
       Size.Width = 71.000000000000000000
-      Size.Height = 68.000000000000000000
+      Size.Height = 107.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 80.000000000000000000
       TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -36,16 +38,16 @@ object Form5: TForm5
   end
   object Layout1: TLayout
     Align = Client
-    Size.Width = 376.000000000000000000
-    Size.Height = 591.000000000000000000
+    Size.Width = 333.000000000000000000
+    Size.Height = 513.000000000000000000
     Size.PlatformDefault = False
     Visible = False
     TabOrder = 1
     object GridPanelLayout1: TGridPanelLayout
       Anchors = [akRight, akBottom]
       Cursor = crHandPoint
-      Position.X = 263.000000000000000000
-      Position.Y = 328.000000000000000000
+      Position.X = 220.000000000000000000
+      Position.Y = 250.000000000000000000
       Size.Width = 113.000000000000000000
       Size.Height = 161.000000000000000000
       Size.PlatformDefault = False
@@ -79,9 +81,6 @@ object Form5: TForm5
         end
         item
           Value = 35.368380267714570000
-        end
-        item
-          SizeStyle = Auto
         end>
       object Rectangle1: TRectangle
         Align = Client
@@ -124,7 +123,7 @@ object Form5: TForm5
         Fill.Color = claNull
         Sides = []
         Size.Width = 113.000000000000000000
-        Size.Height = 51.984405517578120000
+        Size.Height = 51.984405517578130000
         Size.PlatformDefault = False
         Visible = False
         object Circle3: TCircle
@@ -132,7 +131,7 @@ object Form5: TForm5
           Fill.Color = claOrange
           Position.X = 70.801498413085940000
           Size.Width = 42.198501586914060000
-          Size.Height = 51.984405517578120000
+          Size.Height = 51.984405517578130000
           Size.PlatformDefault = False
         end
         object Label4: TLabel
@@ -140,7 +139,7 @@ object Form5: TForm5
           StyledSettings = [Family, Size, FontColor]
           Margins.Left = 10.000000000000000000
           Size.Width = 60.801498413085940000
-          Size.Height = 51.984405517578120000
+          Size.Height = 51.984405517578130000
           Size.PlatformDefault = False
           TextSettings.Font.StyleExt = {00070000000000000004000000}
           Text = 'Menu 1'
@@ -158,7 +157,7 @@ object Form5: TForm5
         Fill.Color = claNull
         Sides = []
         Size.Width = 113.000000000000000000
-        Size.Height = 56.943092346191400000
+        Size.Height = 56.943092346191410000
         Size.PlatformDefault = False
         Visible = False
         object Circle4: TCircle
@@ -166,7 +165,7 @@ object Form5: TForm5
           Fill.Color = claPalevioletred
           Position.X = 70.801498413085940000
           Size.Width = 42.198501586914060000
-          Size.Height = 56.943092346191400000
+          Size.Height = 56.943092346191410000
           Size.PlatformDefault = False
         end
         object Label5: TLabel
@@ -174,7 +173,7 @@ object Form5: TForm5
           StyledSettings = [Family, Size, FontColor]
           Margins.Left = 10.000000000000000000
           Size.Width = 60.801498413085940000
-          Size.Height = 56.943092346191400000
+          Size.Height = 56.943092346191410000
           Size.PlatformDefault = False
           TextSettings.Font.StyleExt = {00070000000000000004000000}
           Text = 'Menu 1'
@@ -190,9 +189,9 @@ object Form5: TForm5
     object Rectangle4: TRectangle
       Align = Client
       Fill.Color = claBlack
-      Opacity = 0.300000011920929000
-      Size.Width = 376.000000000000000000
-      Size.Height = 591.000000000000000000
+      Opacity = 0.400000005960464500
+      Size.Width = 333.000000000000000000
+      Size.Height = 513.000000000000000000
       Size.PlatformDefault = False
     end
   end
