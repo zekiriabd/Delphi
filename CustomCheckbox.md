@@ -12,10 +12,10 @@
 
 
 <p align="center">
-  <img src="https://i.imgur.com/nhOF7pO.gif" alt="badges" style="margin:auto">
+  <img src="https://i.imgur.com/lG4yQ6B.gif" alt="badges" style="margin:auto">
 </p>
 
 
 <p>
-  https://www.youtube.com/watch?v=LqTicZvqicI&list=PLfVdvKscEioOgxKhAz_LFBjrQcyXImD_K&index=6&t=0s
+ https://www.youtube.com/watch?v=F2ejD64ZZMU&list=PLfVdvKscEioOgxKhAz_LFBjrQcyXImD_K&index=22
 </p>
