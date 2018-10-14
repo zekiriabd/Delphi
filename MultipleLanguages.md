@@ -1,6 +1,6 @@
 # Delphi
 
-#### Tosts Message In Delphi FMX  -     التنبه المسمى طوست في الدلفي
+#### Multiple Languages In Delphi-FMX      تعدد اللغات في الدلفي
 
 ## Platform Support
 
