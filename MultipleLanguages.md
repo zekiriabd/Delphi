@@ -12,10 +12,17 @@
 
 
 <p align="center">
-  <img src="https://i.imgur.com/nhOF7pO.gif" alt="badges" style="margin:auto">
+  <img src="https://i.imgur.com/A81OxL6.jpg" alt="badges" style="margin:auto">
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/8QbE8ix.jpg" alt="badges" style="margin:auto">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/vmbGixQ.jpg" alt="badges" style="margin:auto">
 </p>
 
 
 <p>
-  https://www.youtube.com/watch?v=LqTicZvqicI&list=PLfVdvKscEioOgxKhAz_LFBjrQcyXImD_K&index=6&t=0s
+  https://www.youtube.com/watch?v=uxEzky-AXkc&list=PLfVdvKscEioOgxKhAz_LFBjrQcyXImD_K&index=23
 </p>
