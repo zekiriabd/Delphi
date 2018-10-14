@@ -11,25 +11,19 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
   FMX.MediaLibrary.Actions, System.Actions, FMX.ActnList, FMX.StdActns,
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Menus, FMX.Edit,
-  FMX.Effects,system.iOUtils, FMX.Layouts  ;
+  FMX.Effects,system.iOUtils, FMX.Layouts, RTL.Controls  ;
 
 type
   TForm5 = class(TForm)
-    ActionList1: TActionList;
-    TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction;
-    TakePhotoFromCameraAction1: TTakePhotoFromCameraAction;
-    ShowShareSheetAction1: TShowShareSheetAction;
     OpenDialog1: TOpenDialog;
-    GridPanelLayout1: TGridPanelLayout;
+    Layout3: TLayout;
+    Layout2: TLayout;
+    btnSave: TButton;
+    btnCancel: TButton;
     Layout1: TLayout;
     Circle1: TCircle;
-    Rectangle2: TRectangle;
-    ShadowEffect1: TShadowEffect;
-    Label2: TLabel;
-    Button2: TButton;
-    Button3: TButton;
     Circle2: TCircle;
-    Rectangle1: TRectangle;
+    GridPanelLayout1: TGridPanelLayout;
     lbFirstName: TLabel;
     txFirstName: TEdit;
     lbLastName: TLabel;
@@ -38,17 +32,25 @@ type
     txEmail: TEdit;
     lbProfession: TLabel;
     txProfession: TEdit;
-    Layout2: TLayout;
-    btnSave: TButton;
-    btnCancel: TButton;
+    Rectangle1: TRectangle;
+    Rectangle2: TRectangle;
+    ShadowEffect1: TShadowEffect;
+    Label2: TLabel;
+    Button2: TButton;
+    Button3: TButton;
     Lang1: TLang;
-    Layout3: TLayout;
+    ActionList1: TActionList;
+    TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction;
+    TakePhotoFromCameraAction1: TTakePhotoFromCameraAction;
+    ShowShareSheetAction1: TShowShareSheetAction;
+    RTLFixer1: TRTLFixer;
     procedure TakePhotoFromCameraAction1DidFinishTaking(Image: TBitmap);
     procedure ShowShareSheetAction1BeforeExecute(Sender: TObject);
     procedure TakePhotoFromLibraryAction1DidFinishTaking(Image: TBitmap);
     procedure Circle2Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -91,6 +93,19 @@ procedure TForm5.Circle2Click(Sender: TObject);
 begin
      Rectangle1.Visible:=True;
      Rectangle2.Visible:=True;
+end;
+
+procedure TForm5.FormCreate(Sender: TObject);
+var elm :TControl;
+begin
+    IF Lang1.Lang.ToUpper() = 'AR' THEN
+    BEGIN
+        for elm in GridPanelLayout1.Controls do
+         begin
+            if elm.InheritsFrom(TEdit)then  (elm as TEdit).TextAlign := TTextAlign.Trailing;
+            if elm.InheritsFrom(TLabel)then (elm as TLabel).TextAlign := TTextAlign.Trailing;
+         end;
+    END;
 end;
 
 procedure TForm5.ShowShareSheetAction1BeforeExecute(Sender: TObject);

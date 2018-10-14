@@ -3,49 +3,52 @@ object Form5: TForm5
   Top = 0
   Caption = 'Form5'
   ClientHeight = 538
-  ClientWidth = 398
+  ClientWidth = 372
+  Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  DesignerMasterStyle = 3
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
   object OpenDialog1: TOpenDialog
-    Left = 320
+    Left = 328
+    Top = 8
   end
   object Layout3: TLayout
     Align = Client
-    Size.Width = 398.000000000000000000
+    Size.Width = 372.000000000000000000
     Size.Height = 538.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 5
+    TabOrder = 4
     object Layout2: TLayout
       Align = Bottom
       Position.Y = 488.000000000000000000
-      Size.Width = 398.000000000000000000
+      Size.Width = 372.000000000000000000
       Size.Height = 50.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object btnSave: TButton
-        Position.X = 240.000000000000000000
+        Position.X = 288.000000000000000000
         Position.Y = 8.000000000000000000
         Size.Width = 73.000000000000000000
         Size.Height = 33.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        Text = 'Save'
+        Text = 'btnSave'
       end
       object btnCancel: TButton
-        Position.X = 8.000000000000000000
+        Position.X = 16.000000000000000000
         Position.Y = 8.000000000000000000
         Size.Width = 73.000000000000000000
         Size.Height = 33.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        Text = 'Cancel'
+        Text = 'btnCancel'
       end
     end
     object Layout1: TLayout
       Align = Top
-      Size.Width = 398.000000000000000000
+      Size.Width = 372.000000000000000000
       Size.Height = 121.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
@@ -2042,7 +2045,6 @@ object Form5: TForm5
           Size.Height = 33.000000000000000000
           Size.PlatformDefault = False
           Stroke.Thickness = 0.500000000000000000
-          OnClick = Circle2Click
         end
       end
     end
@@ -2052,7 +2054,7 @@ object Form5: TForm5
       Margins.Top = 10.000000000000000000
       Margins.Right = 10.000000000000000000
       Margins.Bottom = 10.000000000000000000
-      Size.Width = 378.000000000000000000
+      Size.Width = 352.000000000000000000
       Size.Height = 347.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 2
@@ -2112,7 +2114,7 @@ object Form5: TForm5
           Value = 12.665875862345400000
         end
         item
-          Value = 12.551319374624990000
+          Value = 12.551319374625000000
         end
         item
           Value = 12.439022304374620000
@@ -2131,7 +2133,7 @@ object Form5: TForm5
         end>
       object lbFirstName: TLabel
         Align = Client
-        Size.Width = 378.000000000000000000
+        Size.Width = 352.000000000000000000
         Size.Height = 44.778770446777340000
         Size.PlatformDefault = False
         Text = 'lbFirstName'
@@ -2141,13 +2143,14 @@ object Form5: TForm5
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         Align = Client
         TabOrder = 1
-        Size.Width = 378.000000000000000000
-        Size.Height = 32.000000000000000000
+        Text = 'Edite'
+        Size.Width = 352.000000000000000000
+        Size.Height = 44.358390808105470000
         Size.PlatformDefault = False
       end
       object lbLastName: TLabel
         Align = Client
-        Size.Width = 378.000000000000000000
+        Size.Width = 352.000000000000000000
         Size.Height = 43.950592041015630000
         Size.PlatformDefault = False
         Text = 'lbLastName'
@@ -2157,13 +2160,13 @@ object Form5: TForm5
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         Align = Client
         TabOrder = 2
-        Size.Width = 378.000000000000000000
-        Size.Height = 32.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 43.553085327148440000
         Size.PlatformDefault = False
       end
       object lbEmail: TLabel
         Align = Client
-        Size.Width = 378.000000000000000000
+        Size.Width = 352.000000000000000000
         Size.Height = 43.163406372070310000
         Size.PlatformDefault = False
         Text = 'lbEmail'
@@ -2173,13 +2176,13 @@ object Form5: TForm5
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         Align = Client
         TabOrder = 3
-        Size.Width = 378.000000000000000000
-        Size.Height = 32.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 42.779129028320310000
         Size.PlatformDefault = False
       end
       object lbProfession: TLabel
         Align = Client
-        Size.Width = 378.000000000000000000
+        Size.Width = 352.000000000000000000
         Size.Height = 42.398071289062500000
         Size.PlatformDefault = False
         Text = 'lbProfession'
@@ -2189,8 +2192,8 @@ object Form5: TForm5
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         Align = Client
         TabOrder = 4
-        Size.Width = 378.000000000000000000
-        Size.Height = 32.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 42.018554687500000000
         Size.PlatformDefault = False
       end
     end
@@ -2240,7 +2243,6 @@ object Form5: TForm5
       Size.PlatformDefault = False
       TabOrder = 1
       Text = 'Take Photo'
-      OnClick = Button2Click
     end
     object Button3: TButton
       Position.X = 56.000000000000000000
@@ -2250,35 +2252,19 @@ object Form5: TForm5
       Size.PlatformDefault = False
       TabOrder = 2
       Text = 'Photo Library'
-      OnClick = Button3Click
-    end
-  end
-  object ActionList1: TActionList
-    Left = 320
-    Top = 56
-    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
-      Category = 'Media Library'
-      OnDidFinishTaking = TakePhotoFromLibraryAction1DidFinishTaking
-    end
-    object TakePhotoFromCameraAction1: TTakePhotoFromCameraAction
-      Category = 'Media Library'
-      OnDidFinishTaking = TakePhotoFromCameraAction1DidFinishTaking
-    end
-    object ShowShareSheetAction1: TShowShareSheetAction
-      Category = 'Media Library'
-      OnBeforeExecute = ShowShareSheetAction1BeforeExecute
     end
   end
   object Lang1: TLang
-    Lang = 'EN'
-    Left = 56
+    AutoSelect = False
+    Lang = 'FR'
+    Left = 16
     Top = 8
     ResourcesBin = {
       440000006C00620045006D00610069006C000D000A006C006200460069007200
       730074004E0061006D0065000D000A006C0062004C006100730074004E006100
       6D0065000D000A006C006200500072006F00660065007300730069006F006E00
       0D000A00620074006E0053006100760065000D000A00620074006E0043006100
-      6E00630065006C000D000A00030000000200000041005200730000006C006200
+      6E00630065006C000D000A000300000002000000410052008B0000006C006200
       45006D00610069006C003D0027064406280631064A062F062000270644062706
       440643062A063106480646064A060D000A006C00620046006900720073007400
       4E0061006D0065003D00270644064406420628060D000A006C0062004C006100
@@ -2286,21 +2272,46 @@ object Form5: TForm5
       500072006F00660065007300730069006F006E003D0027064406450647064606
       29060D000A00620074006E0053006100760065003D002D06410638060D000A00
       620074006E00430061006E00630065006C003D00250644063A06270621060D00
-      0A000200000046005200740000006C00620045006D00610069006C003D004500
-      6D00610069006C000D000A006C006200460069007200730074004E0061006D00
-      65003D0050007200E9006E006F006D000D000A006C0062004C00610073007400
-      4E0061006D0065003D004E006F006D000D000A006C006200500072006F006600
-      65007300730069006F006E003D00500072006F00660065007300730069006F00
-      6E000D000A00620074006E0053006100760065003D0045006E00720065006700
-      6900730074007200650072000D000A00620074006E00430061006E0063006500
-      6C003D0041006E006E0075006C00650072000D000A000200000045004E007600
-      00006C00620045006D00610069006C003D0045006D00610069006C000D000A00
-      6C006200460069007200730074004E0061006D0065003D004600690072007300
-      740020006E0061006D0065000D000A006C0062004C006100730074004E006100
-      6D0065003D004C0061007300740020006E0061006D0065000D000A006C006200
-      500072006F00660065007300730069006F006E003D00500072006F0066006500
-      7300730069006F006E000D000A00620074006E0053006100760065003D005300
-      6100760065000D000A00620074006E00430061006E00630065006C003D004300
-      61006E00630065006C000D000A00}
+      0A0053006100760065003D002D06410638060D000A00430061006E0063006500
+      6C003D00250644063A06270621060D000A000200000046005200960000006C00
+      620045006D00610069006C003D0045006D00610069006C000D000A006C006200
+      460069007200730074004E0061006D0065003D0050007200E9006E006F006D00
+      0D000A006C0062004C006100730074004E0061006D0065003D004E006F006D00
+      0D000A006C006200500072006F00660065007300730069006F006E003D005000
+      72006F00660065007300730069006F006E000D000A00620074006E0053006100
+      760065003D0045006E007200650067006900730074007200650072000D000A00
+      620074006E00430061006E00630065006C003D0041006E006E0075006C006500
+      72000D000A0053006100760065003D0045006E00720065006700690073007400
+      7200650072000D000A00430061006E00630065006C003D0041006E006E007500
+      6C00650072000D000A000200000045004E00900000006C00620045006D006100
+      69006C003D0045006D00610069006C000D000A006C0062004600690072007300
+      74004E0061006D0065003D004600690072007300740020006E0061006D006500
+      0D000A006C0062004C006100730074004E0061006D0065003D004C0061007300
+      740020006E0061006D0065000D000A006C006200500072006F00660065007300
+      730069006F006E003D00500072006F00660065007300730069006F006E000D00
+      0A00620074006E0053006100760065003D0053006100760065000D000A006200
+      74006E00430061006E00630065006C003D00430061006E00630065006C000D00
+      0A00430061006E00630065006C003D00430061006E00630065006C000D000A00
+      53006100760065003D0053006100760065000D000A00}
+  end
+  object ActionList1: TActionList
+    Left = 328
+    Top = 64
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+    end
+    object TakePhotoFromCameraAction1: TTakePhotoFromCameraAction
+      Category = 'Media Library'
+    end
+    object ShowShareSheetAction1: TShowShareSheetAction
+      Category = 'Media Library'
+    end
+  end
+  object RTLFixer1: TRTLFixer
+    ArabicDigits = True
+    DigitTypes = ArabicDigitType2
+    MathOrder = ArabicRightToLeft
+    Left = 16
+    Top = 64
   end
 end
