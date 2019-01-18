@@ -4,84 +4,70 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  FMX.Controls.Presentation, FMX.StdCtrls, FMX.ScrollBox, FMX.Memo,
-  System.Net.HttpClient,
-  IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient;
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Layouts,
+  FMX.StdCtrls, FMX.Controls.Presentation, FMX.ScrollBox, FMX.Memo, UNetworkState,
+  FMX.Ani;
 
 type
   TForm2 = class(TForm)
-    Button1: TButton;
     Memo1: TMemo;
-    Button2: TButton;
+    Button1: TButton;
+    Layout1: TLayout;
+    Label1: TLabel;
+    FloatAnimation1: TFloatAnimation;
     procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
-    { Déclarations privées }
+    FNetworkState: TNetworkState;
+  protected
+    procedure DoOnChange(Sender: TObject; Value: TNetworkStateValue);
   public
-    { Déclarations publiques }
+
   end;
 
 var
   Form2: TForm2;
 
 implementation
-{$ifdef Android}
-uses
-  Androidapi.JNIBridge,
-  Androidapi.JNI.JavaTypes,
-  Androidapi.Helpers,
-  Androidapi.JNI.NET,
-  Androidapi.JNI.GraphicsContentViewText;
-{$ENDIF}
+
 {$R *.fmx}
 
+
+
 procedure TForm2.Button1Click(Sender: TObject);
-var
-  WifiManagerObj: JObject;
-  WifiManager: JWifiManager;
-  WifiInfo: JWifiInfo;
 begin
-  WifiManagerObj := SharedActivityContext.getSystemService(TJContext.JavaClass.WIFI_SERVICE);
-  WifiManager    := TJWifiManager.Wrap((WifiManagerObj as ILocalObject).GetObjectID);
-  WifiInfo       := WifiManager.getConnectionInfo();
-
-  Memo1.Lines.Clear;
-
-  Memo1.Lines.Add('------------------------------ ');
-  Memo1.Lines.Add('Wifi Enabled: '    + WifiManager.isWifiEnabled.ToString);
-  Memo1.Lines.Add('Wifi State: '      + WifiManager.getWifiState.ToString);
-  Memo1.Lines.Add('Ping Supplicant: ' + WifiManager.pingSupplicant.ToString);
-  Memo1.Lines.Add('------------------------------ ');
-  Memo1.Lines.Add('BSSID: ' + JStringToString(WifiInfo.getBSSID));
-  Memo1.Lines.Add('HiddenSSID: ' + WifiInfo.getHiddenSSID.ToString);
-  Memo1.Lines.Add('IpAddress: ' + WifiInfo.getIpAddress.ToString);
-  Memo1.Lines.Add('LinkSpeed: ' + WifiInfo.getLinkSpeed.ToString + 'Mbps');
-  Memo1.Lines.Add('MacAddress: ' + JStringToString(WifiInfo.getMacAddress));
-  Memo1.Lines.Add('NetworkId: ' + WifiInfo.getNetworkId.ToString);
-  Memo1.Lines.Add('Rssi: ' + WifiInfo.getRssi.ToString + 'dBm');
-  Memo1.Lines.Add('SSID: ' + JStringToString(WifiInfo.getSSID));
-  Memo1.Lines.Add('SupplicantState: ' + JStringToString(WifiInfo.getSupplicantState.toString));
+     if self.FNetworkState.CurrentValue = nsConnectedWifi then
+    self.Memo1.Lines.Add('On startup: Connected with WiFi')
+  else if self.FNetworkState.CurrentValue = nsConnectedMobileData then
+    self.Memo1.Lines.Add('On startup: Connected with mobile data')
+  else if self.FNetworkState.CurrentValue = nsDisconnected then
+    self.Memo1.Lines.Add('On startup: Disconnected')
+  else
+    self.Memo1.Lines.Add('On startup: Unknown');
 end;
 
-procedure TForm2.Button2Click(Sender: TObject);
-var
-    //IdTCPClient : TIdTCPClient;
-    Result:string;
-    statusCode : Integer;
+procedure TForm2.FormCreate(Sender: TObject);
 begin
+   self.FNetworkState := TNetworkState.Factory(self, DoOnChange);
+end;
 
-  with THTTPClient.Create do
-  try
-    try
-      statusCode := Head('http://google.com').StatusCode;
-      Result := 'Is conetcted ' + statusCode.ToString();
-    except
-      Result := 'Is not conetcted';
-    end;
-  finally
-    Free;
-    ShowMessage(Result);
+
+procedure TForm2.DoOnChange(Sender: TObject; Value: TNetworkStateValue);
+begin
+  if Value = nsDisconnected  then
+  begin
+     Label1.Visible:=True;
+     FloatAnimation1.Enabled := false;
+     FloatAnimation1.Inverse := false;
+     FloatAnimation1.Enabled := True;
+  end
+  else
+  begin
+    FloatAnimation1.Enabled := false;
+    FloatAnimation1.Inverse := true;
+    FloatAnimation1.Enabled := True;
   end;
 end;
+
+
 end.
