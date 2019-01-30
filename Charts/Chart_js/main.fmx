@@ -1,0 +1,24 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'ChartJS Dashboard Design'
+  ClientHeight = 547
+  ClientWidth = 334
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Size.Width = 334.000000000000000000
+    Size.Height = 547.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Timer1: TTimer
+    Interval = 200
+    OnTimer = Timer1Timer
+    Left = 120
+    Top = 72
+  end
+end
