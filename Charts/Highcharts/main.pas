@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
-  FMX.WebBrowser, FMX.Controls.Presentation ,system.iOUtils, ceffmx;
+  FMX.WebBrowser, FMX.Controls.Presentation ,system.iOUtils;
 
 type
   TForm4 = class(TForm)
@@ -35,6 +35,7 @@ begin
   {$ENDIF}
    //ChromiumFMX1.Load('file://' + path );
    WebBrowser1.Navigate( 'file://' + path );
+   WebBrowser1.EnableCaching:=false;
    Timer1.Enabled:=True;
 end;
 
