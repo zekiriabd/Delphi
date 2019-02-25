@@ -1,0 +1,185 @@
+object FMainPage: TFMainPage
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 555
+  ClientWidth = 331
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 331.000000000000000000
+    Size.Height = 555.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ToolBar1: TToolBar
+      Size.Width = 331.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object SpeedButton1: TSpeedButton
+        Align = Left
+        Size.Width = 33.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'drawertoolbutton'
+        Text = 'SpeedButton1'
+      end
+    end
+  end
+  object Lang1: TLang
+    Lang = 'AR'
+    Left = 280
+    Top = 80
+    ResourcesBin = {
+      340000005300700065006500640042007500740074006F006E0031000D000A00
+      7A0065006B0069007200690061006200640040007900610068006F006F002E00
+      660072000D000A004D006500730020006200E9006200E9000D000A0053006F00
+      75007200630065000D000A00030000000200000041005200110000004D006500
+      730020006200E9006200E9003D00270637064106270644064A060D000A000200
+      000046005200130000004D006500730020006200E9006200E9003D004D006500
+      730020006200E9006200E9000D000A000200000045004E00120000004D006500
+      730020006200E9006200E9003D004D007900200042006100620079000D000A00}
+  end
+  object MultiView1: TMultiView
+    MasterButton = SpeedButton1
+    NavigationPaneOptions.CollapsedWidth = 250.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 555.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object FlyoutMenu: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 250.000000000000000000
+      Size.Height = 442.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claNull
+      object FMenuScrollBox: TVertScrollBox
+        Align = Client
+        Size.Width = 250.000000000000000000
+        Size.Height = 442.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 250.000000000000000000
+        Viewport.Height = 442.000000000000000000
+        object Rectangle1: TRectangle
+          Align = Top
+          Fill.Color = claWhitesmoke
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          object Image1: TImage
+            MultiResBitmap.Height = 50
+            MultiResBitmap = <
+              item
+                Width = 50
+                Height = 50
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000320000003208060000001E3F88
+                  B1000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  03BF494441546843D5DA69A80D611CC7F163C9BE5CFB56784144B267579617CA
+                  96A490B2E40542524ADE289214492994422922A5445E5853926CD9B245CABE65
+                  CFCEF777CF99EBDC39FF33F73C73E79C39E7571F33679A3BFB3CCF33CF2351E0
+                  4CC333AC2BFF15616AA6A685C802EC473BD4D68252CC58FCC61F2CD282528CAE
+                  FE7DFCC5722D28C634C413E86A3FC55E4C460D7899019DC465A42F2FAAD4C779
+                  7C810ED6730E6DA11C8296CD2EFF5502E980F9780C1DF825D4C3ABD4EFE628A9
+                  B4C403E8E057A4A67AECF29A289F59DD91E1188689E88CF47CC273DCC5359C81
+                  1ECB6F883D75301D67A12BEFEA3D76620062892AD2C57809EB00C33889BE2858
+                  06422FB27530D5A5627C1B54ACE735BA0BBF601D4494EEA127224F2D6C86B5D3
+                  7CF988318834BB60ED2CDF54D18E462459096B2785A292AD17AA9549508BD5DA
+                  4121A9EE095D0034821A84D686E3B015A1B21ED606E3A2D2B20F9CD2116A3A58
+                  1B8CD361386535AC0DC54DEF6B7764C4FA66D7B239C9D9A28B1AB9B392B35567
+                  24ACAB512CEE2023D61D89BC368D38DDD03E39FB3FD689C4D6A47648FFD4B422
+                  FE13A90BF3650AC843BC49CE3A472FAF1A881FCA7FE59E7EA96946D465A37AE3
+                  33ACE7D2A22E9EDEF0A20F2C9722FB02BCAF485DD065706945DC42A576983672
+                  14D6CA41F459EBCF1A58EBFAFD84EA2A7FF6C05A3F9B1F988AF2A8E7C35A2988
+                  9AD8D6F7FE1058EBFB5D8715AF0FCC857A69CA743796C2350DA0B6983F6D52D3
+                  AAD23A35F527DBF2A0B4C24CCD846D8AAC457AF49EA957C45AD73217E9690CAF
+                  1BC9D5167DF9CD4333B84615A7CA743D627AA4B6631072CD04A837523D317A69
+                  77A30BC2E484FED106ACB32C254391E8047FDF6D2951DF724506E335AC158BD9
+                  11647C39AA145A02EB0F8ACD4D8C406054C65B7F5C4CD4BF562956A351E37C61
+                  F21DEA29CC355FA183728D6AF383C9D9E06858C0DB49AED4E86B01159F07A013
+                  B2D693B758058D9DE8CA5AEB0451332623D9861536C165BC4F77436D2FF5092B
+                  AA1F544F7485861B7461D4237311A7A0ABAAA741BD972E2D0BAF03420DC69C52
+                  8617B0AE48366A08EE400F04459F0A537015D67682E8C4CD040DF48CC33104AD
+                  932DB7A1DA56DF1AEFA083573B4CC306DA6E53B846DBD44880EEAE73E2EE2EF5
+                  A8851BB6F952918DB0365E282A1C7427228906350B312EE2A7CFE8AADE39E78C
+                  C223583BCC877D50A19397A85DA3EF1075F55B3B8FC2158C4741D2042A08F45F
+                  96AC8371A54E87D35089164B54A9695C7D03544905D5E87E1A773F8E8550A559
+                  AD84A92382A26F79BD9C1AC854EDAEFA425493AB19237A816FC07BDF224822F1
+                  0F8AC34FE4407E78600000000049454E44AE426082}
+                FileName = 
+                  'D:\Tuto Source\Xamarin\NannyTracker\NannyTracker\NannyTracker.An' +
+                  'droid\Resources\drawable\Baby.png'
+              end>
+            Align = Left
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label1: TLabel
+            Align = Left
+            Margins.Left = 20.000000000000000000
+            Position.X = 75.000000000000000000
+            Size.Width = 186.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Mes b'#233'b'#233
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object MainHeader: TRectangle
+      Align = Top
+      Size.Width = 250.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claNull
+      inline FlyoutHeader: TFlyoutHeader
+        Align = Client
+        Size.Width = 250.000000000000000000
+        Size.Height = 113.000000000000000000
+        Size.PlatformDefault = False
+        inherited RHeader: TRectangle
+          Size.Width = 252.000000000000000000
+          Size.Height = 113.000000000000000000
+          inherited LContent: TLayout
+            Size.Height = 108.000000000000000000
+            inherited LEmail: TLabel
+              Position.Y = 60.000000000000000000
+            end
+            inherited CImage: TCircle
+              Size.Height = 38.000000000000000000
+            end
+            inherited LName: TLabel
+              Position.Y = 84.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+  object RTLFixer1: TRTLFixer
+    ArabicDigits = True
+    DigitTypes = ArabicDigitType1
+    MathOrder = LeftToRight
+    Left = 280
+    Top = 136
+  end
+end

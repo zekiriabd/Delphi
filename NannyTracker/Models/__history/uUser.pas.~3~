@@ -1,0 +1,21 @@
+unit uUser;
+
+interface
+
+type
+TUser = class
+    private
+      FuserId :integer;
+      FfirstName:string;
+      FlastName:string;
+      FemailAddress:string;
+    published
+      property userId :       integer read FuserId       write FuserId;
+      property firstName :    string  read FfirstName    write FfirstName;
+      property lastName :     string  read FlastName     write FlastName;
+      property emailAddress : string  read FemailAddress write FemailAddress;
+  end;
+
+implementation
+
+end.
