@@ -29,9 +29,78 @@ object FMainPage: TFMainPage
         Text = 'SpeedButton1'
       end
     end
+    object TabControl1: TTabControl
+      Align = Client
+      Size.Width = 331.000000000000000000
+      Size.Height = 506.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 0
+      TabOrder = 1
+      TabPosition = PlatformDefault
+      Sizes = (
+        331s
+        480s
+        331s
+        480s
+        331s
+        480s)
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 69.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem1'
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+        inline FBabyList1: TFBabyList
+          Align = Client
+          Size.Width = 331.000000000000000000
+          Size.Height = 480.000000000000000000
+          Size.PlatformDefault = False
+          inherited ListView1: TListView
+            Size.Width = 331.000000000000000000
+            Size.Height = 480.000000000000000000
+            OnItemClickEx = nil
+          end
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 69.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem2'
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+      object TabItem3: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 69.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'TabItem3'
+        ExplicitSize.cx = 69.000000000000000000
+        ExplicitSize.cy = 26.000000000000000000
+      end
+    end
   end
   object Lang1: TLang
-    Lang = 'AR'
+    Lang = 'fr'
     Left = 280
     Top = 80
     ResourcesBin = {
@@ -50,10 +119,32 @@ object FMainPage: TFMainPage
     Size.Width = 250.000000000000000000
     Size.Height = 555.000000000000000000
     Size.PlatformDefault = False
+    Visible = False
     TabOrder = 0
     object FlyoutMenu: TRectangle
       Align = Client
-      Fill.Color = claWhite
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFEBBCEE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFF0D4F2
+          Offset = 1.000000000000000000
+        end
+        item
+          Color = claWhite
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
       Size.Width = 250.000000000000000000
       Size.Height = 442.000000000000000000
       Size.PlatformDefault = False
@@ -160,15 +251,19 @@ object FMainPage: TFMainPage
           Size.Width = 252.000000000000000000
           Size.Height = 113.000000000000000000
           inherited LContent: TLayout
+            Size.Width = 177.000000000000000000
             Size.Height = 108.000000000000000000
             inherited LEmail: TLabel
               Position.Y = 60.000000000000000000
+              Size.Width = 177.000000000000000000
             end
             inherited CImage: TCircle
-              Size.Height = 38.000000000000000000
+              Margins.Top = 15.000000000000000000
+              Size.Width = 177.000000000000000000
             end
             inherited LName: TLabel
               Position.Y = 84.000000000000000000
+              Size.Width = 177.000000000000000000
             end
           end
         end

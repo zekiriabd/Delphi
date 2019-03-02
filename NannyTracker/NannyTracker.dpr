@@ -7,7 +7,9 @@ uses
   FMX.Forms,
   MainPage in 'MainPage.pas' {FMainPage},
   uUser in 'Models\uUser.pas',
-  LyoutHeader in 'LyoutHeader.pas' {FlyoutHeader: TFrame};
+  LyoutHeader in 'LyoutHeader.pas' {FlyoutHeader: TFrame},
+  uBaby in 'Models\uBaby.pas',
+  BabyList in 'BabyList.pas' {FBabyList: TFrame};
 
 {$R *.res}
 

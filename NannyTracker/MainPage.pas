@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Layouts, FMX.Controls.Presentation, FMX.MultiView, FMX.Objects,
   FireDAC.Phys.Intf, FireDAC.Stan.Option, FireDAC.Stan.Intf, FireDAC.Comp.Client,
-  RTL.Controls, LyoutHeader;
+  RTL.Controls, LyoutHeader, FMX.TabControl, BabyList;
 
 type
   TFMainPage = class(TForm)
@@ -24,6 +24,11 @@ type
     RTLFixer1: TRTLFixer;
     MainHeader: TRectangle;
     FlyoutHeader: TFlyoutHeader;
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    TabItem3: TTabItem;
+    FBabyList1: TFBabyList;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -41,6 +46,7 @@ implementation
 procedure TFMainPage.FormCreate(Sender: TObject);
 begin
     FlyoutHeader.Loead();
+    FBabyList1.BindSourceAdapterReload();
 end;
 
 end.

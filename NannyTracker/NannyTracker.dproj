@@ -325,6 +325,12 @@
             <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
+        <DCCReference Include="Models\uBaby.pas"/>
+        <DCCReference Include="BabyList.pas">
+            <Form>FBabyList</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
         <None Include="Resources\Resource.lng"/>
         <RcItem Include="Images\zekiri.jpg">
             <ResourceType>RCDATA</ResourceType>
@@ -333,6 +339,18 @@
         <RcItem Include="Images\background.jpg">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>JpgImage_2</ResourceId>
+        </RcItem>
+        <RcItem Include="Images\baby1.jpg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>JpgImage_3</ResourceId>
+        </RcItem>
+        <RcItem Include="Images\baby2.jpg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>JpgImage_4</ResourceId>
+        </RcItem>
+        <RcItem Include="Images\baby4.jpg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>JpgImage_6</ResourceId>
         </RcItem>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
@@ -420,8 +438,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Android\Debug\splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
+                <DeployFile LocalName="Images\baby1.jpg" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Android">
+                        <RemoteDir>.\assets\internal\Images</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -432,6 +451,11 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="Android\Debug\styles.xml" Configuration="Debug" Class="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Debug\splash_image_def.xml" Configuration="Debug" Class="AndroidSplashImageDef">
                     <Platform Name="Android">
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -480,6 +504,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="Images\baby2.jpg" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Android">
+                        <RemoteDir>.\assets\internal\Images</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
                         <Overwrite>true</Overwrite>
@@ -494,6 +524,12 @@
                 <DeployFile LocalName="Resources\Resource.lng" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Android">
                         <RemoteDir>.\assets\internal\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Images\baby4.jpg" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Android">
+                        <RemoteDir>.\assets\internal\Images</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
