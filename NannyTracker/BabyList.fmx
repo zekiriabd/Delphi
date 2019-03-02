@@ -38,36 +38,22 @@ object FBabyList: TFBabyList
         Appearance.PlaceOffset.Y = 24.000000000000000000
       end
       item
-        AppearanceObjectName = 'TextButton7'
-        AppearanceClassName = 'TTextButtonObjectAppearance'
-        Appearance.TintColor = claRed
-        Appearance.Width = 40.000000000000000000
-        Appearance.PlaceOffset.X = 126.000000000000000000
-        Appearance.PlaceOffset.Y = 102.000000000000000000
-      end
-      item
-        AppearanceObjectName = 'TextButton5'
-        AppearanceClassName = 'TTextButtonObjectAppearance'
-        Appearance.TintColor = claSpringgreen
-        Appearance.Width = 40.000000000000000000
-        Appearance.PlaceOffset.X = 176.000000000000000000
-        Appearance.PlaceOffset.Y = 102.000000000000000000
-      end
-      item
-        AppearanceObjectName = 'TextButton6'
-        AppearanceClassName = 'TTextButtonObjectAppearance'
-        Appearance.TintColor = claRed
-        Appearance.Width = 40.000000000000000000
-        Appearance.PlaceOffset.X = 225.000000000000000000
-        Appearance.PlaceOffset.Y = 102.000000000000000000
-      end
-      item
         AppearanceObjectName = 'Image6'
         AppearanceClassName = 'TImageObjectAppearance'
         Appearance.Width = 100.000000000000000000
         Appearance.Height = 100.000000000000000000
         Appearance.PlaceOffset.X = 8.000000000000000000
         Appearance.PlaceOffset.Y = 24.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Image4'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.Width = 40.000000000000000000
+        Appearance.Height = 40.000000000000000000
+        Appearance.Align = Center
+        Appearance.VertAlign = Center
+        Appearance.PlaceOffset.X = -16.000000000000000000
+        Appearance.PlaceOffset.Y = 48.000000000000000000
       end>
     ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
       item
@@ -112,7 +98,7 @@ object FBabyList: TFBabyList
           ControlMemberName = 'Text4'
         end
         item
-          SourceMemberName = 'ProfileImage'
+          SourceMemberName = 'ProfileBitmap'
           ControlMemberName = 'Image6'
         end>
       FillHeaderExpressions = <>

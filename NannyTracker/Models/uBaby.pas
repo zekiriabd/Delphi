@@ -55,7 +55,7 @@ Try
   circleItem.Fill.Bitmap.Bitmap.LoadFromFile(path);
   circleItem.Fill.Bitmap.WrapMode:= TWrapMode.TileStretch;
   circleItem.Fill.Kind := TBrushKind.Bitmap;
-  circleItem.Stroke.Kind:= TBrushKind.Bitmap;
+  circleItem.Stroke.Thickness:= 0;
 Finally
    Result :=  circleItem.MakeScreenshot;
    circleItem.Free;

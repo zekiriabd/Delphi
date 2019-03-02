@@ -10,7 +10,6 @@ uses
 
 type
   TFBabyEdit = class(TFrame)
-    Layout3: TLayout;
     Layout1: TLayout;
     Circle1: TCircle;
     Layout4: TLayout;
@@ -21,16 +20,16 @@ type
     SpeedButton1: TSpeedButton;
     Save: TLabel;
     Edit1: TEdit;
+    Rectangle5: TRectangle;
+    Rectangle6: TRectangle;
     Edit2: TEdit;
+    Rectangle7: TRectangle;
     Edit3: TEdit;
+    Rectangle8: TRectangle;
     Edit4: TEdit;
+    Rectangle9: TRectangle;
     Edit5: TEdit;
-    VertScrollBox1: TVertScrollBox;
-    Edit6: TEdit;
-    Edit7: TEdit;
-    Edit8: TEdit;
-    Edit9: TEdit;
-    Edit10: TEdit;
+
     procedure SpeedButton1Click(Sender: TObject);
   private
     { Déclarations privées }

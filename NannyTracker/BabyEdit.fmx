@@ -1,18 +1,18 @@
 object FBabyEdit: TFBabyEdit
   Size.Width = 347.000000000000000000
-  Size.Height = 662.000000000000000000
+  Size.Height = 582.000000000000000000
   Size.PlatformDefault = False
   object Rectangle1: TRectangle
     Align = Client
     Fill.Color = claWhite
     Size.Width = 347.000000000000000000
-    Size.Height = 662.000000000000000000
+    Size.Height = 582.000000000000000000
     Size.PlatformDefault = False
   end
   object Layout3: TLayout
     Align = Client
     Size.Width = 347.000000000000000000
-    Size.Height = 662.000000000000000000
+    Size.Height = 582.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 4
     object Layout1: TLayout
@@ -1967,194 +1967,194 @@ object FBabyEdit: TFBabyEdit
       Padding.Left = 10.000000000000000000
       Padding.Right = 10.000000000000000000
       Size.Width = 347.000000000000000000
-      Size.Height = 541.000000000000000000
+      Size.Height = 461.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
-      object VertScrollBox1: TVertScrollBox
+      object Rectangle3: TRectangle
         Align = Client
+        Fill.Color = xFFFACCF1
         Size.Width = 327.000000000000000000
-        Size.Height = 541.000000000000000000
+        Size.Height = 461.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 0
-        AutoHide = False
-        Viewport.Width = 311.000000000000000000
-        Viewport.Height = 525.000000000000000000
-        object Rectangle3: TRectangle
-          Align = Client
-          Fill.Color = xFFFACCF1
-          Size.Width = 311.000000000000000000
-          Size.Height = 525.000000000000000000
+        Stroke.Thickness = 0.000000000000000000
+        object SpeedButton1: TSpeedButton
+          Align = Bottom
+          StyledSettings = [Family, Size, Style]
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 424.000000000000000000
+          Size.Width = 317.000000000000000000
+          Size.Height = 32.000000000000000000
           Size.PlatformDefault = False
-          Stroke.Thickness = 0.000000000000000000
-          object Edit1: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 0
-            Position.X = 5.000000000000000000
-            Position.Y = 10.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 30.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object Edit2: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 1
-            Position.X = 5.000000000000000000
-            Position.Y = 323.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 39.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object Edit3: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 2
-            Position.X = 5.000000000000000000
-            Position.Y = 372.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 38.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object Edit4: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 3
-            Position.X = 5.000000000000000000
-            Position.Y = 420.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 46.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object Edit5: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 4
-            Position.X = 5.000000000000000000
-            Position.Y = 179.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 30.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object Edit10: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 5
-            Position.X = 5.000000000000000000
-            Position.Y = 90.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 30.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object Edit6: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 6
-            Position.X = 5.000000000000000000
-            Position.Y = 275.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 38.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object Edit7: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 7
-            Position.X = 5.000000000000000000
-            Position.Y = 219.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 46.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object Edit8: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 8
-            Position.X = 5.000000000000000000
-            Position.Y = 130.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 39.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object Edit9: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Top
-            TabOrder = 9
-            Position.X = 5.000000000000000000
-            Position.Y = 50.000000000000000000
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 10.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Size.Width = 301.000000000000000000
-            Size.Height = 30.000000000000000000
-            Size.PlatformDefault = False
-          end
-          object SpeedButton1: TSpeedButton
-            Align = Bottom
-            StyledSettings = [Family, Size, Style]
-            Margins.Left = 5.000000000000000000
-            Margins.Top = 5.000000000000000000
-            Margins.Right = 5.000000000000000000
-            Margins.Bottom = 5.000000000000000000
-            Position.X = 5.000000000000000000
-            Position.Y = 488.000000000000000000
-            Size.Width = 301.000000000000000000
+          TextSettings.FontColor = claWhite
+          OnClick = SpeedButton1Click
+          object Rectangle4: TRectangle
+            Align = Client
+            Fill.Color = claViolet
+            HitTest = False
+            Size.Width = 317.000000000000000000
             Size.Height = 32.000000000000000000
             Size.PlatformDefault = False
-            TextSettings.FontColor = claWhite
-            OnClick = SpeedButton1Click
-            object Rectangle4: TRectangle
+            Stroke.Color = claViolet
+            Stroke.Thickness = 4.000000000000000000
+            XRadius = 15.000000000000000000
+            YRadius = 15.000000000000000000
+            object Save: TLabel
               Align = Client
-              Fill.Color = claViolet
-              HitTest = False
-              Size.Width = 301.000000000000000000
+              StyledSettings = [Family]
+              Size.Width = 317.000000000000000000
               Size.Height = 32.000000000000000000
               Size.PlatformDefault = False
-              Stroke.Color = claViolet
-              Stroke.Thickness = 4.000000000000000000
-              XRadius = 15.000000000000000000
-              YRadius = 15.000000000000000000
-              object Save: TLabel
-                Align = Client
-                StyledSettings = [Family]
-                Size.Width = 301.000000000000000000
-                Size.Height = 32.000000000000000000
-                Size.PlatformDefault = False
-                TextSettings.Font.Size = 18.000000000000000000
-                TextSettings.Font.StyleExt = {00070000000000000004000000}
-                TextSettings.FontColor = claWhite
-                TextSettings.HorzAlign = Center
-                Text = 'Save'
-                TabOrder = 0
-              end
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = claWhite
+              TextSettings.HorzAlign = Center
+              Text = 'Save'
+              TabOrder = 0
             end
+          end
+        end
+        object Rectangle5: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Padding.Left = 5.000000000000000000
+          Padding.Top = 5.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Padding.Bottom = 5.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 307.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Thickness = 0.000000000000000000
+          XRadius = 7.000000000000000000
+          YRadius = 7.000000000000000000
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            ClipParent = True
+            Size.Width = 297.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Rectangle6: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Padding.Left = 5.000000000000000000
+          Padding.Top = 5.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Padding.Bottom = 5.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 250.000000000000000000
+          Size.Width = 307.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Thickness = 0.000000000000000000
+          XRadius = 7.000000000000000000
+          YRadius = 7.000000000000000000
+          object Edit2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            ClipParent = True
+            Size.Width = 297.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Rectangle7: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Padding.Left = 5.000000000000000000
+          Padding.Top = 5.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Padding.Bottom = 5.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 190.000000000000000000
+          Size.Width = 307.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Thickness = 0.000000000000000000
+          XRadius = 7.000000000000000000
+          YRadius = 7.000000000000000000
+          object Edit3: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            ClipParent = True
+            Size.Width = 297.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Rectangle8: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Padding.Left = 5.000000000000000000
+          Padding.Top = 5.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Padding.Bottom = 5.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 130.000000000000000000
+          Size.Width = 307.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Thickness = 0.000000000000000000
+          XRadius = 7.000000000000000000
+          YRadius = 7.000000000000000000
+          object Edit4: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            ClipParent = True
+            Size.Width = 297.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object Rectangle9: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Padding.Left = 5.000000000000000000
+          Padding.Top = 5.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Padding.Bottom = 5.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 70.000000000000000000
+          Size.Width = 307.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Thickness = 0.000000000000000000
+          XRadius = 7.000000000000000000
+          YRadius = 7.000000000000000000
+          object Edit5: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 0
+            ClipParent = True
+            Size.Width = 297.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
           end
         end
       end

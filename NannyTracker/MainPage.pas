@@ -35,6 +35,7 @@ type
     Label2: TLabel;
     Rectangle1: TRectangle;
     Label3: TLabel;
+    StyleBook1: TStyleBook;
     procedure FormCreate(Sender: TObject);
     procedure BtnBabiesListClick(Sender: TObject);
     procedure BtnNewBabyClick(Sender: TObject);
@@ -50,6 +51,9 @@ var
 
 implementation
 {$R *.fmx}
+{$R *.XLgXhdpiTb.fmx ANDROID}
+{$R *.LgXhdpiPh.fmx ANDROID}
+{$R *.SmXhdpiPh.fmx ANDROID}
 
 procedure TFMainPage.BtnBabiesListClick(Sender: TObject);
 begin

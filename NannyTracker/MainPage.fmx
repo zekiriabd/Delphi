@@ -4,11 +4,12 @@ object FMainPage: TFMainPage
   Caption = 'Form2'
   ClientHeight = 555
   ClientWidth = 331
+  StyleBook = StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
-  DesignerMasterStyle = 0
+  DesignerMasterStyle = 3
   object Layout1: TLayout
     Align = Client
     Size.Width = 331.000000000000000000
@@ -17,20 +18,20 @@ object FMainPage: TFMainPage
     TabOrder = 1
     object ToolBar1: TToolBar
       Size.Width = 331.000000000000000000
-      Size.Height = 49.000000000000000000
+      Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object Rectangle1: TRectangle
         Align = Client
         Fill.Color = claViolet
         Size.Width = 331.000000000000000000
-        Size.Height = 49.000000000000000000
+        Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         Stroke.Thickness = 0.000000000000000000
         object SpeedButton1: TSpeedButton
           Align = Left
-          Size.Width = 33.000000000000000000
-          Size.Height = 49.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
           StyleLookup = 'drawertoolbutton'
           Text = 'SpeedButton1'
@@ -38,8 +39,8 @@ object FMainPage: TFMainPage
         object Label3: TLabel
           Align = Client
           StyledSettings = []
-          Size.Width = 298.000000000000000000
-          Size.Height = 49.000000000000000000
+          Size.Width = 283.000000000000000000
+          Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
           TextSettings.Font.Family = 'Matura MT Script Capitals'
           TextSettings.Font.Size = 18.000000000000000000
@@ -53,23 +54,24 @@ object FMainPage: TFMainPage
     object TabControl1: TTabControl
       Align = Client
       Size.Width = 331.000000000000000000
-      Size.Height = 506.000000000000000000
+      Size.Height = 507.000000000000000000
       Size.PlatformDefault = False
-      TabIndex = 0
+      TabHeight = 49.000000000000000000
+      TabIndex = 1
       TabOrder = 1
       TabPosition = None
       Sizes = (
         331s
-        506s
+        507s
         331s
-        506s
+        507s
         331s
-        506s)
+        507s)
       object TabItem1: TTabItem
         CustomIcon = <
           item
           end>
-        IsSelected = True
+        IsSelected = False
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -81,11 +83,11 @@ object FMainPage: TFMainPage
         inline FBabyList1: TFBabyList
           Align = Client
           Size.Width = 331.000000000000000000
-          Size.Height = 506.000000000000000000
+          Size.Height = 507.000000000000000000
           Size.PlatformDefault = False
           inherited ListView1: TListView
             Size.Width = 331.000000000000000000
-            Size.Height = 506.000000000000000000
+            Size.Height = 507.000000000000000000
           end
           inherited AdapterBindSource1: TAdapterBindSource
             Left = 288
@@ -101,7 +103,7 @@ object FMainPage: TFMainPage
         CustomIcon = <
           item
           end>
-        IsSelected = False
+        IsSelected = True
         Size.Width = 8.000000000000000000
         Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
@@ -113,90 +115,77 @@ object FMainPage: TFMainPage
         inline FBabyEdit1: TFBabyEdit
           Align = Client
           Size.Width = 331.000000000000000000
-          Size.Height = 506.000000000000000000
+          Size.Height = 507.000000000000000000
           Size.PlatformDefault = False
           inherited Rectangle1: TRectangle
             Size.Width = 331.000000000000000000
-            Size.Height = 506.000000000000000000
+            Size.Height = 507.000000000000000000
           end
           inherited Layout3: TLayout
             Size.Width = 331.000000000000000000
-            Size.Height = 506.000000000000000000
-            inherited Layout2: TLayout
-              Position.Y = 456.000000000000000000
-              Size.Width = 331.000000000000000000
-              inherited SpeedButton1: TSpeedButton
-                Size.Width = 321.000000000000000000
-                inherited Rectangle4: TRectangle
-                  Size.Width = 321.000000000000000000
-                end
-              end
-            end
+            Size.Height = 507.000000000000000000
             inherited Layout1: TLayout
               Size.Width = 331.000000000000000000
             end
             inherited Layout4: TLayout
               Size.Width = 331.000000000000000000
-              Size.Height = 335.000000000000000000
+              Size.Height = 386.000000000000000000
               inherited Rectangle3: TRectangle
                 Size.Width = 311.000000000000000000
-                Size.Height = 335.000000000000000000
-                inherited GridPanelLayout1: TGridPanelLayout
-                  Size.Width = 311.000000000000000000
-                  Size.Height = 325.000000000000000000
-                  ControlCollection = <
-                    item
-                      Column = 0
-                      Control = FBabyEdit1.Edit1
-                      Row = 0
+                Size.Height = 386.000000000000000000
+                inherited SpeedButton1: TSpeedButton
+                  Position.Y = 333.000000000000000000
+                  Size.Width = 301.000000000000000000
+                  Size.Height = 48.000000000000000000
+                  inherited Rectangle4: TRectangle
+                    Size.Width = 301.000000000000000000
+                    Size.Height = 48.000000000000000000
+                    inherited Save: TLabel
+                      Size.Width = 301.000000000000000000
+                      Size.Height = 48.000000000000000000
+                      TextSettings.Font.StyleExt = {00070000000000000004000000}
                     end
-                    item
-                      Column = 0
-                      Control = FBabyEdit1.Edit2
-                      Row = 1
-                    end
-                    item
-                      Column = 0
-                      Control = FBabyEdit1.Edit3
-                      Row = 2
-                    end
-                    item
-                      Column = 0
-                      Control = FBabyEdit1.Edit4
-                      Row = 3
-                    end
-                    item
-                      Column = 0
-                      Control = FBabyEdit1.Edit5
-                      Row = 4
-                    end
-                    item
-                      Column = 0
-                      Control = FBabyEdit1.Edit6
-                      Row = 5
-                    end>
-                  RowCollection = <
-                    item
-                      Value = 17.929686749910680000
-                    end
-                    item
-                      Value = 17.404403106368760000
-                    end
-                    item
-                      Value = 16.894519779147920000
-                    end
-                    item
-                      Value = 16.399566062557680000
-                    end
-                    item
-                      Value = 15.919105161681500000
-                    end
-                    item
-                      Value = 15.452719140333450000
-                    end
-                    item
-                      SizeStyle = Auto
-                    end>
+                  end
+                end
+                inherited Rectangle5: TRectangle
+                  Size.Width = 291.000000000000000000
+                  inherited Edit1: TEdit
+                    Margins.Left = 10.000000000000000000
+                    Margins.Top = 10.000000000000000000
+                    Margins.Right = 10.000000000000000000
+                    Size.Width = 261.000000000000000000
+                    Size.Height = 32.000000000000000000
+                  end
+                end
+                inherited Rectangle6: TRectangle
+                  Size.Width = 291.000000000000000000
+                  inherited Edit2: TEdit
+                    Size.Width = 281.000000000000000000
+                    Size.Height = 32.000000000000000000
+                  end
+                end
+                inherited Rectangle7: TRectangle
+                  Position.Y = 130.000000000000000000
+                  Size.Width = 291.000000000000000000
+                  inherited Edit3: TEdit
+                    Size.Width = 281.000000000000000000
+                    Size.Height = 32.000000000000000000
+                  end
+                end
+                inherited Rectangle8: TRectangle
+                  Position.Y = 190.000000000000000000
+                  Size.Width = 291.000000000000000000
+                  inherited Edit4: TEdit
+                    Size.Width = 281.000000000000000000
+                    Size.Height = 32.000000000000000000
+                  end
+                end
+                inherited Rectangle9: TRectangle
+                  Size.Width = 291.000000000000000000
+                  inherited Edit5: TEdit
+                    Size.Width = 281.000000000000000000
+                    Size.Height = 32.000000000000000000
+                  end
                 end
               end
             end
@@ -233,12 +222,18 @@ object FMainPage: TFMainPage
       730020006200E9006200E9000D000A000200000045004E00120000004D006500
       730020006200E9006200E9003D004D007900200042006100620079000D000A00}
   end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end>
+  end
   object MultiView1: TMultiView
     MasterButton = SpeedButton1
     NavigationPaneOptions.CollapsedWidth = 250.000000000000000000
     Size.Width = 250.000000000000000000
     Size.Height = 555.000000000000000000
     Size.PlatformDefault = False
+    Visible = False
     TabOrder = 0
     object FlyoutMenu: TRectangle
       Align = Client
