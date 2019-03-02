@@ -65,7 +65,14 @@ object FMainPage: TFMainPage
           inherited ListView1: TListView
             Size.Width = 331.000000000000000000
             Size.Height = 480.000000000000000000
-            OnItemClickEx = nil
+          end
+          inherited AdapterBindSource1: TAdapterBindSource
+            Left = 48
+            Top = 88
+          end
+          inherited BindingsList1: TBindingsList
+            Left = 44
+            Top = 149
           end
         end
       end

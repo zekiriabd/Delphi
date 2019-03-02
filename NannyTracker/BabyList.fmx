@@ -7,14 +7,14 @@ object FBabyList: TFBabyList
     ItemEditAppearanceClassName = 'TDynamicAppearance'
     HeaderAppearanceClassName = 'TListHeaderObjects'
     FooterAppearanceClassName = 'TListHeaderObjects'
-    EditMode = True
     Align = Client
     CanParentFocus = True
     Size.Width = 320.000000000000000000
     Size.Height = 528.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 9
-    ItemAppearance.ItemHeight = 60
+    ItemAppearance.ItemHeight = 150
+    ItemAppearance.FooterHeight = 1
     ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
       item
         AppearanceObjectName = 'Text1'
@@ -22,29 +22,62 @@ object FBabyList: TFBabyList
         Appearance.Font.Size = 14.000000000000000000
         Appearance.Font.StyleExt = {00070000000000000004000000}
         Appearance.TextAlign = Leading
-        Appearance.Width = 190.000000000000000000
+        Appearance.Width = 187.000000000000000000
         Appearance.Height = 25.000000000000000000
         Appearance.Align = Center
-        Appearance.PlaceOffset.X = 3.000000000000000000
+        Appearance.PlaceOffset.X = 55.000000000000000000
       end
       item
         AppearanceObjectName = 'Text4'
         AppearanceClassName = 'TTextObjectAppearance'
         Appearance.TextAlign = Leading
-        Appearance.Width = 190.000000000000000000
-        Appearance.Height = 33.000000000000000000
-        Appearance.PlaceOffset.X = 60.000000000000000000
+        Appearance.Width = 179.000000000000000000
+        Appearance.Height = 73.000000000000000000
+        Appearance.PlaceOffset.X = 116.000000000000000000
         Appearance.PlaceOffset.Y = 24.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Image3'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.Width = 105.000000000000000000
+        Appearance.Height = 150.000000000000000000
+        Appearance.PlaceOffset.X = 6.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'TextButton7'
+        AppearanceClassName = 'TTextButtonObjectAppearance'
+        Appearance.TintColor = claRed
+        Appearance.Width = 40.000000000000000000
+        Appearance.PlaceOffset.X = 126.000000000000000000
+        Appearance.PlaceOffset.Y = 104.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'TextButton5'
+        AppearanceClassName = 'TTextButtonObjectAppearance'
+        Appearance.TintColor = claSpringgreen
+        Appearance.Width = 40.000000000000000000
+        Appearance.PlaceOffset.X = 176.000000000000000000
+        Appearance.PlaceOffset.Y = 104.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'TextButton6'
+        AppearanceClassName = 'TTextButtonObjectAppearance'
+        Appearance.TintColor = claRed
+        Appearance.Width = 40.000000000000000000
+        Appearance.PlaceOffset.X = 224.000000000000000000
+        Appearance.PlaceOffset.Y = 104.000000000000000000
       end>
     ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
       item
         AppearanceObjectName = 'Text1'
         AppearanceClassName = 'TTextObjectAppearance'
       end>
-    ItemAppearanceObjects.HeaderObjects.Text.Width = 311.000000000000000000
+    ItemAppearanceObjects.HeaderObjects.Text.Width = 289.000000000000000000
     ItemAppearanceObjects.HeaderObjects.Text.Height = 24.000000000000000000
-    ItemAppearanceObjects.FooterObjects.Text.Width = 303.000000000000000000
-    ItemAppearanceObjects.FooterObjects.Text.Height = 24.000000000000000000
+    ItemAppearanceObjects.HeaderObjects.Text.PlaceOffset.X = 6.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.Width = 9.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.Height = 30.000000000000000000
+    ItemAppearanceObjects.FooterObjects.Text.PlaceOffset.X = 294.000000000000000000
     CanSwipeDelete = False
     DisableMouseWheel = True
     ControlType = Platform
@@ -52,14 +85,14 @@ object FBabyList: TFBabyList
   object AdapterBindSource1: TAdapterBindSource
     AutoActivate = True
     ScopeMappings = <>
-    Left = 240
-    Top = 104
+    Left = 264
+    Top = 464
   end
   object BindingsList1: TBindingsList
     Methods = <>
     OutputConverters = <>
-    Left = 140
-    Top = 197
+    Left = 52
+    Top = 461
     object LinkFillControlToField1: TLinkFillControlToField
       Category = 'Quick Bindings'
       Control = ListView1
@@ -69,8 +102,16 @@ object FBabyList: TFBabyList
       AutoFill = True
       FillExpressions = <
         item
-          SourceMemberName = 'FirstName'
+          SourceMemberName = 'BabyName'
           ControlMemberName = 'Text1'
+        end
+        item
+          SourceMemberName = 'Age'
+          ControlMemberName = 'Text4'
+        end
+        item
+          SourceMemberName = 'ProfileImage'
+          ControlMemberName = 'Image3'
         end>
       FillHeaderExpressions = <>
       FillBreakGroups = <>
