@@ -12,20 +12,28 @@ type
   TFBabyEdit = class(TFrame)
     Layout3: TLayout;
     Layout2: TLayout;
-    btnSave: TButton;
     Layout1: TLayout;
     Circle1: TCircle;
     Layout4: TLayout;
     Rectangle3: TRectangle;
     Rectangle1: TRectangle;
     GridPanelLayout1: TGridPanelLayout;
+    Rectangle2: TRectangle;
+    Rectangle4: TRectangle;
+    SpeedButton1: TSpeedButton;
+    Rectangle5: TRectangle;
+    Rectangle6: TRectangle;
+    Rectangle7: TRectangle;
+    Rectangle8: TRectangle;
+    Rectangle9: TRectangle;
+    Rectangle10: TRectangle;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
     Edit4: TEdit;
     Edit5: TEdit;
     Edit6: TEdit;
-    Rectangle2: TRectangle;
+    procedure SpeedButton1Click(Sender: TObject);
   private
     { Déclarations privées }
   public
@@ -35,5 +43,10 @@ type
 implementation
 
 {$R *.fmx}
+
+procedure TFBabyEdit.SpeedButton1Click(Sender: TObject);
+begin
+    ShowMessage('Save');
+end;
 
 end.

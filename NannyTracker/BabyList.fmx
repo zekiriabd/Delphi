@@ -43,7 +43,7 @@ object FBabyList: TFBabyList
         Appearance.TintColor = claRed
         Appearance.Width = 40.000000000000000000
         Appearance.PlaceOffset.X = 126.000000000000000000
-        Appearance.PlaceOffset.Y = 104.000000000000000000
+        Appearance.PlaceOffset.Y = 102.000000000000000000
       end
       item
         AppearanceObjectName = 'TextButton5'
@@ -51,15 +51,15 @@ object FBabyList: TFBabyList
         Appearance.TintColor = claSpringgreen
         Appearance.Width = 40.000000000000000000
         Appearance.PlaceOffset.X = 176.000000000000000000
-        Appearance.PlaceOffset.Y = 104.000000000000000000
+        Appearance.PlaceOffset.Y = 102.000000000000000000
       end
       item
         AppearanceObjectName = 'TextButton6'
         AppearanceClassName = 'TTextButtonObjectAppearance'
         Appearance.TintColor = claRed
         Appearance.Width = 40.000000000000000000
-        Appearance.PlaceOffset.X = 224.000000000000000000
-        Appearance.PlaceOffset.Y = 104.000000000000000000
+        Appearance.PlaceOffset.X = 225.000000000000000000
+        Appearance.PlaceOffset.Y = 102.000000000000000000
       end
       item
         AppearanceObjectName = 'Image6'

@@ -28,26 +28,17 @@ uses uUser,REST.Json,system.iOUtils;
 {$R *.fmx}
 procedure TFlyoutHeader.Loead();
 var
-  text :string;
-  User: TUser;
-var path : string;
+  User : TUser;
+  text : string;
+  path : string;
 begin
-
    text :='{"userId":1,"firstName":"Zekiri","lastName":"Abdelali","emailAddress":"zekiriabd@gmail.com" ,"image":"zekiri.jpg"}';
-
    User := TUser.Create();
    User := TJson.JsonToObject<Tuser>(text);
    LEmail.Text:=User.emailAddress;
    LName.Text:=User.firstName + ' ' + User.lastName;
-  {$IFDEF MSWINDOWS}
-    path := ExpandFileName(GetCurrentDir) + '\' + User.image;
-  {$ELSE}
-    path := TPath.GetDocumentsPath + PathDelim + User.image;
-  {$ENDIF}
-
-
+   path := TPath.GetDocumentsPath + PathDelim + User.image;
    CImage.Fill.Bitmap.Bitmap.LoadFromFile(path);
-
 end;
 
 

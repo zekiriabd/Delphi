@@ -28,17 +28,20 @@ type
 
 implementation
    uses uBaby;
+
 {$R *.fmx}
 procedure  TFBabyList.BindSourceAdapterReload();
 var listBaby : TList<TBaby>;
 begin
+
   listBaby := TList<TBaby>.Create();
   listBaby.Add(TBaby.Create(1,'zekiri','abdelali','baby1.jpg',true));
   listBaby.Add(TBaby.Create(1,'Rouf','Rahich','baby1.jpg',true));
   listBaby.Add(TBaby.Create(1,'Ali','Alowi','baby1.jpg',true));
 
-  AdapterBindSource1.Active:=   False;
-  AdapterBindSource1.Adapter:=  TListBindSourceAdapter<TBaby>.Create(self,listBaby,True);
-  AdapterBindSource1.Active := True;
+  AdapterBindSource1.Active  := False;
+  AdapterBindSource1.Adapter := TListBindSourceAdapter<TBaby>.Create(self,listBaby,True);
+  AdapterBindSource1.Active  := True;
+
 end;
 end.

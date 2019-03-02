@@ -172,13 +172,35 @@ object FMainPage: TFMainPage
                       Control = FBabyEdit1.Edit6
                       Row = 5
                     end>
+                  RowCollection = <
+                    item
+                      Value = 17.929686749910680000
+                    end
+                    item
+                      Value = 17.404403106368760000
+                    end
+                    item
+                      Value = 16.894519779147920000
+                    end
+                    item
+                      Value = 16.399566062557680000
+                    end
+                    item
+                      Value = 15.919105161681500000
+                    end
+                    item
+                      Value = 15.452719140333450000
+                    end
+                    item
+                      SizeStyle = Auto
+                    end>
                   inherited Edit1: TEdit
-                    Size.Width = 275.981628417968700000
+                    Size.Width = 38.271484375000000000
                     Size.Height = 38.271484375000000000
                   end
                   inherited Edit2: TEdit
                     Size.Width = 291.000000000000000000
-                    Size.Height = 36.564308166503900000
+                    Size.Height = 36.564308166503910000
                   end
                   inherited Edit3: TEdit
                     Size.Width = 291.000000000000000000
