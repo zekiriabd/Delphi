@@ -11,28 +11,26 @@ uses
 type
   TFBabyEdit = class(TFrame)
     Layout3: TLayout;
-    Layout2: TLayout;
     Layout1: TLayout;
     Circle1: TCircle;
     Layout4: TLayout;
     Rectangle3: TRectangle;
     Rectangle1: TRectangle;
-    GridPanelLayout1: TGridPanelLayout;
     Rectangle2: TRectangle;
     Rectangle4: TRectangle;
     SpeedButton1: TSpeedButton;
-    Rectangle5: TRectangle;
-    Rectangle6: TRectangle;
-    Rectangle7: TRectangle;
-    Rectangle8: TRectangle;
-    Rectangle9: TRectangle;
-    Rectangle10: TRectangle;
+    Save: TLabel;
     Edit1: TEdit;
     Edit2: TEdit;
     Edit3: TEdit;
     Edit4: TEdit;
     Edit5: TEdit;
+    VertScrollBox1: TVertScrollBox;
     Edit6: TEdit;
+    Edit7: TEdit;
+    Edit8: TEdit;
+    Edit9: TEdit;
+    Edit10: TEdit;
     procedure SpeedButton1Click(Sender: TObject);
   private
     { Déclarations privées }

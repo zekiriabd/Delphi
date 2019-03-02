@@ -125,8 +125,11 @@ object FMainPage: TFMainPage
             inherited Layout2: TLayout
               Position.Y = 456.000000000000000000
               Size.Width = 331.000000000000000000
-              inherited btnSave: TButton
-                Size.Width = 311.000000000000000000
+              inherited SpeedButton1: TSpeedButton
+                Size.Width = 321.000000000000000000
+                inherited Rectangle4: TRectangle
+                  Size.Width = 321.000000000000000000
+                end
               end
             end
             inherited Layout1: TLayout
@@ -194,30 +197,6 @@ object FMainPage: TFMainPage
                     item
                       SizeStyle = Auto
                     end>
-                  inherited Edit1: TEdit
-                    Size.Width = 38.271484375000000000
-                    Size.Height = 38.271484375000000000
-                  end
-                  inherited Edit2: TEdit
-                    Size.Width = 291.000000000000000000
-                    Size.Height = 36.564308166503910000
-                  end
-                  inherited Edit3: TEdit
-                    Size.Width = 291.000000000000000000
-                    Size.Height = 34.907188415527340000
-                  end
-                  inherited Edit4: TEdit
-                    Size.Width = 291.000000000000000000
-                    Size.Height = 33.298583984375000000
-                  end
-                  inherited Edit5: TEdit
-                    Size.Width = 291.000000000000000000
-                    Size.Height = 31.737091064453130000
-                  end
-                  inherited Edit6: TEdit
-                    Size.Width = 291.000000000000000000
-                    Size.Height = 30.221343994140630000
-                  end
                 end
               end
             end
