@@ -20,13 +20,34 @@ object FMainPage: TFMainPage
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
-      object SpeedButton1: TSpeedButton
-        Align = Left
-        Size.Width = 33.000000000000000000
+      object Rectangle1: TRectangle
+        Align = Client
+        Fill.Color = claViolet
+        Size.Width = 331.000000000000000000
         Size.Height = 49.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'drawertoolbutton'
-        Text = 'SpeedButton1'
+        Stroke.Thickness = 0.000000000000000000
+        object SpeedButton1: TSpeedButton
+          Align = Left
+          Size.Width = 33.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'drawertoolbutton'
+          Text = 'SpeedButton1'
+        end
+        object Label3: TLabel
+          Align = Client
+          StyledSettings = []
+          Size.Width = 298.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Matura MT Script Capitals'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Nanny Tracker'
+          TabOrder = 1
+        end
       end
     end
     object TabControl1: TTabControl
@@ -36,21 +57,21 @@ object FMainPage: TFMainPage
       Size.PlatformDefault = False
       TabIndex = 0
       TabOrder = 1
-      TabPosition = PlatformDefault
+      TabPosition = None
       Sizes = (
         331s
-        480s
+        506s
         331s
-        480s
+        506s
         331s
-        480s)
+        506s)
       object TabItem1: TTabItem
         CustomIcon = <
           item
           end>
         IsSelected = True
-        Size.Width = 69.000000000000000000
-        Size.Height = 26.000000000000000000
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
@@ -60,19 +81,19 @@ object FMainPage: TFMainPage
         inline FBabyList1: TFBabyList
           Align = Client
           Size.Width = 331.000000000000000000
-          Size.Height = 480.000000000000000000
+          Size.Height = 506.000000000000000000
           Size.PlatformDefault = False
           inherited ListView1: TListView
             Size.Width = 331.000000000000000000
-            Size.Height = 480.000000000000000000
+            Size.Height = 506.000000000000000000
           end
           inherited AdapterBindSource1: TAdapterBindSource
-            Left = 48
-            Top = 88
+            Left = 288
+            Top = 8
           end
           inherited BindingsList1: TBindingsList
-            Left = 44
-            Top = 149
+            Left = 204
+            Top = 5
           end
         end
       end
@@ -81,22 +102,113 @@ object FMainPage: TFMainPage
           item
           end>
         IsSelected = False
-        Size.Width = 69.000000000000000000
-        Size.Height = 26.000000000000000000
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
         Text = 'TabItem2'
         ExplicitSize.cx = 69.000000000000000000
         ExplicitSize.cy = 26.000000000000000000
+        inline FBabyEdit1: TFBabyEdit
+          Align = Client
+          Size.Width = 331.000000000000000000
+          Size.Height = 506.000000000000000000
+          Size.PlatformDefault = False
+          inherited Rectangle1: TRectangle
+            Size.Width = 331.000000000000000000
+            Size.Height = 506.000000000000000000
+          end
+          inherited Layout3: TLayout
+            Size.Width = 331.000000000000000000
+            Size.Height = 506.000000000000000000
+            inherited Layout2: TLayout
+              Position.Y = 456.000000000000000000
+              Size.Width = 331.000000000000000000
+              inherited btnSave: TButton
+                Size.Width = 311.000000000000000000
+              end
+            end
+            inherited Layout1: TLayout
+              Size.Width = 331.000000000000000000
+            end
+            inherited Layout4: TLayout
+              Size.Width = 331.000000000000000000
+              Size.Height = 335.000000000000000000
+              inherited Rectangle3: TRectangle
+                Size.Width = 311.000000000000000000
+                Size.Height = 335.000000000000000000
+                inherited GridPanelLayout1: TGridPanelLayout
+                  Size.Width = 311.000000000000000000
+                  Size.Height = 325.000000000000000000
+                  ControlCollection = <
+                    item
+                      Column = 0
+                      Control = FBabyEdit1.Edit1
+                      Row = 0
+                    end
+                    item
+                      Column = 0
+                      Control = FBabyEdit1.Edit2
+                      Row = 1
+                    end
+                    item
+                      Column = 0
+                      Control = FBabyEdit1.Edit3
+                      Row = 2
+                    end
+                    item
+                      Column = 0
+                      Control = FBabyEdit1.Edit4
+                      Row = 3
+                    end
+                    item
+                      Column = 0
+                      Control = FBabyEdit1.Edit5
+                      Row = 4
+                    end
+                    item
+                      Column = 0
+                      Control = FBabyEdit1.Edit6
+                      Row = 5
+                    end>
+                  inherited Edit1: TEdit
+                    Size.Width = 275.981628417968700000
+                    Size.Height = 38.271484375000000000
+                  end
+                  inherited Edit2: TEdit
+                    Size.Width = 291.000000000000000000
+                    Size.Height = 36.564308166503900000
+                  end
+                  inherited Edit3: TEdit
+                    Size.Width = 291.000000000000000000
+                    Size.Height = 34.907188415527340000
+                  end
+                  inherited Edit4: TEdit
+                    Size.Width = 291.000000000000000000
+                    Size.Height = 33.298583984375000000
+                  end
+                  inherited Edit5: TEdit
+                    Size.Width = 291.000000000000000000
+                    Size.Height = 31.737091064453130000
+                  end
+                  inherited Edit6: TEdit
+                    Size.Width = 291.000000000000000000
+                    Size.Height = 30.221343994140630000
+                  end
+                end
+              end
+            end
+          end
+        end
       end
       object TabItem3: TTabItem
         CustomIcon = <
           item
           end>
         IsSelected = False
-        Size.Width = 69.000000000000000000
-        Size.Height = 26.000000000000000000
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
         Size.PlatformDefault = False
         StyleLookup = ''
         TabOrder = 0
@@ -108,8 +220,8 @@ object FMainPage: TFMainPage
   end
   object Lang1: TLang
     Lang = 'fr'
-    Left = 280
-    Top = 80
+    Left = 144
+    Top = 8
     ResourcesBin = {
       340000005300700065006500640042007500740074006F006E0031000D000A00
       7A0065006B0069007200690061006200640040007900610068006F006F002E00
@@ -126,7 +238,6 @@ object FMainPage: TFMainPage
     Size.Width = 250.000000000000000000
     Size.Height = 555.000000000000000000
     Size.PlatformDefault = False
-    Visible = False
     TabOrder = 0
     object FlyoutMenu: TRectangle
       Align = Client
@@ -164,18 +275,19 @@ object FMainPage: TFMainPage
         TabOrder = 0
         Viewport.Width = 250.000000000000000000
         Viewport.Height = 442.000000000000000000
-        object Rectangle1: TRectangle
+        object BtnNewBaby: TRectangle
           Align = Top
           Fill.Color = claWhitesmoke
           Margins.Left = 5.000000000000000000
           Margins.Top = 5.000000000000000000
           Margins.Right = 5.000000000000000000
           Position.X = 5.000000000000000000
-          Position.Y = 5.000000000000000000
+          Position.Y = 60.000000000000000000
           Size.Width = 240.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
           Stroke.Color = claNull
+          OnClick = BtnNewBabyClick
           object Image1: TImage
             MultiResBitmap.Height = 50
             MultiResBitmap = <
@@ -216,11 +328,10 @@ object FMainPage: TFMainPage
                   96AC8371A54E87D35089164B54A9695C7D03544905D5E87E1A773F8E8550A559
                   AD84A92382A26F79BD9C1AC854EDAEFA425493AB19237A816FC07BDF224822F1
                   0F8AC34FE4407E78600000000049454E44AE426082}
-                FileName = 
-                  'D:\Tuto Source\Xamarin\NannyTracker\NannyTracker\NannyTracker.An' +
-                  'droid\Resources\drawable\Baby.png'
+                FileName = 'D:\Tuto Source\Delphi\NannyTracker\Images\Baby.png'
               end>
             Align = Left
+            HitTest = False
             Margins.Left = 5.000000000000000000
             Margins.Top = 8.000000000000000000
             Margins.Bottom = 8.000000000000000000
@@ -231,6 +342,86 @@ object FMainPage: TFMainPage
             Size.PlatformDefault = False
           end
           object Label1: TLabel
+            Align = Left
+            Margins.Left = 20.000000000000000000
+            Position.X = 75.000000000000000000
+            Size.Width = 186.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Nouveaux b'#233'b'#233
+            TabOrder = 1
+          end
+        end
+        object BtnBabiesList: TRectangle
+          Align = Top
+          Fill.Color = claWhitesmoke
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claNull
+          OnClick = BtnBabiesListClick
+          object Image2: TImage
+            MultiResBitmap.Height = 50
+            MultiResBitmap = <
+              item
+                Width = 50
+                Height = 50
+                PNG = {
+                  89504E470D0A1A0A0000000D49484452000000320000003208060000001E3F88
+                  B1000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                  0417494441546843EDD859C815651CC7F1D76CD3F65C2ADA50DB285213225A88
+                  162A5A14B22E0ABD50B250B088F446CDF608DAA02EEA228208EA22A244A2320A
+                  A1D2C42208BCD014D772C98268DFEDFB7DDF795E4ED37FCECCBCE79C0B617EF0
+                  79CF7BE63C33E7CCF63CFF67FA9A3469D2A4C9FE9C83B3D76EA5DBDB2BCD6178
+                  043FE115177498E3F122FEC07D2EE8768EC56DB80E47BB808CC0C7D887BFF128
+                  AAE654DC8ECBE176CC89D808B7F73B66A3EB79187E817EC45D589CBDDF807351
+                  27AF236D6F0FA6E1E5ECFD8738093DC9783C83F7E1D1F70B3D6ABE9E87BAB910
+                  CF612DDCC65F995F3106B5333C7B2D8B67C11BD02F19072F87B4EEADB801A7E1
+                  6B7C8BB2D8E6708CC2E970DB07E04078495D8313B00D3FA0E3B8F1B9D80A8F5C
+                  159EB5A2B3E401F0927447A275F33CFBAFE2140C3913B00AD11794F107785F79
+                  205226E34B44EDCBFC8239A89DF3B11BD146EB588E34263C81A84D1DCF62182A
+                  E52C7C8F684343F106BC9F0EC2EA6C59271E4369BC01535FDE4DF7C2D84DFF89
+                  A84D1D37A36DDCDB68C54EFD8633615E40D4A68E9D380661EC5AEDC7A315BBC1
+                  DEC7D8A3459FD75558C2DC8968856E71003D0E661DA236757C05C79DFEB4768F
+                  D767AFBD8ABDD7B503FFF6ADC85E3B89B5D994817FFFBB23E764AFBDCC05D9EB
+                  03B0E0EC34963A833914A9602B62596D6FF64FCBB23C6FE84DB96579963AA9AA
+                  F532B3FC8FDAC9D2647B6E59DE2E5C8DFE3C85A851AB8B61EE40F4B95D6A3AA3
+                  A92A2EE2C1B07C37CE65A23656C463E1E0F752B6AC881D94D382D2BDF648A79B
+                  EA6C446DFCE234E25E82A84D2BAF00E33D137D6E299FE23C286AD36A9123EE43
+                  6837B57427BCB1AC771E84556E3ECE148F18F8B7BFC62A2BF21C079C519E8119
+                  2EC8E56478D98D86BFCF2AB95DBEF0CFBB88F6B29716C1DC8DE8F3BA6E44FFE5
+                  E2A51135E88535B014329F236A53C76B182C243D75F6ED51C3C49BCAA22FCD10
+                  5B79195429081F47BA8C67E23344EDF6C2CB25FAAC95A5FDFFAA617B92A871B2
+                  1466129EC45B78134BE06CCE7C80685DB9B347C22C442AFCAEC0F378071E5D9F
+                  0778BF39C6ED40B42DAD4758D2BBF053442BC9A317DDE82997A1DDCCCF9D3757
+                  C2F7CBE0CD1CC5DFE2196B5729DB9B0D26BF474EA83E41D15CDE81F16DACC416
+                  38983A939C8A8B5014BB784B7807B98F60176D7CEFE4CB51DEDAE928381F9A8E
+                  769586BFD16D382615661EA22330543F23D544B7206A5387975BE5C745F3E1E3
+                  996843757C8774F4ED1DDB9524555826F9D4A556BC963723DA60155E7E3E0F4B
+                  7114EFA49B77002D1B180B3312F7C0E755D1C6238E0D3721EA519CD5595F79A6
+                  A275F3BC077CBC7429BA126FFEABF034A2473ADEACF76322AAE4107843DBED5A
+                  C1B66ECB1F6FB5B1003E0CAC94B01F2E89B5D72C38177090B4D7790F438DA3BC
+                  0FB49D027F039F0B3BFA3769D2A44993264D9AECDFE9EBFB179A83316EA09DA4
+                  410000000049454E44AE426082}
+                FileName = 'D:\Tuto Source\Delphi\NannyTracker\Images\Babies.png'
+              end>
+            Align = Left
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 50.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label2: TLabel
             Align = Left
             Margins.Left = 20.000000000000000000
             Position.X = 75.000000000000000000
@@ -281,7 +472,7 @@ object FMainPage: TFMainPage
     ArabicDigits = True
     DigitTypes = ArabicDigitType1
     MathOrder = LeftToRight
-    Left = 280
-    Top = 136
+    Left = 80
+    Top = 8
   end
 end

@@ -49,7 +49,7 @@ const
   IMGDIR = 'Images';
 begin
 Try
-   Result:= TBitmap.Create;
+  Result:= TBitmap.Create;
   circleItem := TCircle.Create(nil);
   path := TPath.GetDocumentsPath + '/' + IMGDIR +'/' + imageName;
   circleItem.Fill.Bitmap.Bitmap.LoadFromFile(path);
@@ -78,7 +78,7 @@ begin
     Self._ProfileImage := profileImage;
     Self.Age           :=  10; //CalcAge();
 
-    //Self.ProfileBitmap := GetProfileBitmap();
+    Self.ProfileBitmap := GetProfileBitmap();
 end;
 
 procedure TBaby.SetFirstName(const Value: string);

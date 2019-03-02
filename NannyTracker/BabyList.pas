@@ -31,11 +31,11 @@ implementation
 {$R *.fmx}
 procedure  TFBabyList.BindSourceAdapterReload();
 var listBaby : TList<TBaby>;
-var baby : TBaby;
 begin
   listBaby := TList<TBaby>.Create();
-  baby := TBaby.Create(1,'zekiri','abdelali','baby1.jpg',true);
-  listBaby.Add(baby);
+  listBaby.Add(TBaby.Create(1,'zekiri','abdelali','baby1.jpg',true));
+  listBaby.Add(TBaby.Create(1,'Rouf','Rahich','baby1.jpg',true));
+  listBaby.Add(TBaby.Create(1,'Ali','Alowi','baby1.jpg',true));
 
   AdapterBindSource1.Active:=   False;
   AdapterBindSource1.Adapter:=  TListBindSourceAdapter<TBaby>.Create(self,listBaby,True);

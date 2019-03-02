@@ -7,7 +7,7 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
   FMX.Layouts, FMX.Controls.Presentation, FMX.MultiView, FMX.Objects,
   FireDAC.Phys.Intf, FireDAC.Stan.Option, FireDAC.Stan.Intf, FireDAC.Comp.Client,
-  RTL.Controls, LyoutHeader, FMX.TabControl, BabyList;
+  RTL.Controls, LyoutHeader, FMX.TabControl, BabyList, BabyEdit;
 
 type
   TFMainPage = class(TForm)
@@ -17,7 +17,7 @@ type
     SpeedButton1: TSpeedButton;
     FlyoutMenu: TRectangle;
     FMenuScrollBox: TVertScrollBox;
-    Rectangle1: TRectangle;
+    BtnNewBaby: TRectangle;
     Image1: TImage;
     Label1: TLabel;
     Lang1: TLang;
@@ -29,7 +29,15 @@ type
     TabItem2: TTabItem;
     TabItem3: TTabItem;
     FBabyList1: TFBabyList;
+    FBabyEdit1: TFBabyEdit;
+    BtnBabiesList: TRectangle;
+    Image2: TImage;
+    Label2: TLabel;
+    Rectangle1: TRectangle;
+    Label3: TLabel;
     procedure FormCreate(Sender: TObject);
+    procedure BtnBabiesListClick(Sender: TObject);
+    procedure BtnNewBabyClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -42,6 +50,18 @@ var
 
 implementation
 {$R *.fmx}
+
+procedure TFMainPage.BtnBabiesListClick(Sender: TObject);
+begin
+  TabControl1.ActiveTab:=TabControl1.Tabs[0];
+  Multiview1.HideMaster;
+end;
+
+procedure TFMainPage.BtnNewBabyClick(Sender: TObject);
+begin
+  TabControl1.ActiveTab:=TabControl1.Tabs[1];
+  Multiview1.HideMaster;
+end;
 
 procedure TFMainPage.FormCreate(Sender: TObject);
 begin

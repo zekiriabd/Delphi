@@ -30,18 +30,12 @@ object FBabyList: TFBabyList
       item
         AppearanceObjectName = 'Text4'
         AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Family = 'Arial'
         Appearance.TextAlign = Leading
         Appearance.Width = 179.000000000000000000
         Appearance.Height = 73.000000000000000000
         Appearance.PlaceOffset.X = 116.000000000000000000
         Appearance.PlaceOffset.Y = 24.000000000000000000
-      end
-      item
-        AppearanceObjectName = 'Image3'
-        AppearanceClassName = 'TImageObjectAppearance'
-        Appearance.Width = 105.000000000000000000
-        Appearance.Height = 150.000000000000000000
-        Appearance.PlaceOffset.X = 6.000000000000000000
       end
       item
         AppearanceObjectName = 'TextButton7'
@@ -66,6 +60,14 @@ object FBabyList: TFBabyList
         Appearance.Width = 40.000000000000000000
         Appearance.PlaceOffset.X = 224.000000000000000000
         Appearance.PlaceOffset.Y = 104.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Image6'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.Width = 100.000000000000000000
+        Appearance.Height = 100.000000000000000000
+        Appearance.PlaceOffset.X = 8.000000000000000000
+        Appearance.PlaceOffset.Y = 24.000000000000000000
       end>
     ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
       item
@@ -111,7 +113,7 @@ object FBabyList: TFBabyList
         end
         item
           SourceMemberName = 'ProfileImage'
-          ControlMemberName = 'Image3'
+          ControlMemberName = 'Image6'
         end>
       FillHeaderExpressions = <>
       FillBreakGroups = <>
