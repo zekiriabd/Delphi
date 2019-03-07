@@ -1,7 +1,7 @@
 object FMainPage: TFMainPage
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Main'
   ClientHeight = 555
   ClientWidth = 331
   StyleBook = StyleBook1
@@ -10,7 +10,7 @@ object FMainPage: TFMainPage
   FormFactor.Devices = [Desktop]
   OnCreate = FormCreate
   DesignerMasterStyle = 3
-  object Layout1: TLayout
+  object MainLayout: TLayout
     Align = Client
     Size.Width = 331.000000000000000000
     Size.Height = 555.000000000000000000
@@ -121,11 +121,14 @@ object FMainPage: TFMainPage
             Size.Width = 331.000000000000000000
             Size.Height = 507.000000000000000000
           end
-          inherited Layout3: TLayout
+          inherited MasterLayout: TLayout
             Size.Width = 331.000000000000000000
             Size.Height = 507.000000000000000000
             inherited Layout1: TLayout
               Size.Width = 331.000000000000000000
+              inherited btnActionSheet: TCircle
+                OnClick = FBabyEdit1btnActionSheetClick
+              end
             end
             inherited Layout4: TLayout
               Size.Width = 331.000000000000000000
@@ -150,10 +153,7 @@ object FMainPage: TFMainPage
                 inherited Rectangle5: TRectangle
                   Size.Width = 291.000000000000000000
                   inherited Edit1: TEdit
-                    Margins.Left = 10.000000000000000000
-                    Margins.Top = 10.000000000000000000
-                    Margins.Right = 10.000000000000000000
-                    Size.Width = 261.000000000000000000
+                    Size.Width = 281.000000000000000000
                     Size.Height = 32.000000000000000000
                   end
                 end
@@ -165,7 +165,6 @@ object FMainPage: TFMainPage
                   end
                 end
                 inherited Rectangle7: TRectangle
-                  Position.Y = 130.000000000000000000
                   Size.Width = 291.000000000000000000
                   inherited Edit3: TEdit
                     Size.Width = 281.000000000000000000
@@ -173,7 +172,6 @@ object FMainPage: TFMainPage
                   end
                 end
                 inherited Rectangle8: TRectangle
-                  Position.Y = 190.000000000000000000
                   Size.Width = 291.000000000000000000
                   inherited Edit4: TEdit
                     Size.Width = 281.000000000000000000
@@ -226,6 +224,118 @@ object FMainPage: TFMainPage
     Styles = <
       item
       end>
+  end
+  object recBakground: TRectangle
+    Align = Client
+    Fill.Color = xB4000000
+    Size.Width = 331.000000000000000000
+    Size.Height = 555.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xB4000000
+    Visible = False
+    object mActionSheet: TRectangle
+      Align = Bottom
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFF1E6F2
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = claWhite
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 371.000000000000000000
+      Size.Width = 311.000000000000000000
+      Size.Height = 174.000000000000000000
+      Size.PlatformDefault = False
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object animActionSheet: TFloatAnimation
+        Duration = 0.200000002980232200
+        Interpolation = Quadratic
+        OnFinish = animActionSheetFinish
+        PropertyName = 'Position.Y'
+        StartValue = 650.000000000000000000
+        StopValue = 0.000000000000000000
+      end
+      object Label4: TLabel
+        Align = Top
+        StyledSettings = [Family, Style]
+        Padding.Top = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 311.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.FontColor = claDimgray
+        TextSettings.HorzAlign = Center
+        Text = 'Select Avatar'
+        TabOrder = 0
+      end
+      object ListBox1: TListBox
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 301.000000000000000000
+        Size.Height = 128.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 301.000000000000000000
+        Viewport.Height = 128.000000000000000000
+        object btnTakePhoto: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claDodgerblue
+          TextSettings.HorzAlign = Center
+          StyledSettings = [Family]
+          Size.Width = 301.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Take Photo...'
+          OnClick = btnTakePhotoClick
+        end
+        object btnTakeFromLibrary: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claDodgerblue
+          TextSettings.HorzAlign = Center
+          StyledSettings = [Family]
+          Position.Y = 41.000000000000000000
+          Size.Width = 301.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Choose from Library...'
+          OnClick = btnTakeFromLibraryClick
+        end
+        object btnActionSheetClose: TListBoxItem
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.FontColor = claDodgerblue
+          TextSettings.HorzAlign = Center
+          StyledSettings = [Family]
+          Position.Y = 82.000000000000000000
+          Size.Width = 301.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Cancel'
+          OnClick = btnActionSheetCloseClick
+        end
+      end
+    end
   end
   object MultiView1: TMultiView
     MasterButton = SpeedButton1
@@ -470,5 +580,17 @@ object FMainPage: TFMainPage
     MathOrder = LeftToRight
     Left = 80
     Top = 8
+  end
+  object ActionList1: TActionList
+    Left = 279
+    Top = 64
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromLibraryAction1DidFinishTaking
+    end
+    object TakePhotoFromCameraAction1: TTakePhotoFromCameraAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromCameraAction1DidFinishTaking
+    end
   end
 end
