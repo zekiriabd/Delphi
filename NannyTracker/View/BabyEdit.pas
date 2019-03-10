@@ -40,7 +40,6 @@ type
     Rectangle13: TRectangle;
     Edit9: TEdit;
     VertScrollBox1: TVertScrollBox;
-    ActionList1: TActionList;
   private
     { Déclarations privées }
   public

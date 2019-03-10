@@ -127,24 +127,24 @@ end;
 
 procedure TFMainPage.TakePhotoFromCameraAction1DidFinishTaking(Image: TBitmap);
 begin
-    FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
-    ActionSheetClose();
+    //FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
+    //ActionSheetClose();
 end;
 
 procedure TFMainPage.TakePhotoFromLibraryAction1DidFinishTaking(Image: TBitmap);
 begin
-    FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
-    ActionSheetClose();
+   // FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
+    //ActionSheetClose();
 end;
 
 procedure TFMainPage.btnTakeFromLibraryClick(Sender: TObject);
 begin
-   TakePhotoFromLibraryAction1.Execute;
+  // TakePhotoFromLibraryAction1.Execute;
 end;
 
 procedure TFMainPage.btnTakePhotoClick(Sender: TObject);
 begin
-   TakePhotoFromCameraAction1.Execute;
+  // TakePhotoFromCameraAction1.Execute;
 end;
 
 end.

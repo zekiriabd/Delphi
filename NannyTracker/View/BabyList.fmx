@@ -20,7 +20,7 @@ object FBabyList: TFBabyList
         AppearanceObjectName = 'Image4'
         AppearanceClassName = 'TImageObjectAppearance'
         Appearance.ScalingMode = Stretch
-        Appearance.Width = 306.000000000000000000
+        Appearance.Width = 344.000000000000000000
         Appearance.Height = 162.000000000000000000
         Appearance.Align = Center
         Appearance.VertAlign = Center
