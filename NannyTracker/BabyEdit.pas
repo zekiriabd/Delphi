@@ -31,6 +31,15 @@ type
     Edit4: TEdit;
     Rectangle9: TRectangle;
     Edit5: TEdit;
+    Rectangle10: TRectangle;
+    Edit6: TEdit;
+    Rectangle11: TRectangle;
+    Edit7: TEdit;
+    Rectangle12: TRectangle;
+    Edit8: TEdit;
+    Rectangle13: TRectangle;
+    Edit9: TEdit;
+    VertScrollBox1: TVertScrollBox;
   private
     { Déclarations privées }
   public

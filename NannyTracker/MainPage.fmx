@@ -2,8 +2,8 @@ object FMainPage: TFMainPage
   Left = 0
   Top = 0
   Caption = 'Main'
-  ClientHeight = 555
-  ClientWidth = 331
+  ClientHeight = 597
+  ClientWidth = 364
   StyleBook = StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -12,19 +12,19 @@ object FMainPage: TFMainPage
   DesignerMasterStyle = 3
   object MainLayout: TLayout
     Align = Client
-    Size.Width = 331.000000000000000000
-    Size.Height = 555.000000000000000000
+    Size.Width = 364.000000000000000000
+    Size.Height = 597.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     object ToolBar1: TToolBar
-      Size.Width = 331.000000000000000000
+      Size.Width = 364.000000000000000000
       Size.Height = 48.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object Rectangle1: TRectangle
         Align = Client
         Fill.Color = claViolet
-        Size.Width = 331.000000000000000000
+        Size.Width = 364.000000000000000000
         Size.Height = 48.000000000000000000
         Size.PlatformDefault = False
         Stroke.Thickness = 0.000000000000000000
@@ -39,7 +39,7 @@ object FMainPage: TFMainPage
         object Label3: TLabel
           Align = Client
           StyledSettings = []
-          Size.Width = 283.000000000000000000
+          Size.Width = 316.000000000000000000
           Size.Height = 48.000000000000000000
           Size.PlatformDefault = False
           TextSettings.Font.Family = 'Matura MT Script Capitals'
@@ -53,20 +53,20 @@ object FMainPage: TFMainPage
     end
     object TabControl1: TTabControl
       Align = Client
-      Size.Width = 331.000000000000000000
-      Size.Height = 507.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 549.000000000000000000
       Size.PlatformDefault = False
       TabHeight = 49.000000000000000000
       TabIndex = 1
       TabOrder = 1
       TabPosition = None
       Sizes = (
-        331s
-        507s
-        331s
-        507s
-        331s
-        507s)
+        364s
+        549s
+        364s
+        549s
+        364s
+        549s)
       object TabItem1: TTabItem
         CustomIcon = <
           item
@@ -82,12 +82,12 @@ object FMainPage: TFMainPage
         ExplicitSize.cy = 26.000000000000000000
         inline FBabyList1: TFBabyList
           Align = Client
-          Size.Width = 331.000000000000000000
-          Size.Height = 507.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 549.000000000000000000
           Size.PlatformDefault = False
           inherited ListView1: TListView
-            Size.Width = 331.000000000000000000
-            Size.Height = 507.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 549.000000000000000000
           end
           inherited AdapterBindSource1: TAdapterBindSource
             Left = 288
@@ -114,74 +114,74 @@ object FMainPage: TFMainPage
         ExplicitSize.cy = 26.000000000000000000
         inline FBabyEdit1: TFBabyEdit
           Align = Client
-          Size.Width = 331.000000000000000000
-          Size.Height = 507.000000000000000000
+          Size.Width = 364.000000000000000000
+          Size.Height = 549.000000000000000000
           Size.PlatformDefault = False
           inherited Rectangle1: TRectangle
-            Size.Width = 331.000000000000000000
-            Size.Height = 507.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 549.000000000000000000
           end
           inherited MasterLayout: TLayout
-            Size.Width = 331.000000000000000000
-            Size.Height = 507.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 549.000000000000000000
             inherited Layout1: TLayout
-              Size.Width = 331.000000000000000000
+              Size.Width = 364.000000000000000000
               inherited btnActionSheet: TCircle
                 OnClick = FBabyEdit1btnActionSheetClick
               end
             end
             inherited Layout4: TLayout
-              Size.Width = 331.000000000000000000
-              Size.Height = 386.000000000000000000
+              Size.Width = 364.000000000000000000
+              Size.Height = 428.000000000000000000
               inherited Rectangle3: TRectangle
-                Size.Width = 311.000000000000000000
-                Size.Height = 386.000000000000000000
+                Size.Width = 344.000000000000000000
+                Size.Height = 428.000000000000000000
                 inherited SpeedButton1: TSpeedButton
-                  Position.Y = 333.000000000000000000
-                  Size.Width = 301.000000000000000000
+                  Position.Y = 375.000000000000000000
+                  Size.Width = 334.000000000000000000
                   Size.Height = 48.000000000000000000
                   inherited Rectangle4: TRectangle
-                    Size.Width = 301.000000000000000000
+                    Size.Width = 334.000000000000000000
                     Size.Height = 48.000000000000000000
                     inherited Save: TLabel
-                      Size.Width = 301.000000000000000000
+                      Size.Width = 334.000000000000000000
                       Size.Height = 48.000000000000000000
                       TextSettings.Font.StyleExt = {00070000000000000004000000}
                     end
                   end
                 end
                 inherited Rectangle5: TRectangle
-                  Size.Width = 291.000000000000000000
+                  Size.Width = 324.000000000000000000
                   inherited Edit1: TEdit
-                    Size.Width = 281.000000000000000000
+                    Size.Width = 314.000000000000000000
                     Size.Height = 32.000000000000000000
                   end
                 end
                 inherited Rectangle6: TRectangle
-                  Size.Width = 291.000000000000000000
+                  Size.Width = 324.000000000000000000
                   inherited Edit2: TEdit
-                    Size.Width = 281.000000000000000000
+                    Size.Width = 314.000000000000000000
                     Size.Height = 32.000000000000000000
                   end
                 end
                 inherited Rectangle7: TRectangle
-                  Size.Width = 291.000000000000000000
+                  Size.Width = 324.000000000000000000
                   inherited Edit3: TEdit
-                    Size.Width = 281.000000000000000000
+                    Size.Width = 314.000000000000000000
                     Size.Height = 32.000000000000000000
                   end
                 end
                 inherited Rectangle8: TRectangle
-                  Size.Width = 291.000000000000000000
+                  Size.Width = 324.000000000000000000
                   inherited Edit4: TEdit
-                    Size.Width = 281.000000000000000000
+                    Size.Width = 314.000000000000000000
                     Size.Height = 32.000000000000000000
                   end
                 end
                 inherited Rectangle9: TRectangle
-                  Size.Width = 291.000000000000000000
+                  Size.Width = 324.000000000000000000
                   inherited Edit5: TEdit
-                    Size.Width = 281.000000000000000000
+                    Size.Width = 314.000000000000000000
                     Size.Height = 32.000000000000000000
                   end
                 end
