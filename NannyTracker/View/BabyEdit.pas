@@ -40,6 +40,7 @@ type
     Rectangle13: TRectangle;
     Edit9: TEdit;
     VertScrollBox1: TVertScrollBox;
+    ActionList1: TActionList;
   private
     { Déclarations privées }
   public
@@ -49,7 +50,17 @@ type
 implementation
 
 {$R *.fmx}
+   {
+    procedure TFMainPage.TakePhotoFromCameraAction1DidFinishTaking(Image: TBitmap);
+begin
+    FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
+    ActionSheetClose();
+end;
 
-
+procedure TFMainPage.TakePhotoFromLibraryAction1DidFinishTaking(Image: TBitmap);
+begin
+    FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
+    ActionSheetClose();
+end; }
 
 end.

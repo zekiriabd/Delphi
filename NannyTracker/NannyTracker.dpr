@@ -7,10 +7,10 @@ uses
   FMX.Forms,
   MainPage in 'MainPage.pas' {FMainPage},
   uUser in 'Models\uUser.pas',
-  LyoutHeader in 'LyoutHeader.pas' {FlyoutHeader: TFrame},
   uBaby in 'Models\uBaby.pas',
-  BabyList in 'BabyList.pas' {FBabyList: TFrame},
-  BabyEdit in 'BabyEdit.pas' {FBabyEdit: TFrame};
+  BabyEdit in 'View\BabyEdit.pas' {FBabyEdit: TFrame},
+  BabyList in 'View\BabyList.pas' {FBabyList: TFrame},
+  LyoutHeader in 'View\LyoutHeader.pas' {FlyoutHeader: TFrame};
 
 {$R *.res}
 

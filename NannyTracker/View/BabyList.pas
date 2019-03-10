@@ -36,8 +36,9 @@ begin
 
   listBaby := TList<TBaby>.Create();
   listBaby.Add(TBaby.Create(1,'zekiri','abdelali','baby1.jpg',true));
-  listBaby.Add(TBaby.Create(1,'Rouf','Rahich','baby1.jpg',true));
-  listBaby.Add(TBaby.Create(1,'Ali','Alowi','baby1.jpg',true));
+  listBaby.Add(TBaby.Create(1,'Rouf','Rahich','baby2.jpg',true));
+  listBaby.Add(TBaby.Create(1,'Ali','Alowi','baby3.jpg',true));
+  listBaby.Add(TBaby.Create(1,'Meh','Mihoub','baby4.jpg',true));
 
   AdapterBindSource1.Active  := False;
   AdapterBindSource1.Adapter := TListBindSourceAdapter<TBaby>.Create(self,listBaby,True);

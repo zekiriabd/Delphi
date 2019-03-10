@@ -22,6 +22,7 @@ type
 
     //function ImagePathToCircleBitmap(imageName : string):TBitmap;
     function GetProfileBitmap():TBitmap;
+    function GetBgItemBitmap():TBitmap;
 
     { Private declarations }
   public
@@ -29,6 +30,7 @@ type
     ProfileBitmap :TBitmap;
     Age:Integer;
     BabyName : string;
+    BgItem   : TBitmap;
 
    //Constructor Create; overload;
     Constructor Create(id : integer; firstName:string; lastName: string; profileImage:string;isPresent:Boolean);
@@ -63,11 +65,40 @@ End;
 
 end;
 
+
+function ImagePathToRectangleBitmap(imageName : string):TBitmap;
+var
+path : string;
+RectangleItem: TRectangle;
+const
+  IMGDIR = 'Images';
+begin
+Try
+  Result:= TBitmap.Create;
+  RectangleItem := TRectangle.Create(nil);
+  path := TPath.GetDocumentsPath + '/' + IMGDIR +'/' + imageName;
+  RectangleItem.Fill.Bitmap.Bitmap.LoadFromFile(path);
+  RectangleItem.Fill.Bitmap.WrapMode:= TWrapMode.TileStretch;
+  RectangleItem.Fill.Kind := TBrushKind.Bitmap;
+  RectangleItem.Stroke.Thickness:= 0;
+Finally
+   Result :=  RectangleItem.MakeScreenshot;
+   RectangleItem.Free;
+End;
+
+end;
+
+
+
 function TBaby.GetProfileBitmap:TBitmap;
 begin
     Result :=  ImagePathToCircleBitmap(Self._ProfileImage);
 end;
 
+function TBaby.GetBgItemBitmap:TBitmap;
+begin
+    Result :=  ImagePathToRectangleBitmap('itemBg.png');
+end;
 
 Constructor TBaby.Create(id : integer; firstName:string; lastName: string;profileImage:string;isPresent:Boolean);
 begin
@@ -76,7 +107,8 @@ begin
     self._LastName     := lastName;
     Self.BabyName      :=  self._FirstName + ' ' +   self._LastName;
     Self._ProfileImage := profileImage;
-    Self.Age           :=  10; //CalcAge();
+    Self.Age           := 10; //CalcAge();
+    Self.BgItem        := GetBgItemBitmap();
 
     Self.ProfileBitmap := GetProfileBitmap();
 end;

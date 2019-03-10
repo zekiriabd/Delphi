@@ -1,5 +1,5 @@
 object FBabyList: TFBabyList
-  Size.Width = 320.000000000000000000
+  Size.Width = 387.000000000000000000
   Size.Height = 528.000000000000000000
   Size.PlatformDefault = False
   object ListView1: TListView
@@ -9,7 +9,7 @@ object FBabyList: TFBabyList
     FooterAppearanceClassName = 'TListHeaderObjects'
     Align = Client
     CanParentFocus = True
-    Size.Width = 320.000000000000000000
+    Size.Width = 387.000000000000000000
     Size.Height = 528.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 9
@@ -17,43 +17,46 @@ object FBabyList: TFBabyList
     ItemAppearance.FooterHeight = 1
     ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
       item
-        AppearanceObjectName = 'Text1'
-        AppearanceClassName = 'TTextObjectAppearance'
-        Appearance.Font.Size = 14.000000000000000000
-        Appearance.Font.StyleExt = {00070000000000000004000000}
-        Appearance.TextAlign = Leading
-        Appearance.Width = 187.000000000000000000
-        Appearance.Height = 25.000000000000000000
+        AppearanceObjectName = 'Image4'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.ScalingMode = Stretch
+        Appearance.Width = 306.000000000000000000
+        Appearance.Height = 162.000000000000000000
         Appearance.Align = Center
-        Appearance.PlaceOffset.X = 55.000000000000000000
+        Appearance.VertAlign = Center
+        Appearance.PlaceOffset.X = -2.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Image2'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.Width = 97.000000000000000000
+        Appearance.Height = 94.000000000000000000
+        Appearance.PlaceOffset.X = 28.000000000000000000
+        Appearance.PlaceOffset.Y = 24.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Text3'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Width = 105.000000000000000000
+        Appearance.Height = 33.000000000000000000
+        Appearance.PlaceOffset.X = 120.000000000000000000
+        Appearance.PlaceOffset.Y = 53.000000000000000000
       end
       item
         AppearanceObjectName = 'Text4'
         AppearanceClassName = 'TTextObjectAppearance'
-        Appearance.Font.Family = 'Arial'
-        Appearance.TextAlign = Leading
-        Appearance.Width = 179.000000000000000000
-        Appearance.Height = 73.000000000000000000
-        Appearance.PlaceOffset.X = 116.000000000000000000
-        Appearance.PlaceOffset.Y = 24.000000000000000000
+        Appearance.Width = 97.000000000000000000
+        Appearance.Height = 41.000000000000000000
+        Appearance.PlaceOffset.X = 126.000000000000000000
+        Appearance.PlaceOffset.Y = 72.000000000000000000
       end
       item
-        AppearanceObjectName = 'Image6'
-        AppearanceClassName = 'TImageObjectAppearance'
-        Appearance.Width = 100.000000000000000000
-        Appearance.Height = 100.000000000000000000
-        Appearance.PlaceOffset.X = 8.000000000000000000
-        Appearance.PlaceOffset.Y = 24.000000000000000000
-      end
-      item
-        AppearanceObjectName = 'Image4'
-        AppearanceClassName = 'TImageObjectAppearance'
-        Appearance.Width = 40.000000000000000000
-        Appearance.Height = 40.000000000000000000
-        Appearance.Align = Center
-        Appearance.VertAlign = Center
-        Appearance.PlaceOffset.X = -16.000000000000000000
-        Appearance.PlaceOffset.Y = 48.000000000000000000
+        AppearanceObjectName = 'Text5'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Width = 113.000000000000000000
+        Appearance.Height = 38.000000000000000000
+        Appearance.PlaceOffset.X = 214.000000000000000000
+        Appearance.PlaceOffset.Y = 50.000000000000000000
       end>
     ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
       item
@@ -90,16 +93,24 @@ object FBabyList: TFBabyList
       AutoFill = True
       FillExpressions = <
         item
-          SourceMemberName = 'BabyName'
-          ControlMemberName = 'Text1'
-        end
-        item
           SourceMemberName = 'Age'
           ControlMemberName = 'Text4'
         end
         item
           SourceMemberName = 'ProfileBitmap'
-          ControlMemberName = 'Image6'
+          ControlMemberName = 'Image2'
+        end
+        item
+          SourceMemberName = 'BgItem'
+          ControlMemberName = 'Image4'
+        end
+        item
+          SourceMemberName = 'FirstName'
+          ControlMemberName = 'Text3'
+        end
+        item
+          SourceMemberName = 'LastName'
+          ControlMemberName = 'Text5'
         end>
       FillHeaderExpressions = <>
       FillBreakGroups = <>
