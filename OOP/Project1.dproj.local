@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/06/12 12:30:45.000.472,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/06/12 12:40:05.000.738,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/06/12 12:40:26.000.791,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Tuto Source\Delphi\OOP\uClass.fmx</Transaction>
+    <Transaction>2019/06/12 12:40:26.000.791,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Tuto Source\Delphi\OOP\uClass.pas</Transaction>
+    <Transaction>2019/06/12 12:40:30.000.079,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Tuto Source\Delphi\OOP\Project1.dproj</Transaction>
+    <Transaction>2019/06/12 12:40:39.000.157,D:\Tuto Source\Delphi\OOP\uClass.pas=</Transaction>
+    <Transaction>2019/06/12 12:40:50.000.725,=D:\Tuto Source\Delphi\OOP\Unit1.pas</Transaction>
+    <Transaction>2019/06/12 12:40:59.000.891,=D:\Tuto Source\Delphi\OOP\Unit2.pas</Transaction>
+    <Transaction>2019/06/12 12:41:12.000.736,D:\Tuto Source\Delphi\OOP\Unit2.pas=D:\Tuto Source\Delphi\OOP\uClass.pas</Transaction>
+    <Transaction>2019/06/15 09:56:48.388,=D:\Tuto Source\Delphi\OOP\Unit2.pas</Transaction>
+    <Transaction>2019/06/15 09:57:05.628,D:\Tuto Source\Delphi\OOP\uInterface.pas=D:\Tuto Source\Delphi\OOP\Unit2.pas</Transaction>
+    <Transaction>2019/06/15 11:27:29.272,D:\Tuto Source\Delphi\OOP\uInterface.pas=</Transaction>
+    <Transaction>2019/06/15 11:46:55.241,=D:\Tuto Source\Delphi\OOP\Unit2.pas</Transaction>
+    <Transaction>2019/06/15 11:47:04.089,D:\Tuto Source\Delphi\OOP\uInterface.pas=D:\Tuto Source\Delphi\OOP\Unit2.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
