@@ -1,0 +1,233 @@
+﻿.right_div{
+    width: calc(100% - 60px);
+    height: 100%;
+    position: absolute;
+    left: 60px;
+    z-index:-1;
+
+    /* no scrollbar when filter open */
+    overflow: hidden;
+}
+
+.skin-0 .skin-u, .skin-0 .skin-i, .skin-0 .skin-d, .skin-0 .skin-r,
+.skin-u .skin-i, .skin-u .skin-d, .skin-u .skin-r,
+.skin-i .skin-d, .skin-i .skin-u, .skin-i .skin-r,
+.skin-d .skin-u, .skin-d .skin-i, .skin-d .skin-r,
+.skin-r .skin-u, .skin-r .skin-i, .skin-r .skin-d {
+    display: none;
+    visibility: hidden;
+}
+
+button,
+input,
+select{
+    outline : none;
+}
+
+.wait {
+ display: none;
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ text-align: center;
+ background-color: rgba(192,192,192,0.3);
+ font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+ font-size: 20px;
+ z-index:2;
+}
+
+.wait-content {
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    margin-top: 20%;
+    z-index: 20;
+}
+
+.wait > img {
+    height: 20px;
+}
+
+.wait > div {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.wait .spinner
+{
+ position : absolute;
+ height: 20px;
+ width : 270px;
+ margin-left : -70%;
+}
+
+.skin-0 .wait .spinner
+{
+ background : url(/App_Themes/img/wait_u.gif)  no-repeat;
+ background-size : contain;
+}
+.skin-u .wait .spinner
+{
+ background : url(/App_Themes/img/wait_u.gif)  no-repeat;
+ background-size : contain;
+}
+.skin-i .wait .spinner
+{
+ background : url(/App_Themes/img/wait_i.gif)  no-repeat;
+ background-size : contain;
+}
+
+.skin-r .wait .spinner
+{
+ background : url(/App_Themes/img/wait_r.gif)  no-repeat;
+ background-size : contain;
+}
+
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.main {
+    height: calc(100% - 100px);
+}
+
+.main.is-open {
+    height: calc(100% - 175px);
+}
+
+.main > .tab-content 
+{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.img-map {
+    width:calc(100% - 400px)
+}
+
+
+.modal-content{
+    text-align:center;
+}
+.modal-content #TargetName{
+    font-weight:bold;
+}
+
+/*.modal-dialog button
+{
+    border-radius: 12px !important;
+    padding: 0 25px !important;
+}*/
+
+
+.highcharts-reset-zoom{
+    stroke:none!important;
+}
+.highcharts-button-hover rect{
+    fill:none!important;
+}
+
+.main .tab-pane 
+{
+    position : absolute;
+    width:100%;
+    top: 20px;
+    bottom:0;
+}
+
+/* in ppt export, draw visible but out of user view */
+.tab-pane.ppt-draw,
+.bars-graph-page.ppt-draw,
+.bubbles-graph-page.ppt-draw 
+{
+    left: -9999px;
+    visibility: visible;
+    display:block;
+}
+
+/* in exported html remove hack to draw ppt out of user view  */
+.grab .tab-pane.ppt-draw 
+{
+    left: 0;
+}
+
+
+.footer {
+    width: 100%;
+    padding: 3px 25px;
+    border-top: 2px solid #cbcbcb;
+    display:none;
+    background-color:white;
+    position:absolute;
+    top:calc(100% - 5px);
+}
+
+.is-open .footer {
+    top:100%;
+}
+
+
+
+.skin-i .footer { border-top-color: #ebcb00; }
+.skin-u .footer { border-top-color: #BC0808; }
+.skin-r .footer { border-top-color: #2C435A; }
+
+    .footer div {
+        float: left;
+        margin-right:30px;
+    }
+
+    .footer p {
+        font-size: 12px;
+        margin: 3px;
+        float: left;
+    }
+
+ .footer img {
+        width: 20px;
+        float: left;
+        margin: -2px 4px 0 0;
+    }
+
+   .footer span {
+        font-size: 11px;
+        margin-left:5px;
+        font-style:italic;
+        font-weight:bold;
+    }
+.footer .connected-info{
+    width:calc(40% - 50px);
+    float: right;
+}
+
+.footer .connected-info p{
+    float:right;
+}
+
+
+.skin-u .skin-fc { fill: #df4127 ! important; }
+.skin-i .skin-fc { fill: #FCC910 ! important; }
+.skin-r .skin-fc { fill: #1b2326 ! important; }
+.help>a {
+    position: fixed;
+    width: 48px;
+    height: 56px;
+    bottom: 60px;
+    right: -26px;
+    -webkit-transition: width 1s; 
+    transition: right 1s;
+}
+.help>a:hover{
+     width: 74px;
+}
+
+#options_popup .modal-body .row{
+    margin-top:10px;
+    text-align:left;
+}

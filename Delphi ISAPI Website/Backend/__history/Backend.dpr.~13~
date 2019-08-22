@@ -1,0 +1,22 @@
+program Backend;
+{$APPTYPE GUI}
+
+{$R *.dres}
+
+uses
+  Vcl.Forms,
+  Web.WebReq,
+  IdHTTPWebBrokerBridge,
+  WebServer in 'WebServerUI\WebServer.pas' {Form1},
+  Controller in 'Controllers\Controller.pas',
+  ServerCors in 'Controllers\ServerCors.pas' {WebModule1: TWebModule};
+
+{$R *.res}
+
+begin
+  if WebRequestHandler <> nil then
+    WebRequestHandler.WebModuleClass := WebModuleClass;
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

@@ -1,0 +1,8 @@
+﻿.div-hello{
+  border-bottom: 3px solid #464646;
+  text-align: center;
+}
+.div-hello label{
+  font-size: 20px;
+  color:red;
+}

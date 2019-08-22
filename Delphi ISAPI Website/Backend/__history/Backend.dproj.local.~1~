@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2017/08/20 23:34:42.749,=D:\DelphiWebsite\Backend\FormUnit1.pas</Transaction>
+    <Transaction>2017/08/20 23:34:43.756,=D:\DelphiWebsite\Backend\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2017/08/20 23:34:43.918,=D:\DelphiWebsite\Backend\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/08/20 23:34:44.889,=D:\DelphiWebsite\Backend\js\base64.js</Transaction>
+    <Transaction>2017/08/20 23:34:44.901,=D:\DelphiWebsite\Backend\js\serverfunctionexecutor.js</Transaction>
+    <Transaction>2017/08/20 23:34:44.913,=D:\DelphiWebsite\Backend\js\json2.js</Transaction>
+    <Transaction>2017/08/20 23:34:44.927,=D:\DelphiWebsite\Backend\js\callbackframework.js</Transaction>
+    <Transaction>2017/08/20 23:34:44.944,=D:\DelphiWebsite\Backend\js\serverfunctions.js</Transaction>
+    <Transaction>2017/08/20 23:34:44.986,=D:\DelphiWebsite\Backend\js\base64-min.js</Transaction>
+    <Transaction>2017/08/20 23:34:45.005,=D:\DelphiWebsite\Backend\js\json2-min.js</Transaction>
+    <Transaction>2017/08/20 23:34:45.024,=D:\DelphiWebsite\Backend\js\serverfunctionexecutor-min.js</Transaction>
+    <Transaction>2017/08/20 23:34:45.048,=D:\DelphiWebsite\Backend\js\callbackframework-min.js</Transaction>
+    <Transaction>2017/08/20 23:34:45.076,=D:\DelphiWebsite\Backend\js\connection.js</Transaction>
+    <Transaction>2017/08/20 23:34:45.102,=D:\DelphiWebsite\Backend\js\serverfunctioninvoker.js</Transaction>
+    <Transaction>2017/08/20 23:34:45.145,=D:\DelphiWebsite\Backend\css\main.css</Transaction>
+    <Transaction>2017/08/20 23:34:45.177,=D:\DelphiWebsite\Backend\css\serverfunctioninvoker.css</Transaction>
+    <Transaction>2017/08/20 23:34:45.210,=D:\DelphiWebsite\Backend\templates\reversestring.html</Transaction>
+    <Transaction>2017/08/20 23:34:45.246,=D:\DelphiWebsite\Backend\templates\serverfunctioninvoker.html</Transaction>
+    <Transaction>2017/08/20 23:34:45.308,=D:\DelphiWebsite\Backend\images\collapse.png</Transaction>
+    <Transaction>2017/08/20 23:34:45.347,=D:\DelphiWebsite\Backend\images\expand.png</Transaction>
+  </Transactions>
+</BorlandProject>

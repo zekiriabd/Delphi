@@ -1,0 +1,29 @@
+unit MyController;
+
+interface
+
+uses System.SysUtils, System.Classes, Datasnap.DSServer, Datasnap.DSAuth;
+
+type
+{$METHODINFO ON}
+  TServerMethods1 = class(TComponent)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function HelloWorld(): string;
+  end;
+{$METHODINFO OFF}
+
+implementation
+
+
+uses System.StrUtils;
+
+function TServerMethods1.HelloWorld(): string;
+begin
+  Result := 'Hello World';
+end;
+
+end.
+

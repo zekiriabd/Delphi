@@ -1,0 +1,55 @@
+﻿void function index_function(undefined) {
+
+function attachEvents() {
+  /*btn add click*/
+  $("#btn_add_user").click(function (e) {
+  /* var _fields = {
+                    LastName:$("#tx_LastName").val(),
+                    Id:parseInt($("#tx_Id").val()),
+                    FirstName:$("#tx_FirstName").val(),
+                    Login:$("#tx_Login").val()
+                 }
+
+      var new_user = {type:"User.TUser",id:1,fields:_fields};
+      SetUser(new_user ,function(){ DrawUserGrid() });
+      */
+  });
+
+  sum();
+  }
+
+
+ function InitAppWhenReady() {
+
+  function DrawUserGrid(){
+  // Draw users grid
+   var table = $("<table id='grid_users' cellpadding='0' cellspacing='0' class='display'></table>");
+   var thead = $("<thead><tr><th>ID</th><th>Login</th><th>Name</th></tr></thead>");
+   table.append(thead);
+   var tbody = $("<tbody></tbody>");
+   var tr;
+   $.each($fronted.Users, function (i, u) {
+       if( u != null){
+            tr = $("<tr></tr>");
+            tr.append("<td>" + u.fields.Id + "</td><td>" + u.fields.Login + "</td><td>" + u.fields.FirstName + " " + u.fields.LastName + "</td>");
+            tbody.append(tr);
+       }
+   });
+   table.append(tbody);
+   $("#div_users").empty();
+   $("#div_users").append(table);
+   $("#grid_users").DataTable();
+  }
+  // call api
+  GetUsers(function(){ DrawUserGrid() });
+
+  attachEvents();
+ }
+
+ $(document).ready(function () {
+  if (document.getElementById) {
+   InitAppWhenReady();
+  }
+ });
+
+}.call();
