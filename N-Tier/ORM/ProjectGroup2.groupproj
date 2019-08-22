@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{00F2858C-8865-4875-89EC-D03EC39B582D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Client\Project10.dproj">
+            <Dependencies>MyORM.dproj</Dependencies>
+        </Projects>
+        <Projects Include="MyORM.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Project10" DependsOnTargets="MyORM">
+        <MSBuild Projects="Client\Project10.dproj"/>
+    </Target>
+    <Target Name="Project10:Clean" DependsOnTargets="MyORM:Clean">
+        <MSBuild Projects="Client\Project10.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project10:Make" DependsOnTargets="MyORM:Make">
+        <MSBuild Projects="Client\Project10.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MyORM">
+        <MSBuild Projects="MyORM.dproj"/>
+    </Target>
+    <Target Name="MyORM:Clean">
+        <MSBuild Projects="MyORM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MyORM:Make">
+        <MSBuild Projects="MyORM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Project10;MyORM"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Project10:Clean;MyORM:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Project10:Make;MyORM:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
