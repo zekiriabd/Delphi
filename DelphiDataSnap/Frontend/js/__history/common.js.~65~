@@ -1,0 +1,44 @@
+﻿$fronted = {};
+$fronted.host = "http://delphibackend.net//DelphiBackend.dll/datasnap/rest/TProjectController/";
+$fronted.SERVICE =
+ {
+  user_list_url : $fronted.host + "GetUserList",
+  add_user_url  : $fronted.host + "SetUser",
+  sum_url  : $fronted.host + "sum",
+ };
+
+
+
+/*======================================================================
+   Service Web Metod
+ ======================================================================*/
+function GetUsers(fnOnComplete)
+{
+ $.ajax($fronted.SERVICE.user_list_url, { method: 'GET', xhrFields: { withCredentials: false } })
+ .success(function (data) {
+  var _data = JSON.parse(data);
+   $fronted.Users = _data.result[0].fields.FItems;
+   if (fnOnComplete) { fnOnComplete(); }
+ })
+ .fail( function(xhr, textStatus, errorThrown) {
+ });
+}
+function SetUser(user,fnOnComplete) {
+    $.ajax($fronted.SERVICE.add_user_url,
+     {
+       method: 'POST',
+       xhrFields: { withCredentials: false },
+       data: JSON.stringify(user),
+     }
+    ).success(function (data) {
+      alert(data);
+      if (fnOnComplete) { fnOnComplete(); }
+  })
+ .fail(function (xhr, textStatus, errorThrown) {
+   var y = xhr;
+ });
+}
+
+
+
+

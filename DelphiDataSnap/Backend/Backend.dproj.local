@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2017/08/27 12:21:31.247,=D:\DelphiWebsite\Backend\WebModuleUnit1.pas</Transaction>
+    <Transaction>2017/08/27 12:21:32.140,=D:\DelphiWebsite\Backend\js\base64.js</Transaction>
+    <Transaction>2017/08/27 12:21:32.201,=D:\DelphiWebsite\Backend\js\serverfunctionexecutor.js</Transaction>
+    <Transaction>2017/08/27 12:21:32.250,=D:\DelphiWebsite\Backend\js\json2.js</Transaction>
+    <Transaction>2017/08/27 12:21:32.285,=D:\DelphiWebsite\Backend\js\callbackframework.js</Transaction>
+    <Transaction>2017/08/27 12:21:32.304,=D:\DelphiWebsite\Backend\js\serverfunctions.js</Transaction>
+    <Transaction>2017/08/27 12:21:32.320,=D:\DelphiWebsite\Backend\js\base64-min.js</Transaction>
+    <Transaction>2017/08/27 12:21:32.331,=D:\DelphiWebsite\Backend\js\json2-min.js</Transaction>
+    <Transaction>2017/08/27 12:21:32.343,=D:\DelphiWebsite\Backend\js\serverfunctionexecutor-min.js</Transaction>
+    <Transaction>2017/08/27 12:21:32.350,=D:\DelphiWebsite\Backend\js\callbackframework-min.js</Transaction>
+    <Transaction>2017/08/27 12:22:09.591,=D:\DelphiWebsite\Backend\Controllers\Controller.pas</Transaction>
+    <Transaction>2017/08/27 12:22:10.992,=D:\DelphiWebsite\Backend\Controllers\WebServerCors.pas</Transaction>
+    <Transaction>2017/08/27 12:22:18.111,=D:\DelphiWebsite\Backend\Database\DatabaseAccess.pas</Transaction>
+    <Transaction>2017/08/27 12:22:24.233,=D:\DelphiWebsite\Backend\Models\User.pas</Transaction>
+    <Transaction>2017/08/27 12:23:15.658,D:\DelphiWebsite\Backend\Backend.dproj=D:\DelphiWebsite\Backend\Backend1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

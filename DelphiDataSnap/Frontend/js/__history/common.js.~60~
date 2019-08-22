@@ -1,0 +1,65 @@
+﻿$fronted = {};
+$fronted.host = "http://delphibackend.net//DelphiBackend.dll/datasnap/rest/TProjectController/";
+$fronted.SERVICE =
+ {
+  user_list_url : $fronted.host + "GetUserList",
+  add_user_url  : $fronted.host + "SetUser",
+  sum_url  : $fronted.host + "sum",
+ };
+
+
+
+/*======================================================================
+   Service Web Metod
+ ======================================================================*/
+function GetUsers(fnOnComplete)
+{
+ $.ajax($fronted.SERVICE.user_list_url, { method: 'GET', xhrFields: { withCredentials: true } })
+ .success(function (data) {
+  var _data = JSON.parse(data);
+   $fronted.Users = _data.result[0].fields.FItems;
+   if (fnOnComplete) { fnOnComplete(); }
+ })
+ .fail( function(xhr, textStatus, errorThrown) {
+ });
+}
+//            JSON.stringify(user)
+
+
+function sum() {
+    var x = 5 ;
+    $.ajax($fronted.SERVICE.sum_url,
+     {
+       method: 'POST',
+       xhrFields: { withCredentials: true },
+       data: x
+     }
+    ).success(function (data) {
+  alert(data)
+  })
+ .fail(function (xhr, textStatus, errorThrown) {
+   var y = xhr;
+ });
+}
+
+function SetUser(user,fnOnComplete) {
+    $.ajax({
+                method: 'POST',
+                url: $fronted.SERVICE.add_user_url,
+                xhrFields: { withCredentials: true },
+                crossDomain: true,
+                data: JSON.stringify(user),
+                dataType: 'json',
+                contentType : 'application/json; charset=utf-8',
+                success: function(data) {
+                 alert(data);
+                 if (fnOnComplete) { fnOnComplete(); }
+                },
+                error: function (responseData, textStatus, errorThrown) {
+                    alert(responseData);
+                }
+        });
+             }
+
+
+
