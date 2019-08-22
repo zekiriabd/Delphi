@@ -1,0 +1,52 @@
+unit Controller;
+
+{$WARN SYMBOL_PLATFORM OFF}
+
+interface
+
+uses
+  ComObj, ActiveX, AspTlb, WebApplicationCOM_ASP_TLB, StdVcl;
+
+type
+  TController = class(TASPObject, IController)
+  protected
+    procedure OnEndPage; safecall;
+    procedure OnStartPage(const AScriptingContext: IUnknown); safecall;
+    procedure HelloWorld; safecall;
+    procedure GetUsers; safecall;
+  end;
+
+implementation
+
+uses ComServ;
+
+procedure TController.OnEndPage;
+begin
+  inherited OnEndPage;
+end;
+
+procedure TController.OnStartPage(const AScriptingContext: IUnknown);
+begin
+  inherited OnStartPage(AScriptingContext);
+end;
+
+procedure TController.HelloWorld;
+begin
+    Response.Write('Hello World');
+end;
+
+procedure TController.GetUsers;
+begin
+Response.Write(     '<table id="grid_users">'+
+                    '<thead><tr><th>First Name</th><th>Last Name</th></tr></thead>'+
+                    '<tbody>'+
+                    '<tr><td>Zekiri</td><td>abdelali</td></tr>'+
+                    '<tr><td>Ali</td><td>Alwi</td></tr>'+
+                    '<tr><td>Berkan</td><td>Messaoud</td></tr>'+
+                    '</tbody></table>');
+end;
+
+initialization
+  TAutoObjectFactory.Create(ComServer, TController, Class_Controller,
+    ciMultiInstance, tmApartment);
+end.

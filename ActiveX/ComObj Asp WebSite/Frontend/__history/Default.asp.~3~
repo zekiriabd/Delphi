@@ -1,0 +1,12 @@
+<HTML>
+<BODY>
+<TITLE> Testing Delphi ASP </TITLE>
+<CENTER>
+</CENTER>
+<HR>
+<WebApplicationCOM_ASP.Controller") 
+   DelphiASPObj.HelloWorld
+%>
+<HR>
+</BODY>
+</HTML>

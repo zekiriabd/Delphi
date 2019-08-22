@@ -1,0 +1,13 @@
+<HTML>
+<BODY>
+<TITLE> Testing Delphi ASP </TITLE>
+<CENTER>
+<H3> You should see the results of your Delphi Active Server method below </H3>
+</CENTER>
+<HR>
+<WebApplicationCOM_ASP.Controller") 
+   DelphiASPObj.HelloWorld
+%>
+<HR>
+</BODY>
+</HTML>

@@ -1,0 +1,58 @@
+unit User;
+
+{$WARN SYMBOL_PLATFORM OFF}
+
+interface
+
+uses
+  ComObj, ActiveX, AspTlb, WebApplicationCOM_ASP_TLB, StdVcl;
+
+type
+  TUser = class(TASPObject, IUser)
+  protected
+    procedure OnEndPage; safecall;
+    procedure OnStartPage(const AScriptingContext: IUnknown); safecall;
+    function Get_FirstName: OleVariant; safecall;
+    function Get_LastName: OleVariant; safecall;
+    procedure Set_FirstName(Value: OleVariant); safecall;
+    procedure Set_LastName(Value: OleVariant); safecall;
+  end;
+
+implementation
+
+uses ComServ;
+
+procedure TUser.OnEndPage;
+begin
+  inherited OnEndPage;
+end;
+
+procedure TUser.OnStartPage(const AScriptingContext: IUnknown);
+begin
+  inherited OnStartPage(AScriptingContext);
+end;
+
+function TUser.Get_FirstName: OleVariant;
+begin
+
+end;
+
+function TUser.Get_LastName: OleVariant;
+begin
+
+end;
+
+procedure TUser.Set_FirstName(Value: OleVariant);
+begin
+
+end;
+
+procedure TUser.Set_LastName(Value: OleVariant);
+begin
+
+end;
+
+initialization
+  TAutoObjectFactory.Create(ComServer, TUser, Class_User,
+    ciMultiInstance, tmApartment);
+end.

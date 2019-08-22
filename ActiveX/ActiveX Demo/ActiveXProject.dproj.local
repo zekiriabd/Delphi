@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/09/16 00:34:13.000.945,=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2_TLB.pas</Transaction>
+    <Transaction>2017/09/16 00:34:13.000.925,=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2.ridl</Transaction>
+    <Transaction>2017/09/16 00:35:06.000.652,=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/09/16 00:38:31.000.240,C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\MainPageIU.dfm</Transaction>
+    <Transaction>2017/09/16 00:38:31.000.240,C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\MainPageIU.pas</Transaction>
+    <Transaction>2017/09/16 00:38:45.000.260,C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2_TLB.pas=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\ActiveX_Project_TLB.pas</Transaction>
+    <Transaction>2017/09/16 00:38:45.000.222,C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2.ridl=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\ActiveX_Project.ridl</Transaction>
+    <Transaction>2017/09/16 00:39:13.000.885,C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\MainPageIU.pas=D:\ActiveX_Test1\MainPageIU.pas</Transaction>
+    <Transaction>2017/09/16 00:39:13.000.885,C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\MainPageIU.dfm=D:\ActiveX_Test1\MainPageIU.dfm</Transaction>
+    <Transaction>2017/09/16 00:39:24.000.166,C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\ActiveX_Project_TLB.pas=D:\ActiveX_Test1\ActiveX_Project_TLB.pas</Transaction>
+    <Transaction>2017/09/16 00:39:32.000.967,C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\ActiveX_Project.ridl=D:\ActiveX_Test1\ActiveX_Project.ridl</Transaction>
+    <Transaction>2017/09/16 00:39:53.000.576,C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2.dproj=D:\ActiveX_Test1\ActiveXProject.dproj</Transaction>
+    <Transaction>2017/09/16 00:41:49.000.167,D:\ActiveX_Test1\ActiveX_Project_TLB.pas=D:\ActiveX_Test1\Project2_TLB.pas</Transaction>
+  </Transactions>
+</BorlandProject>

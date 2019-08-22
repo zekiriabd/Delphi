@@ -1,0 +1,70 @@
+unit Controller;
+
+{$WARN SYMBOL_PLATFORM OFF}
+
+interface
+
+uses
+ComObj, ActiveX, AspTlb, WebApplicationCOM_ASP_TLB, StdVcl,
+
+Data.DB, Data.Win.ADODB,
+DatabaseAccess;
+
+type
+  TController = class(TASPObject, IController)
+  protected
+    procedure OnEndPage; safecall;
+    procedure OnStartPage(const AScriptingContext: IUnknown); safecall;
+    procedure HelloWorld; safecall;
+    procedure GetUsers; safecall;
+  end;
+
+implementation
+
+uses ComServ;
+
+procedure TController.OnEndPage;
+begin
+  inherited OnEndPage;
+end;
+
+procedure TController.OnStartPage(const AScriptingContext: IUnknown);
+begin
+  inherited OnStartPage(AScriptingContext);
+end;
+
+procedure TController.HelloWorld;
+begin
+    Response.Write('Hello World');
+end;
+
+procedure TController.GetUsers;
+var userSqlProc : TADOStoredProc;
+var tableHtml :string;
+var rowsHtml : string;
+begin
+      userSqlProc := TDatabaseAccess.ExecProc('sp_GetDelphiUsers',nil);
+      userSqlProc.Open;
+      while not userSqlProc.EOF do
+      begin
+         rowsHtml := rowsHtml + '<tr><td>'+
+                userSqlProc.FieldByName('FirstName').AsString +
+                '</td><td>'+
+                userSqlProc.FieldByName('LastName').AsString +
+                '</td></tr>';
+          userSqlProc.Next;
+      end;
+      userSqlProc.Close;
+
+
+ tableHtml :=  '<table id="grid_users">'+
+               '<thead><tr><th>First Name</th><th>Last Name</th></tr></thead>'+
+               '<tbody>'+ rowsHtml +'</tbody></table>';
+
+Response.Write(tableHtml);
+end;
+
+initialization
+  TAutoObjectFactory.Create(ComServer, TController, Class_Controller,
+    ciMultiInstance, tmApartment);
+end.

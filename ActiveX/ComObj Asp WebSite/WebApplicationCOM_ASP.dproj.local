@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2017/09/16 13:35:50.510,=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2.ridl</Transaction>
+    <Transaction>2017/09/16 13:35:50.534,=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2_TLB.pas</Transaction>
+    <Transaction>2017/09/16 13:36:38.357,D:\ActiveX_Test2\WebApplicationCOM_ASP.ridl=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2.ridl</Transaction>
+    <Transaction>2017/09/16 13:36:38.429,D:\ActiveX_Test2\Project2_TLB.pas=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2_TLB.pas</Transaction>
+    <Transaction>2017/09/16 13:36:38.438,D:\ActiveX_Test2\WebApplicationCOM_ASP_TLB.pas=D:\ActiveX_Test2\Project2_TLB.pas</Transaction>
+    <Transaction>2017/09/16 13:36:51.731,D:\ActiveX_Test2\WebApplicationCOM_ASP.dproj=C:\Users\zekiri\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2017/09/16 13:37:20.811,=D:\ActiveX_Test2\Controller.asp</Transaction>
+    <Transaction>2017/09/16 13:37:21.016,=D:\ActiveX_Test2\Unit1.pas</Transaction>
+    <Transaction>2017/09/16 13:37:49.298,D:\ActiveX_Test2\Controllers\Controller.pas=D:\ActiveX_Test2\Unit1.pas</Transaction>
+    <Transaction>2017/09/16 13:38:49.581,D:\ActiveX_Test2\Frontend\Default.asp=D:\ActiveX_Test2\Controller.asp</Transaction>
+    <Transaction>2017/09/16 13:55:13.413,=D:\ActiveX_Test2\Frontend\css\Index.css</Transaction>
+    <Transaction>2017/09/16 13:55:26.033,=D:\ActiveX_Test2\Frontend\img\LeftBarr.png</Transaction>
+    <Transaction>2017/09/16 13:55:26.040,=D:\ActiveX_Test2\Frontend\img\logo.png</Transaction>
+    <Transaction>2017/09/16 13:55:26.046,=D:\ActiveX_Test2\Frontend\img\Menu.png</Transaction>
+    <Transaction>2017/09/16 13:55:26.062,=D:\ActiveX_Test2\Frontend\img\users.ico</Transaction>
+    <Transaction>2017/09/16 13:58:59.022,=D:\ActiveX_Test2\Database\DatabaseAccess.pas</Transaction>
+    <Transaction>2017/09/16 14:08:32.788,=D:\ActiveX_Test2\User.asp</Transaction>
+    <Transaction>2017/09/16 14:08:32.809,=D:\ActiveX_Test2\Unit1.pas</Transaction>
+    <Transaction>2017/09/16 14:10:14.924,D:\ActiveX_Test2\Model\User.pas=D:\ActiveX_Test2\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

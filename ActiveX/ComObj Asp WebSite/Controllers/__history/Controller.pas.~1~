@@ -1,0 +1,34 @@
+unit Controller;
+
+{$WARN SYMBOL_PLATFORM OFF}
+
+interface
+
+uses
+  ComObj, ActiveX, AspTlb, WebApplicationCOM_ASP_TLB, StdVcl;
+
+type
+  TController = class(TASPObject, IController)
+  protected
+    procedure OnEndPage; safecall;
+    procedure OnStartPage(const AScriptingContext: IUnknown); safecall;
+  end;
+
+implementation
+
+uses ComServ;
+
+procedure TController.OnEndPage;
+begin
+  inherited OnEndPage;
+end;
+
+procedure TController.OnStartPage(const AScriptingContext: IUnknown);
+begin
+  inherited OnStartPage(AScriptingContext);
+end;
+
+initialization
+  TAutoObjectFactory.Create(ComServer, TController, Class_Controller,
+    ciMultiInstance, tmApartment);
+end.

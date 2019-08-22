@@ -1,0 +1,9 @@
+<HTML>
+<BODY>
+<TITLE> Testing Delphi ASP </TITLE>
+<%
+    Set service = Server.CreateObject("WebApplicationCOM_ASP.Controller")
+    service.HelloWorld
+%>
+</BODY>
+</HTML>

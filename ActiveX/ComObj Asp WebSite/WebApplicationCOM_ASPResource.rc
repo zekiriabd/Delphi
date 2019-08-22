@@ -1,0 +1,4 @@
+PngImage_1 RCDATA "Frontend\\img\\LeftBarr.png"
+PngImage_2 RCDATA "Frontend\\img\\logo.png"
+PngImage_3 RCDATA "Frontend\\img\\Menu.png"
+Icon_1 ICON "Frontend\\img\\users.ico"
