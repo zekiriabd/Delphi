@@ -39,32 +39,18 @@ object Form9: TForm9
     Size.PlatformDefault = False
   end
   object Button2: TButton
-    Position.X = 8.000000000000000000
-    Position.Y = 72.000000000000000000
-    Size.Width = 625.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 217.000000000000000000
     Size.Height = 57.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 3
+    TabOrder = 4
     Text = 'Get User List'
     OnClick = Button2Click
   end
-  object ListBox1: TListBox
-    Position.X = 8.000000000000000000
-    Position.Y = 136.000000000000000000
-    Size.Width = 625.000000000000000000
-    Size.Height = 137.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 4
-    DisableFocusEffect = True
-    DefaultItemStyles.ItemStyle = ''
-    DefaultItemStyles.GroupHeaderStyle = ''
-    DefaultItemStyles.GroupFooterStyle = ''
-    Viewport.Width = 621.000000000000000000
-    Viewport.Height = 133.000000000000000000
-  end
   object Button3: TButton
     Position.X = 296.000000000000000000
-    Position.Y = 280.000000000000000000
+    Position.Y = 408.000000000000000000
     Size.Width = 337.000000000000000000
     Size.Height = 65.000000000000000000
     Size.PlatformDefault = False
@@ -75,7 +61,52 @@ object Form9: TForm9
   object Edit3: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
     TabOrder = 7
-    Position.X = 168.000000000000000000
-    Position.Y = 304.000000000000000000
+    Position.X = 72.000000000000000000
+    Position.Y = 424.000000000000000000
+  end
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 8.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 625.000000000000000000
+    Size.Height = 241.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Viewport.Width = 621.000000000000000000
+    Viewport.Height = 216.000000000000000000
+  end
+  object Button4: TButton
+    Position.X = 416.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Get Filter User '
+    OnClick = Button4Click
+  end
+  object AureliusDataset1: TAureliusDataset
+    FieldDefs = <>
+    Left = 280
+    Top = 112
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = AureliusDataset1
+    ScopeMappings = <>
+    Left = 360
+    Top = 104
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 420
+    Top = 109
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
   end
 end

@@ -15,7 +15,10 @@ uses
   Aurelius.Bind.BaseDataset, Aurelius.Bind.Dataset, System.Rtti, FMX.Grid.Style,
   Data.Bind.EngExt, Fmx.Bind.DBEngExt, Fmx.Bind.Grid, System.Bindings.Outputs,
   Fmx.Bind.Editors, Data.Bind.Components, Data.Bind.Grid, Data.Bind.DBScope,
-  FMX.ScrollBox, FMX.Grid
+  FMX.ScrollBox, FMX.Grid,
+
+  Aurelius.Criteria.Linq,
+  Aurelius.Criteria.Projections
   ;
 
 type
@@ -24,14 +27,20 @@ type
     Edit1: TEdit;
     Edit2: TEdit;
     Button2: TButton;
-    ListBox1: TListBox;
     Button3: TButton;
     Edit3: TEdit;
+    StringGrid1: TStringGrid;
+    AureliusDataset1: TAureliusDataset;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource;
+    Button4: TButton;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
       FConnection : IDBConnection;
       Manager : TObjectManager;
@@ -58,27 +67,11 @@ begin
 end;
 
 procedure TForm9.Button2Click(Sender: TObject);
-var
-  users : TList<TUserDB>;
-  user : TUserDB;
 begin
-   try
-     users := Manager.Find<TUserDB>().List();
-
-
-     ListBox1.Clear;
-     for user in users do
-      ListBox1.Items.Add( user.FirstName + ' ' + user.LastName );
-
-    //AureliusDataset1.Close;
-    //AureliusDataset1.Manager := Manager;
-    //AureliusDataset1.SetSourceCriteria(Manager.Find<TUserDB>);
-    //AureliusDataset1.Open;
-
-   finally
-      //Manager.Free;
-   end;
-
+    AureliusDataset1.Close;
+    AureliusDataset1.Manager := Manager;
+    AureliusDataset1.SetSourceCriteria(Manager.Find<TUserDB>);
+    AureliusDataset1.Open;
 end;
 
 procedure TForm9.Button3Click(Sender: TObject);
@@ -88,6 +81,21 @@ begin
     id := StrToInt(edit3.Text);
     user:=  Manager.Find<TUserDB>(id);
     Manager.Remove(user);
+end;
+
+procedure TForm9.Button4Click(Sender: TObject);
+begin
+    AureliusDataset1.Close;
+    AureliusDataset1.Manager := Manager;
+    AureliusDataset1.SetSourceCriteria(
+
+    Manager.Find<TUserDB>()
+    .Where(Linq['FirstName'].Like('zek%'))
+    .OrderBy('FirstName')
+
+
+    );
+    AureliusDataset1.Open;
 end;
 
 procedure TForm9.FormCreate(Sender: TObject);

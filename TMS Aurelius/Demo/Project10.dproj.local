@@ -2,17 +2,19 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2019/08/24 00:40:14.000.511,=D:\Delphi\Project\Unit9.pas</Transaction>
-    <Transaction>2019/08/24 00:59:37.536,=D:\Delphi\Project\Unit9.pas</Transaction>
-    <Transaction>2019/08/24 01:00:04.840,D:\Tuto Source\Delphi\TMS Aurelius\Demo\Unit9.fmx=D:\Delphi\Project\Unit9.fmx</Transaction>
-    <Transaction>2019/08/24 01:00:04.840,D:\Tuto Source\Delphi\TMS Aurelius\Demo\Unit9.pas=D:\Delphi\Project\Unit9.pas</Transaction>
-    <Transaction>2019/08/24 01:00:06.581,D:\Tuto Source\Delphi\TMS Aurelius\Demo\Project10.dproj=D:\Delphi\Project\Project10.dproj</Transaction>
-    <Transaction>2019/08/24 01:00:33.481,=D:\Tuto Source\Delphi\TMS Aurelius\Demo\ConnectionModule.pas</Transaction>
-    <Transaction>2019/08/24 01:28:22.910,=D:\Tuto Source\Delphi\TMS Aurelius\Demo\User.pas</Transaction>
-    <Transaction>2019/08/24 01:47:19.117,D:\Tuto Source\Delphi\TMS Aurelius\Demo\UserM.pas=D:\Tuto Source\Delphi\TMS Aurelius\Demo\User.pas</Transaction>
-    <Transaction>2019/08/24 01:47:30.622,D:\Tuto Source\Delphi\TMS Aurelius\Demo\UserDB.pas=D:\Tuto Source\Delphi\TMS Aurelius\Demo\UserM.pas</Transaction>
-  </Transactions>  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5"/>
-  </ActiveMobileDevice>
-  <ProjectSortOrder AutoSort="0" SortType="0">
+    <Transaction>2019/08/24 00:59:37.000.536,=D:\Delphi\Project\Unit9.pas</Transaction>
+    <Transaction>2019/08/24 01:00:04.000.840,D:\Tuto Source\Delphi\TMS Aurelius\Demo\Unit9.fmx=D:\Delphi\Project\Unit9.fmx</Transaction>
+    <Transaction>2019/08/24 01:00:04.000.840,D:\Tuto Source\Delphi\TMS Aurelius\Demo\Unit9.pas=D:\Delphi\Project\Unit9.pas</Transaction>
+    <Transaction>2019/08/24 01:00:06.000.581,D:\Tuto Source\Delphi\TMS Aurelius\Demo\Project10.dproj=D:\Delphi\Project\Project10.dproj</Transaction>
+    <Transaction>2019/08/24 01:00:33.000.481,=D:\Tuto Source\Delphi\TMS Aurelius\Demo\ConnectionModule.pas</Transaction>
+    <Transaction>2019/08/24 01:28:22.000.910,=D:\Tuto Source\Delphi\TMS Aurelius\Demo\User.pas</Transaction>
+    <Transaction>2019/08/24 01:47:19.000.117,D:\Tuto Source\Delphi\TMS Aurelius\Demo\UserM.pas=D:\Tuto Source\Delphi\TMS Aurelius\Demo\User.pas</Transaction>
+    <Transaction>2019/08/24 01:47:30.000.622,D:\Tuto Source\Delphi\TMS Aurelius\Demo\UserDB.pas=D:\Tuto Source\Delphi\TMS Aurelius\Demo\UserM.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="android-support-v4.dex.jar"/>
     <File Path="cloud-messaging.dex.jar"/>
     <File Path="com-google-android-gms.play-services-ads-base.17.2.0.dex.jar"/>

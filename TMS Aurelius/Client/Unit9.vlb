@@ -1,0 +1,26 @@
+﻿[]
+Coordinates=91,70,90,51
+
+[Module Settings]
+ModelLayerNames=NewLayer0
+ActiveLayerNames=NewLayer0
+EditingLayerName=NewLayer0
+
+[PrototypeBindSource1]
+Coordinates=190,30,125,105
+
+[BindingsList1]
+Coordinates=126,154,82,33
+
+[StringGridPrototypeBindSource1]
+Coordinates=0,0,176,51
+
+[Button1]
+Coordinates=131,70,53,51
+
+[Edit1]
+Coordinates=82,70,40,51
+
+[Edit2]
+Coordinates=33,70,40,51
+

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/08/24 00:40:14.000.511,=D:\Delphi\Project\Unit9.pas</Transaction>
+    <Transaction>2019/08/26 10:33:44.000.559,=D:\Delphi\Project\Unit9.pas</Transaction>
+    <Transaction>2019/08/26 10:34:03.000.768,=D:\Delphi\Project\ConnectionModule.pas</Transaction>
+    <Transaction>2019/08/26 10:37:04.000.682,=D:\Delphi\Project\Unit10.pas</Transaction>
+    <Transaction>2019/08/26 10:41:03.000.002,D:\Delphi\Project\ConnectionModule.dfm=D:\Tuto Source\Delphi\TMS Aurelius\DataBaseToClass\ConnectionModule.dfm</Transaction>
+    <Transaction>2019/08/26 10:41:03.000.002,D:\Delphi\Project\ConnectionModule.pas=D:\Tuto Source\Delphi\TMS Aurelius\DataBaseToClass\ConnectionModule.pas</Transaction>
+    <Transaction>2019/08/26 10:41:22.000.330,D:\Delphi\Project\Unit9.pas=D:\Tuto Source\Delphi\TMS Aurelius\DataBaseToClass\Unit9.pas</Transaction>
+    <Transaction>2019/08/26 10:41:22.000.330,D:\Delphi\Project\Unit9.fmx=D:\Tuto Source\Delphi\TMS Aurelius\DataBaseToClass\Unit9.fmx</Transaction>
+    <Transaction>2019/08/26 10:41:24.000.947,D:\Delphi\Project\Project10.dproj=D:\Tuto Source\Delphi\TMS Aurelius\DataBaseToClass\Project10.dproj</Transaction>
+    <Transaction>2019/08/26 11:44:47.110,=D:\Tuto Source\Delphi\TMS Aurelius\DataBaseToClass\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
