@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2019/08/28 13:36:56.748,=D:\Delphi\Project\Server.pas</Transaction>
+    <Transaction>2019/08/28 13:36:57.067,=D:\Delphi\Project\ConnectionModule.pas</Transaction>
+    <Transaction>2019/08/28 13:38:02.832,D:\Tuto Source\Delphi\N-Tier\API\Server.pas=D:\Delphi\Project\Server.pas</Transaction>
+    <Transaction>2019/08/28 13:38:04.656,D:\Tuto Source\Delphi\N-Tier\API\ConnectionModule.pas=D:\Delphi\Project\ConnectionModule.pas</Transaction>
+    <Transaction>2019/08/28 13:38:04.656,D:\Tuto Source\Delphi\N-Tier\API\ConnectionModule.dfm=D:\Delphi\Project\ConnectionModule.dfm</Transaction>
+    <Transaction>2019/08/28 13:38:06.492,D:\Tuto Source\Delphi\N-Tier\API\Console_XData_Server.dproj=D:\Delphi\Project\Console_XData_Server.dproj</Transaction>
+    <Transaction>2019/08/28 13:38:51.720,D:\Tuto Source\Delphi\N-Tier\API\WebApi.dproj=D:\Tuto Source\Delphi\N-Tier\API\Console_XData_Server.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

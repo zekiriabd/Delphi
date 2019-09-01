@@ -1,4 +1,4 @@
-package MyORM;
+package ORM;
 
 {$R *.res}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
@@ -28,11 +28,6 @@ package MyORM;
 {$IMPLICITBUILD ON}
 
 requires
-  rtl,
-  dbrtl;
-
-contains
-  DatabaseAccess in 'DatabaseAccess.pas',
-  User in 'User.pas';
+  rtl;
 
 end.

@@ -1,4 +1,4 @@
-program Project10;
+program ClientFMX;
 
 uses
   Vcl.Forms,

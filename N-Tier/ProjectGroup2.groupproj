@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4DC131DF-FD18-4E47-BF5C-C45D599174FD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="API\WebApi.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\ClientFMX.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ORM\ORM.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="WebApi">
+        <MSBuild Projects="API\WebApi.dproj"/>
+    </Target>
+    <Target Name="WebApi:Clean">
+        <MSBuild Projects="API\WebApi.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebApi:Make">
+        <MSBuild Projects="API\WebApi.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientFMX">
+        <MSBuild Projects="Client\ClientFMX.dproj"/>
+    </Target>
+    <Target Name="ClientFMX:Clean">
+        <MSBuild Projects="Client\ClientFMX.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientFMX:Make">
+        <MSBuild Projects="Client\ClientFMX.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ORM">
+        <MSBuild Projects="ORM\ORM.dproj"/>
+    </Target>
+    <Target Name="ORM:Clean">
+        <MSBuild Projects="ORM\ORM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ORM:Make">
+        <MSBuild Projects="ORM\ORM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="WebApi;ClientFMX;ORM"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="WebApi:Clean;ClientFMX:Clean;ORM:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="WebApi:Make;ClientFMX:Make;ORM:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

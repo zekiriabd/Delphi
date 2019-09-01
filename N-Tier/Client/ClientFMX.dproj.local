@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/08/22 04:12:51.000.644,=D:\Delphi\Project\Unit9.pas</Transaction>
+    <Transaction>2019/08/22 04:14:19.000.671,D:\Delphi\Project\Unit9.dfm=D:\Tuto Source\Delphi\ORM\Client\Unit9.dfm</Transaction>
+    <Transaction>2019/08/22 04:14:19.000.671,D:\Delphi\Project\Unit9.pas=D:\Tuto Source\Delphi\ORM\Client\Unit9.pas</Transaction>
+    <Transaction>2019/08/22 04:14:21.000.443,D:\Delphi\Project\Project10.dproj=D:\Tuto Source\Delphi\ORM\Client\Project10.dproj</Transaction>
+    <Transaction>2019/08/28 13:40:00.473,D:\Tuto Source\Delphi\N-Tier\Client\ClientFMX.dproj=D:\Tuto Source\Delphi\N-Tier\Client\Project10.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
