@@ -1,0 +1,43 @@
+unit BillController;
+
+interface
+
+uses
+  System.SysUtils,System.Classes,System.JSON,System.Generics.Collections,EMS.Services,
+  EMS.ResourceAPI,EMS.ResourceTypes,rest.json;
+
+type
+ [ResourceName('country')]
+  {$METHODINFO ON}
+  TBillController = class
+  published
+
+    [ResourceSuffix('/GetCountries')]
+    [EndPointRequestSummary('User Management', '', 'Get all users from user table mysql database ', 'application/json', '')]
+    procedure GetCountries(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+
+  {$METHODINFO OFF}
+
+  end;
+implementation
+uses Client,UserDataAccess;
+
+procedure TBillController.GetCountries(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  users : TList<TClient>;
+begin
+  users:= TUserDataAccess.GetUsers();
+  AResponse.Body.SetValue( TJSON.ObjectToJsonObject(users), True);
+end;
+
+
+procedure Register;
+begin
+  RegisterResource(TypeInfo(TBillController));
+end;
+
+initialization
+  Register;
+end.
+
+

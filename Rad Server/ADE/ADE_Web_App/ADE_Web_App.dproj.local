@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/10/05 18:11:05.000.530,=rtl.dcp</Transaction>
+    <Transaction>2019/10/05 18:11:41.000.184,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Package1.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\ADE_Web_App.dproj</Transaction>
+    <Transaction>2019/10/05 18:12:37.000.668,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\ADE_Web_App.dproj=D:\MyDev\Delphi\Rad Server\ADE\ADE_Web_App\ADE_Web_App.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

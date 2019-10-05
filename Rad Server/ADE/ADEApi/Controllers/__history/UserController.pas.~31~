@@ -1,0 +1,91 @@
+unit UserController;
+
+// EMS Resource Module
+
+interface
+
+uses
+
+
+  System.SysUtils,
+  System.Classes,
+  System.JSON,
+  System.Generics.Collections,
+
+  EMS.Services,
+  EMS.ResourceAPI,
+  EMS.ResourceTypes,
+
+  rest.json;
+
+type
+ [ResourceName('user')]
+  {$METHODINFO ON}
+  TUserController = class
+  published
+     
+
+    [EndPointRequestSummary('User Management', '', 'Get all users from user table mysql database ', 'application/json', '')]
+    [EndPointResponseDetails(200, 'Ok', TAPIDoc.TPrimitiveType.spObject, TAPIDoc.TPrimitiveFormat.None, '', '')]
+    [ResourceSuffix('/GetUsers')]
+    procedure GetUsers(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+
+    [EndPointRequestSummary('User Management', '', 'insert user to user table  mysql database ', 'application/json', '')]
+    [EndPointResponseDetails(200, 'Ok', TAPIDoc.TPrimitiveType.spObject, TAPIDoc.TPrimitiveFormat.None, '', '')]
+    [ResourceSuffix('/PostUser')]
+    procedure PostUser(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+
+    [EndPointRequestSummary('User Management', '', 'Get all user by id from user table mysql database ', 'application/json', '')]
+    [EndPointResponseDetails(200, 'Ok', TAPIDoc.TPrimitiveType.spObject, TAPIDoc.TPrimitiveFormat.None, '', '')]
+    [ResourceSuffix('/GetUserById/{id}')]
+    procedure GetUserById(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+  {$METHODINFO OFF}
+
+  end;
+implementation
+uses User,UserDataAccess;
+
+procedure TUserController.GetUsers(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  users : TList<TUser>;
+begin
+  users:= TUserDataAccess.GetUsers();
+  AResponse.Body.SetValue( TJSON.ObjectToJsonObject(users), True);
+end;
+
+
+procedure TUserController.GetUserById(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  id:string;
+  user:TUser;
+begin
+  id  := ARequest.Params.Values['id'];
+  user := TUserDataAccess.GetUserById(StrToInt(id));
+  AResponse.Body.SetValue( TJSON.ObjectToJsonObject(user), True);
+end;
+
+procedure TUserController.PostUser(const AContext: TEndpointContext; const ARequest: TEndpointRequest; const AResponse: TEndpointResponse);
+var
+  jsUser : TJSONObject;
+  user : TUser;
+begin
+  jsUser := ARequest.Body.GetObject;
+  user := TUser.Create(
+          StrToInt(jsUser.GetValue('id').Value),
+          jsUser.GetValue('firstName').Value,
+          jsUser.GetValue('lastName').Value
+          );
+  TUserDataAccess.Insert(user);
+end;
+
+
+procedure Register;
+begin
+  RegisterResource(TypeInfo(TUserController));
+end;
+
+initialization
+  Register;
+end.
+
+

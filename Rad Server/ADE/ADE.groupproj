@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C6C1B08A-398C-4F8F-B13B-63593638AAC1}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ADEApi\ADE_API.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ADEApi_UnitTest\ADE_API_Test.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ADE_Mobile_App\ADE_Mobile_App.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ADE_Web_App\ADE_Web_App.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ADE_API">
+        <MSBuild Projects="ADEApi\ADE_API.dproj"/>
+    </Target>
+    <Target Name="ADE_API:Clean">
+        <MSBuild Projects="ADEApi\ADE_API.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ADE_API:Make">
+        <MSBuild Projects="ADEApi\ADE_API.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ADE_API_Test">
+        <MSBuild Projects="ADEApi_UnitTest\ADE_API_Test.dproj"/>
+    </Target>
+    <Target Name="ADE_API_Test:Clean">
+        <MSBuild Projects="ADEApi_UnitTest\ADE_API_Test.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ADE_API_Test:Make">
+        <MSBuild Projects="ADEApi_UnitTest\ADE_API_Test.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ADE_Mobile_App">
+        <MSBuild Projects="ADE_Mobile_App\ADE_Mobile_App.dproj"/>
+    </Target>
+    <Target Name="ADE_Mobile_App:Clean">
+        <MSBuild Projects="ADE_Mobile_App\ADE_Mobile_App.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ADE_Mobile_App:Make">
+        <MSBuild Projects="ADE_Mobile_App\ADE_Mobile_App.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ADE_Web_App">
+        <MSBuild Projects="ADE_Web_App\ADE_Web_App.dproj"/>
+    </Target>
+    <Target Name="ADE_Web_App:Clean">
+        <MSBuild Projects="ADE_Web_App\ADE_Web_App.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ADE_Web_App:Make">
+        <MSBuild Projects="ADE_Web_App\ADE_Web_App.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ADE_API;ADE_API_Test;ADE_Mobile_App;ADE_Web_App"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ADE_API:Clean;ADE_API_Test:Clean;ADE_Mobile_App:Clean;ADE_Web_App:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ADE_API:Make;ADE_API_Test:Make;ADE_Mobile_App:Make;ADE_Web_App:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
