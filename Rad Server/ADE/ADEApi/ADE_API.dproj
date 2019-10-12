@@ -104,35 +104,18 @@
         <DCCReference Include="FireDACMySQLDriver.dcp"/>
         <DCCReference Include="tmsbcl.dcp"/>
         <DCCReference Include="aurelius.dcp"/>
-        <DCCReference Include="Controllers\ClientController.pas"/>
-        <DCCReference Include="Database\UserDataAccess.pas"/>
+        <DCCReference Include="fmx.dcp"/>
+        <DCCReference Include="fmxFireDAC.dcp"/>
         <DCCReference Include="Models\Client.pas"/>
         <DCCReference Include="Models\Bill.pas"/>
-        <DCCReference Include="Controllers\BillController.pas"/>
-        <DCCReference Include="Controllers\StatsController.pas"/>
-        <RcItem Include="Swagger\favicon-16x16.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>PngImage_1</ResourceId>
-        </RcItem>
-        <RcItem Include="Swagger\favicon-32x32.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>PngImage_2</ResourceId>
-        </RcItem>
-        <None Include="Swagger\index.html"/>
-        <None Include="Swagger\oauth2-redirect.html"/>
-        <None Include="Swagger\swagger-ui-bundle.js"/>
-        <None Include="Swagger\swagger-ui-bundle.js.map"/>
-        <None Include="Swagger\swagger-ui-standalone-preset.js"/>
-        <None Include="Swagger\swagger-ui-standalone-preset.js.map"/>
-        <None Include="Swagger\swagger-ui.css"/>
-        <None Include="Swagger\swagger-ui.css.map"/>
-        <None Include="Swagger\swagger-ui.js"/>
-        <None Include="Swagger\swagger-ui.js.map"/>
-        <None Include="Swagger\Swagger.dpr"/>
-        <None Include="Swagger\Swagger.dproj"/>
-        <None Include="Swagger\Swagger.dproj.local"/>
-        <None Include="Swagger\Swagger.identcache"/>
-        <None Include="Swagger\__history"/>
+        <DCCReference Include="Database\MysqlConnection.pas">
+            <Form>FireDacMySqlConnection</Form>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="Database\UserDataAccess.pas"/>
+        <DCCReference Include="Controllers\ClientController.pas"/>
+        <DCCReference Include="Database\ClientService.pas"/>
+        <DCCReference Include="Controllers\UserController.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

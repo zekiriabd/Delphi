@@ -1,0 +1,39 @@
+unit ClientService;
+
+interface
+
+uses
+  Client,
+  MysqlConnection,
+  System.SysUtils,
+  System.Classes,
+  System.Generics.Collections,
+  Aurelius.Drivers.Interfaces,
+  Aurelius.Engine.DatabaseManager,
+  Aurelius.Engine.ObjectManager,
+  Aurelius.Criteria.Linq,
+  Aurelius.Criteria.Projections;
+
+type
+    TClientService = class
+        class procedure AddClient(client : TClient);static;
+    private
+      FConnection : IDBConnection;
+      Manager : TObjectManager;
+    public
+
+end;
+implementation
+
+procedure TClientService.AddClient(client : TClient);
+begin
+   FConnection := TFireDacMySqlConnection.CreateConnection;
+   TDatabaseManager.Update(FConnection);
+   Manager := TObjectManager.Create(FConnection);
+   Manager.Save(client);
+ // TUserDataAccess.Insert(client);
+end;
+
+
+
+end.

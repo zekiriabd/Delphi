@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7967E46D-21F8-499A-9E78-13CB8F90187E}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MyProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Swagger\Swagger.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MyProject">
+        <MSBuild Projects="MyProject.dproj"/>
+    </Target>
+    <Target Name="MyProject:Clean">
+        <MSBuild Projects="MyProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MyProject:Make">
+        <MSBuild Projects="MyProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Swagger">
+        <MSBuild Projects="Swagger\Swagger.dproj"/>
+    </Target>
+    <Target Name="Swagger:Clean">
+        <MSBuild Projects="Swagger\Swagger.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Swagger:Make">
+        <MSBuild Projects="Swagger\Swagger.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MyProject;Swagger"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MyProject:Clean;Swagger:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MyProject:Make;Swagger:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

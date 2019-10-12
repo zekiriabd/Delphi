@@ -1,7 +1,6 @@
 package ADE_API;
 
 {$R *.res}
-{$R *.dres}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -40,14 +39,17 @@ requires
   RESTComponents,
   FireDACMySQLDriver,
   tmsbcl,
-  aurelius;
+  aurelius,
+  fmx,
+  fmxFireDAC;
 
 contains
-  ClientController in 'Controllers\ClientController.pas',
-  UserDataAccess in 'Database\UserDataAccess.pas',
   Client in 'Models\Client.pas',
   Bill in 'Models\Bill.pas',
-  BillController in 'Controllers\BillController.pas',
-  StatsController in 'Controllers\StatsController.pas';
+  MysqlConnection in 'Database\MysqlConnection.pas' {FireDacMySqlConnection: TDataModule},
+  UserDataAccess in 'Database\UserDataAccess.pas',
+  ClientController in 'Controllers\ClientController.pas',
+  ClientService in 'Database\ClientService.pas',
+  UserController in 'Controllers\UserController.pas';
 
 end.

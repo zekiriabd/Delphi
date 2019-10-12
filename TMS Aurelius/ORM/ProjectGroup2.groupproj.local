@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2019/08/22 04:14:30.000.384,D:\Delphi\Project\ProjectGroup2.groupproj=D:\Tuto Source\Delphi\ORM\ProjectGroup2.groupproj</Transaction>
+    <Transaction>2019/08/22 04:14:30.000.384,D:\Tuto Source\Delphi\ORM\ProjectGroup2.groupproj=D:\Delphi\Project\ProjectGroup2.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="D:\Tuto Source\Delphi\TMS Aurelius\Client\Project10.dproj"/>
+		<Projects ActiveProject="D:\MyDev\Delphi\TMS Aurelius\ORM\MyORM.dproj"/>
 	</Default.Personality>
 </BorlandProject>

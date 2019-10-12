@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/10/02 23:32:42.000.447,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/10/03 22:46:06.000.859,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/10/03 22:46:06.000.848,=emsserverapi.dcp</Transaction>
+    <Transaction>2019/10/04 08:47:08.000.280,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/10/04 08:47:08.000.268,=emsserverapi.dcp</Transaction>
+    <Transaction>2019/10/05 07:11:24.000.795,=FireDACCommonDriver.dcp</Transaction>
+    <Transaction>2019/10/05 07:11:24.000.795,=dbrtl.dcp</Transaction>
+    <Transaction>2019/10/05 07:11:24.000.795,=FireDACCommon.dcp</Transaction>
+    <Transaction>2019/10/05 07:11:24.000.780,=emsserverapi.dcp</Transaction>
+    <Transaction>2019/10/05 07:11:24.000.811,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/10/05 07:11:24.000.795,=emsserverresource.dcp</Transaction>
+    <Transaction>2019/10/05 07:11:24.000.795,=FireDAC.dcp</Transaction>
+    <Transaction>2019/10/05 17:52:42.000.361,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.850,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\favicon-32x32.png</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.854,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\oauth2-redirect.html</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.887,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\swagger-ui.js.map</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.875,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\swagger-ui.css.map</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.893,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\swagger-ui-standalone-preset.js</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.896,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\swagger-ui-standalone-preset.js.map</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.848,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\favicon-16x16.png</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.891,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\swagger-ui-bundle.js.map</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.889,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\swagger-ui-bundle.js</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.884,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\swagger-ui.js</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.852,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\index.html</Transaction>
+    <Transaction>2019/10/05 17:53:00.000.869,=D:\MyDev\Delphi\Rad Server\ADE\Swagger\swagger-ui.css</Transaction>
+    <Transaction>2019/10/05 17:53:13.000.442,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Swagger.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2019/10/05 17:53:49.000.242,D:\MyDev\Delphi\Rad Server\ADE\Swagger\Swagger.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Swagger.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

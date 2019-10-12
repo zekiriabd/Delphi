@@ -4,6 +4,6 @@
 		<NoProfile iOSSimulator="iPhone5"/>
 	</ActiveMobileDevice>
 	<Transactions>
-    <Transaction>2019/10/05 18:07:37.000.235,D:\MyDev\Delphi\Rad Server\ADE\ADE_Mobile_App\ADE_Mobile_App.dproj=D:\MyDev\Delphi\Rad Server\ADE\ADE_Mobile_App\MasterDetailApplication.dproj</Transaction>
+    <Transaction>2019/10/05 18:07:37.000.235,D:\MyDev\Delphi\Rad Server\ADE\ADE_Mobile_App\MasterDetailApplication.dproj=D:\MyDev\Delphi\Rad Server\ADE\ADE_Mobile_App\ADE_Mobile_App.dproj</Transaction>
   </Transactions>
 </BorlandProject>

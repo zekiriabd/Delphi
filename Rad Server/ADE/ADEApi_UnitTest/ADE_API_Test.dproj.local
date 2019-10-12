@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2019/08/21 10:03:59.000.518,=D:\Delphi\Project\Unit5.pas</Transaction>
-    <Transaction>2019/08/21 10:06:37.000.711,D:\Delphi\Project\Unit5.pas=D:\Tuto Source\Delphi\DUnitX\s.pas</Transaction>
-    <Transaction>2019/08/21 10:06:43.000.079,D:\Delphi\Project\Project4.dproj=D:\Tuto Source\Delphi\DUnitX\Project4.dproj</Transaction>
-    <Transaction>2019/10/05 18:02:36.000.092,D:\MyDev\Delphi\Rad Server\ADE\ADEApi_UnitTest\ADE_API_Test.dproj=D:\MyDev\Delphi\Rad Server\ADE\ADEApi_UnitTest\Project4.dproj</Transaction>
+    <Transaction>2019/08/21 10:06:37.000.711,D:\Tuto Source\Delphi\DUnitX\s.pas=D:\Delphi\Project\Unit5.pas</Transaction>
+    <Transaction>2019/08/21 10:06:43.000.079,D:\Tuto Source\Delphi\DUnitX\Project4.dproj=D:\Delphi\Project\Project4.dproj</Transaction>
+    <Transaction>2019/10/05 18:02:36.000.092,D:\MyDev\Delphi\Rad Server\ADE\ADEApi_UnitTest\Project4.dproj=D:\MyDev\Delphi\Rad Server\ADE\ADEApi_UnitTest\ADE_API_Test.dproj</Transaction>
   </Transactions>
 </BorlandProject>

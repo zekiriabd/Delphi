@@ -25,6 +25,16 @@ uses
 
   System.Generics.Collections,
   System.SysUtils,
+
+  Aurelius.Drivers.Interfaces,
+  Aurelius.Engine.DatabaseManager,
+  Aurelius.Engine.ObjectManager,
+  Aurelius.Criteria.Linq,
+  Aurelius.Criteria.Projections,
+  Aurelius.Drivers.FireDac,
+  Aurelius.Schema.MySQL,
+  Aurelius.Comp.Connection,
+  Aurelius.Sql.Mysql,
   User;
 
 type
@@ -32,12 +42,14 @@ TUserDataAccess = class
     class function GetUsers(): TList<TUser>;static;
     class procedure Insert(user:TUser);static;
     class function GetUserById(id:Integer):TUser;static;
+//    class function GetTmsManager():TObjectManager;static;
 end;
 
 implementation
 
 function GetCoonection():TFDConnection;
 begin
+
     Result := TFDConnection.Create(nil);
     Result.Params.DriverID := 'MySQL';
     Result.Params.Add('Server=127.0.0.1');
@@ -45,7 +57,40 @@ begin
     Result.Params.UserName := 'root';
     Result.Params.Password := '';
     Result.LoginPrompt := False;
+    Result.Connected:=True;
 end;
+{
+class function TUserDataAccess.GetTmsManager(): TObjectManager;
+var
+  tmsConnection : IDBConnection;
+  FDConnection:TFDConnection;
+  AureliusConnection1: TAureliusConnection;
+begin
+    try
+    FDConnection := TFDConnection.Create(nil);
+    FDConnection.Params.DriverID := 'MySQL';
+    FDConnection.Params.Add('Server=127.0.0.1');
+    FDConnection.Params.Database := 'usersmanagement';
+    FDConnection.Params.UserName := 'root';
+    FDConnection.Params.Password := '';
+
+
+    AureliusConnection1:= TAureliusConnection.Create(nil);
+    AureliusConnection1.AdaptedConnection := FDConnection;
+    AureliusConnection1.AdapterName:='FireDac';
+    AureliusConnection1.SQLDialect:='MySQL';
+
+    tmsConnection :=AureliusConnection1.CreateConnection;
+
+    TDatabaseManager.Update(tmsConnection);
+    Result := TObjectManager.Create(tmsConnection);
+    finally
+    FDConnection.Free;
+    AureliusConnection1.Free;
+    end;
+   
+end;
+         }
 
 class function TUserDataAccess.GetUsers(): TList<TUser>;
 var

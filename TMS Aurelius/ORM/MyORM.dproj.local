@@ -2,7 +2,7 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2019/08/22 04:23:28.000.379,=rtl.dcp</Transaction>
-    <Transaction>2019/08/22 04:24:19.000.390,D:\Tuto Source\Delphi\ORM\MyORM.dproj=D:\Delphi\Project\Package2.dproj</Transaction>
+    <Transaction>2019/08/22 04:24:19.000.390,D:\Delphi\Project\Package2.dproj=D:\Tuto Source\Delphi\ORM\MyORM.dproj</Transaction>
     <Transaction>2019/08/22 04:25:05.000.619,=D:\Tuto Source\Delphi\ORM\Unit1.pas</Transaction>
     <Transaction>2019/08/22 04:25:59.000.087,D:\Tuto Source\Delphi\ORM\Unit1.pas=</Transaction>
     <Transaction>2019/08/22 04:26:24.000.195,=D:\Tuto Source\Delphi\ORM\DatabaseAccess.pas</Transaction>
