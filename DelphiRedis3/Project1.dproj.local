@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/24 12:51:45.000.753,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 11:21:26.000.498,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 11:21:29.000.937,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019/12/01 11:21:49.000.585,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 11:21:49.000.771,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019/12/01 11:56:44.000.577,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019/12/01 11:56:44.000.380,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 14:50:25.000.770,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 14:50:26.000.049,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2020/01/07 22:13:30.042,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2020/01/07 22:14:35.260,D:\MyDev\Delphi\DelphiRedis3\Unit1.pas=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2020/01/07 22:14:35.260,D:\MyDev\Delphi\DelphiRedis3\Unit1.dfm=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.dfm</Transaction>
+    <Transaction>2020/01/07 22:14:41.725,D:\MyDev\Delphi\DelphiRedis3\Project1.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2020/01/07 22:15:27.960,=D:\MyDev\Delphi\DelphiRedis3\Redis\RedisDictionary.pas</Transaction>
+    <Transaction>2020/01/07 22:15:37.324,=D:\MyDev\Delphi\DelphiRedis3\Redis\entities\UserR.pas</Transaction>
+    <Transaction>2020/01/07 22:15:49.508,=D:\MyDev\Delphi\DelphiRedis3\Redis\repositories\IUserRepo.pas</Transaction>
+    <Transaction>2020/01/07 22:15:49.525,=D:\MyDev\Delphi\DelphiRedis3\Redis\repositories\UserRepoImp.pas</Transaction>
+  </Transactions>
+</BorlandProject>
