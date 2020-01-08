@@ -1,21 +1,12 @@
-# ReactNative
+# DELPHI 
 
-#### Animation with React Native انشاء صور متحكة او مكونات تتحرك
-
-## Platform Support
-
-|Platform|Version|
-| ------------------- | :------------------: |
-|React.iOS|
-|React.Android|
-|React.UWP|
-
+#### RedisDictionary
 
 <p align="center">
-   <img src="https://i.imgur.com/udzUkZV.gif" alt="badges" style="margin:auto">
+   <img src="https://i.imgur.com/0MgIiQf.png" alt="badges" style="margin:auto">
 </p>
 
 
 <p>
-  https://www.youtube.com/watch?v=ZjpisXpysFw&index=14&list=PLfVdvKscEioNsjW5coC7XiugINCiHY-fG
+ https://www.youtube.com/watch?v=g-vq1Q5R2x8&list=PLfVdvKscEioOukQCwezjjsVevZqPlqVPn&index=31
 </p>
