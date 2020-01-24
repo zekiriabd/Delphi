@@ -106,7 +106,7 @@ object Form3: TForm3
   end
   object Button5: TButton
     Left = 8
-    Top = 239
+    Top = 237
     Width = 619
     Height = 36
     Caption = 'Del All'

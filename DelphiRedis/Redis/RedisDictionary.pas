@@ -18,7 +18,7 @@ type
     function FindAll(): string;
     function FindById(key : string): string;
     function Remove(key : string): Boolean;
-    function clearAll(): Boolean;
+    function DeleteAll(): Boolean;
     function Serialize(obj: TObject): string;
     function Deserialize(serialized: string): TObject;
     Destructor  Destroy; override;
@@ -59,7 +59,7 @@ begin
   result := Boolean(self.redisDB.HDel(self.redisKey , keys));
 end;
 
-function TRedisDictionary.clearAll(): Boolean;
+function TRedisDictionary.DeleteAll(): Boolean;
 begin
   result := Boolean(self.redisDB.DEL(self.redisKey));
 end;

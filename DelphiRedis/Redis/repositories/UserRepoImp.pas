@@ -1,51 +1,50 @@
 unit UserRepoImp;
 interface
-uses UserR, RedisDictionary,System.SysUtils;
+uses UserR, RedisDictionary,System.SysUtils,IUserRepo;
 
 type
-  TUserRepoImp = class
+  TUserRepoImp = class(TInterfacedObject,UserRepo)
   private
-   users : TRedisDictionary;
+     users : TRedisDictionary;
   public
    Constructor Create();
-   procedure setUser(user: TUserR);
-   function getUsers():string;
-   function getUserById(id : string):string;
-   function deleteUser(id : string): Boolean;
-   function clearAll(): Boolean;
+   procedure SetUser(user: TUserR);
+   function GetUsers():string;
+   function GetUserById(id : string):string;
+   function DeleteUser(id : string): Boolean;
+   function ClearUserTable(): Boolean;
+
   end;
 
 implementation
 { TUserRepoImp }
+procedure TUserRepoImp.SetUser(user: TUserR);
+begin
+   self.users.Add(inttostr(user.Id), user);
+end;
 
+function TUserRepoImp.GetUsers(): string;
+begin
+   Result := self.users.FindAll();
+end;
+
+function TUserRepoImp.DeleteUser(id : string): Boolean;
+begin
+   Result := self.users.Remove(id);
+end;
+
+function TUserRepoImp.ClearUserTable(): Boolean;
+begin
+   Result := self.users.DeleteAll();
+end;
 constructor TUserRepoImp.Create;
 begin
    self.users := TRedisDictionary.Create('user');
 end;
 
-procedure TUserRepoImp.setUser(user: TUserR);
-begin
-   self.users.Add(inttostr(user.Id), user);
-end;
-
-function TUserRepoImp.getUsers(): string;
-begin
-   Result := self.users.FindAll();
-end;
-
-function TUserRepoImp.getUserById(id : string): string;
+function TUserRepoImp.GetUserById(id: string): string;
 begin
    Result := self.users.FindById(id);
-end;
-
-function TUserRepoImp.deleteUser(id : string): Boolean;
-begin
-   Result := self.users.Remove(id);
-end;
-
-function TUserRepoImp.clearAll(): Boolean;
-begin
-   Result := self.users.clearAll();
 end;
 
 

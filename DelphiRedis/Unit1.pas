@@ -24,12 +24,12 @@ type
     Label3: TLabel;
     Button4: TButton;
     Button5: TButton;
+    procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
      userRepoImp : TUserRepoImp;
     { Private declarations }
@@ -59,27 +59,27 @@ end;
 
 procedure TForm3.Button2Click(Sender: TObject);
 begin
-     memo1.text := self.userRepoImp.getUserById(edit3.Text);
+  memo1.text := self.userRepoImp.getUserById(edit3.Text);
 end;
 
 procedure TForm3.Button3Click(Sender: TObject);
 begin
-     memo1.text := userRepoImp.deleteUser(Edit3.Text).ToString();
+ memo1.text := self.userRepoImp.deleteUser(Edit3.Text).ToString();
 end;
 
 procedure TForm3.Button4Click(Sender: TObject);
 begin
-   userRepoImp.getUsers();
+   self.userRepoImp.getUsers();
 end;
 
 procedure TForm3.Button5Click(Sender: TObject);
 begin
-   userRepoImp.clearAll();
+  userRepoImp.ClearUserTable();
 end;
 
 procedure TForm3.FormCreate(Sender: TObject);
 begin
-  self.userRepoImp := TUserRepoImp.Create();
+   self.userRepoImp := TUserRepoImp.Create();
 end;
 
 end.

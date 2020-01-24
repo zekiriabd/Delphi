@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2019/08/21 10:03:59.518,=D:\Delphi\Project\Unit5.pas</Transaction>
-    <Transaction>2019/08/21 10:06:37.711,D:\Tuto Source\Delphi\DUnitX\s.pas=D:\Delphi\Project\Unit5.pas</Transaction>
-    <Transaction>2019/08/21 10:06:43.079,D:\Tuto Source\Delphi\DUnitX\Project4.dproj=D:\Delphi\Project\Project4.dproj</Transaction>
+	<Transactions>
+    <Transaction>2019/08/21 10:03:59.000.518,=D:\Delphi\Project\Unit5.pas</Transaction>
+    <Transaction>2019/08/21 10:06:37.000.711,D:\Delphi\Project\Unit5.pas=D:\Tuto Source\Delphi\DUnitX\s.pas</Transaction>
+    <Transaction>2019/08/21 10:06:43.000.079,D:\Delphi\Project\Project4.dproj=D:\Tuto Source\Delphi\DUnitX\Project4.dproj</Transaction>
   </Transactions>
 </BorlandProject>

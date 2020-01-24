@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/24 12:51:45.000.753,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 11:21:26.000.498,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 11:21:29.000.937,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019/12/01 11:21:49.000.585,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 11:21:49.000.771,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019/12/01 11:56:44.000.577,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019/12/01 11:56:44.000.380,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 14:50:25.000.770,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 14:50:26.000.049,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019/12/01 18:30:30.000.125,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2019/12/01 18:30:30.000.362,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas</Transaction>
+    <Transaction>2019/12/01 18:34:01.000.067,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.pas=D:\MyDev\Delphi\TMS XData\XDataService.pas</Transaction>
+    <Transaction>2019/12/01 18:34:01.000.067,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit3.dfm=D:\MyDev\Delphi\TMS XData\XDataService.dfm</Transaction>
+    <Transaction>2019/12/01 18:34:15.000.654,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.pas=D:\MyDev\Delphi\TMS XData\XDatatServer.pas</Transaction>
+    <Transaction>2019/12/01 18:34:15.000.654,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit4.dfm=D:\MyDev\Delphi\TMS XData\XDatatServer.dfm</Transaction>
+    <Transaction>2019/12/01 18:34:29.000.890,C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Project3.dproj=D:\MyDev\Delphi\TMS XData\TmsXDataApi.dproj</Transaction>
+    <Transaction>2019/12/01 18:35:38.000.674,=D:\MyDev\Delphi\TMS XData\Unit1.pas</Transaction>
+    <Transaction>2019/12/01 18:36:18.000.754,D:\MyDev\Delphi\TMS XData\Unit1.pas=D:\MyDev\Delphi\TMS XData\Models\uUser.pas</Transaction>
+    <Transaction>2019/12/01 21:00:18.000.568,=D:\MyDev\Delphi\TMS XData\UserService.pas</Transaction>
+    <Transaction>2019/12/01 21:00:20.000.896,=D:\MyDev\Delphi\TMS XData\UserServiceImplementation.pas</Transaction>
+    <Transaction>2019/12/01 21:00:44.000.797,D:\MyDev\Delphi\TMS XData\Controllers\UserServiceImplementation.pas=D:\MyDev\Delphi\TMS XData\UserServiceImplementation.pas</Transaction>
+    <Transaction>2019/12/01 21:00:48.000.739,D:\MyDev\Delphi\TMS XData\Controllers\UserService.pas=D:\MyDev\Delphi\TMS XData\UserService.pas</Transaction>
+    <Transaction>2019/12/01 21:01:06.000.952,D:\MyDev\Delphi\TMS XData\Controllers\uUserService.pas=D:\MyDev\Delphi\TMS XData\Controllers\UserService.pas</Transaction>
+    <Transaction>2019/12/01 21:01:12.000.283,D:\MyDev\Delphi\TMS XData\Controllers\uUserServiceImplementation.pas=D:\MyDev\Delphi\TMS XData\Controllers\UserServiceImplementation.pas</Transaction>
+    <Transaction>2019/12/01 21:54:39.000.014,=D:\MyDev\Delphi\TMS XData\UserService.pas</Transaction>
+    <Transaction>2019/12/01 21:54:39.000.094,=D:\MyDev\Delphi\TMS XData\UserServiceImplementation.pas</Transaction>
+    <Transaction>2019/12/01 21:55:12.000.345,D:\MyDev\Delphi\TMS XData\UserService.pas=D:\MyDev\Delphi\TMS XData\Controllers\uUserService.pas</Transaction>
+    <Transaction>2019/12/01 21:55:26.000.667,D:\MyDev\Delphi\TMS XData\UserServiceImplementation.pas=D:\MyDev\Delphi\TMS XData\Controllers\uUserServiceImp.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Controllers"/>
+    <File Path="Controllers\uUserService.pas"/>
+    <File Path="Controllers\uUserServiceImp.pas"/>
+    <File Path="Models"/>
+    <File Path="Models\uUser.pas"/>
+    <File Path="XDataService.pas"/>
+    <File Path="XDataService.dfm"/>
+    <File Path="XDatatServer.pas"/>
+    <File Path="XDatatServer.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>

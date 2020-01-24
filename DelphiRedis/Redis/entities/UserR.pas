@@ -1,6 +1,5 @@
 unit UserR;
-
-interface
+ interface
 type
   TUserR = class
   private
@@ -15,18 +14,14 @@ type
 
   end;
 implementation
-
 { TUserR }
+
+constructor TUserR.Create; begin end;
 
 constructor TUserR.Create(id: integer; name: string);
 begin
     self.Id   := id;
     self.Name := name;
-end;
-
-constructor TUserR.Create;
-begin
-
 end;
 
 end.
