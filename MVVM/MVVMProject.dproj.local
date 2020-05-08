@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020/04/12 16:50:13.759,=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/04/12 16:50:49.218,D:\MyDev\Delphi\MVVM\UserView.fmx=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit2.fmx</Transaction>
+    <Transaction>2020/04/12 16:50:49.218,D:\MyDev\Delphi\MVVM\UserView.pas=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/04/12 16:50:56.805,D:\MyDev\Delphi\MVVM\MVVMProject.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2020/04/12 16:51:11.851,=D:\MyDev\Delphi\MVVM\Unit1.pas</Transaction>
+    <Transaction>2020/04/12 16:51:24.500,D:\MyDev\Delphi\MVVM\UserModel.pas=D:\MyDev\Delphi\MVVM\Unit1.pas</Transaction>
+    <Transaction>2020/04/12 16:51:28.356,=D:\MyDev\Delphi\MVVM\Unit1.pas</Transaction>
+    <Transaction>2020/04/12 16:51:38.389,D:\MyDev\Delphi\MVVM\UserViewModel.pas=D:\MyDev\Delphi\MVVM\Unit1.pas</Transaction>
+    <Transaction>2020/04/12 17:07:49.693,=D:\MyDev\Delphi\MVVM\zekiri.png</Transaction>
+    <Transaction>2020/04/12 18:25:37.845,D:\MyDev\Delphi\MVVM\UserViewModel.pas=</Transaction>
+    <Transaction>2020/04/12 18:25:41.597,D:\MyDev\Delphi\MVVM\zekiri.png=</Transaction>
+    <Transaction>2020/04/12 18:26:15.732,D:\MyDev\Delphi\MVVM\UserModel.pas=</Transaction>
+    <Transaction>2020/04/12 18:56:33.420,=D:\MyDev\Delphi\MVVM\Unit1.pas</Transaction>
+    <Transaction>2020/04/12 18:56:42.537,D:\MyDev\Delphi\MVVM\UserViewModel.pas=D:\MyDev\Delphi\MVVM\Unit1.pas</Transaction>
+    <Transaction>2020/04/12 18:57:02.394,=D:\MyDev\Delphi\MVVM\Unit1.pas</Transaction>
+    <Transaction>2020/04/12 18:57:09.618,D:\MyDev\Delphi\MVVM\UserModel.pas=D:\MyDev\Delphi\MVVM\Unit1.pas</Transaction>
+  </Transactions>
+  <ActiveMobileDevice>   <NoProfile iOSSimulator="iPhone5"/>
+  </ActiveMobileDevice>
+</BorlandProject>

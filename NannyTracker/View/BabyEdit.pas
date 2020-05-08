@@ -3,7 +3,8 @@ unit BabyEdit;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
   FMX.MediaLibrary.Actions, System.Actions, FMX.ActnList, FMX.StdActns,
   FMX.Effects, FMX.Objects, FMX.Controls.Presentation, FMX.Layouts, FMX.Edit,
@@ -49,17 +50,17 @@ type
 implementation
 
 {$R *.fmx}
-   {
-    procedure TFMainPage.TakePhotoFromCameraAction1DidFinishTaking(Image: TBitmap);
-begin
-    FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
-    ActionSheetClose();
-end;
+{
+  procedure TFMainPage.TakePhotoFromCameraAction1DidFinishTaking(Image: TBitmap);
+  begin
+  FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
+  ActionSheetClose();
+  end;
 
-procedure TFMainPage.TakePhotoFromLibraryAction1DidFinishTaking(Image: TBitmap);
-begin
-    FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
-    ActionSheetClose();
-end; }
+  procedure TFMainPage.TakePhotoFromLibraryAction1DidFinishTaking(Image: TBitmap);
+  begin
+  FBabyEdit1.btnActionSheet.Fill.Bitmap.Bitmap.Assign(Image);
+  ActionSheetClose();
+  end; }
 
 end.

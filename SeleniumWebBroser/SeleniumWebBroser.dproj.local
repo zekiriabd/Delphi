@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/05/04 15:01:36.000.067,D:\MyDev\Delphi\SeleniumWebBroser\SeleniumWebBroser.dproj=C:\Users\zekiriPC\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/05/04 15:12:58.000.213,=D:\Program Files (x86)\Embarcadero\Studio\20.0\source\WebDriver4D\Webdriver4D.pas</Transaction>
+    <Transaction>2020/05/04 15:13:10.000.596,=D:\Program Files (x86)\Embarcadero\Studio\20.0\source\WebDriver4D\WD_http.pas</Transaction>
+    <Transaction>2020/05/04 15:13:38.000.321,=D:\Program Files (x86)\Embarcadero\Studio\20.0\source\WebDriver4D\WD_httpDelphi.pas</Transaction>
+    <Transaction>2020/05/04 20:23:03.000.608,=D:\MyDev\Delphi\SeleniumWebBroser\WD_http.pas</Transaction>
+    <Transaction>2020/05/04 20:23:03.000.738,=D:\MyDev\Delphi\SeleniumWebBroser\Webdriver4D.pas</Transaction>
+    <Transaction>2020/05/04 20:23:03.000.656,=D:\MyDev\Delphi\SeleniumWebBroser\WD_httpDelphi.pas</Transaction>
+    <Transaction>2020/05/04 20:23:03.000.701,=D:\MyDev\Delphi\SeleniumWebBroser\webdriver_js_string.pas</Transaction>
+    <Transaction>2020/05/04 20:28:14.000.491,=D:\MyDev\Delphi\SeleniumWebBroser\JsonDataObjects.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+	</ProjectSortOrder>
+</BorlandProject>

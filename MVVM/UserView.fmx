@@ -1,0 +1,119 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 584
+  ClientWidth = 450
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Text = '0'
+    Position.X = 40.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 54.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 40.000000000000000000
+    Position.Y = 376.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 40.000000000000000000
+    Position.Y = 440.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Circle1: TCircle
+    Fill.Bitmap.WrapMode = TileStretch
+    Fill.Kind = Bitmap
+    Position.X = 88.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button1: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'userId'
+        FieldType = ftInteger
+        ReadOnly = False
+      end
+      item
+        Name = 'firstName'
+        ReadOnly = False
+      end
+      item
+        Name = 'lastName'
+        ReadOnly = False
+      end
+      item
+        Name = 'image'
+        FieldType = ftBitmap
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    OnCreateAdapter = PrototypeBindSource1CreateAdapter
+    Left = 40
+    Top = 112
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'userId'
+      Control = Edit1
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'firstName'
+      Control = Edit2
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'lastName'
+      Control = Edit3
+      Track = False
+    end
+    object LinkPropertyToFieldFillBitmapBitmap: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'image'
+      Component = Circle1
+      ComponentProperty = 'Fill.Bitmap.Bitmap'
+    end
+  end
+end
