@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/02/10 18:54:13.000.432,=C:\Users\zekir\OneDrive\Documents\Embarcadero\Studio\Projets\FormUnit1.pas</Transaction>
+    <Transaction>2024/02/10 18:54:14.000.020,=C:\Users\zekir\OneDrive\Documents\Embarcadero\Studio\Projets\WebModuleUnit1.pas</Transaction>
+    <Transaction>2024/02/10 19:07:56.000.454,C:\DEV\Softwe3\DelphiTMS\DelphiGraphQL\WebModuleUnit1.pas=C:\Users\zekir\OneDrive\Documents\Embarcadero\Studio\Projets\WebModuleUnit1.pas</Transaction>
+    <Transaction>2024/02/10 19:07:56.000.454,C:\DEV\Softwe3\DelphiTMS\DelphiGraphQL\WebModuleUnit1.dfm=C:\Users\zekir\OneDrive\Documents\Embarcadero\Studio\Projets\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2024/02/10 19:08:00.000.788,C:\DEV\Softwe3\DelphiTMS\DelphiGraphQL\FormUnit1.pas=C:\Users\zekir\OneDrive\Documents\Embarcadero\Studio\Projets\FormUnit1.pas</Transaction>
+    <Transaction>2024/02/10 19:08:00.000.788,C:\DEV\Softwe3\DelphiTMS\DelphiGraphQL\FormUnit1.dfm=C:\Users\zekir\OneDrive\Documents\Embarcadero\Studio\Projets\FormUnit1.dfm</Transaction>
+    <Transaction>2024/02/10 19:08:02.000.418,C:\DEV\Softwe3\DelphiTMS\DelphiGraphQL\Project2.dproj=C:\Users\zekir\OneDrive\Documents\Embarcadero\Studio\Projets\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
